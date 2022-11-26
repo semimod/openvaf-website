@@ -36,9 +36,10 @@ content = 'Compact models that <a href="/docs/veriloga_support">adhere to the Ve
 title = "User friendly"
 content = 'OpenVAF employs <a href="/docs/ui">state-of-the-art compilation error reporting</a> to Verilog-A. Never guess where a problem came from again!'
 
-[[extra.list]]
-title = "Real Verilog-A compiler"
-content = 'In contrast to other existing Verilog-A tools, OpenVAF directly generates highly optimized machine code from Verilog-A source files and does not translate the Verilog-A source code into another high-level language.'
+# Not user facing
+# [[extra.list]]
+# title = "Real Verilog-A compiler"
+# content = 'In contrast to other existing Verilog-A tools, OpenVAF directly generates highly optimized machine code from Verilog-A source files and does not translate the Verilog-A source code into another high-level language.'
 
 
 [[extra.list]]
