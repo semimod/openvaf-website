@@ -4,7 +4,7 @@ title = "OpenVAF"
 
 # The homepage contents
 [extra]
-lead = '<b>OpenVAF</b> is an open-source Verilog-A compiler that makes use of state-of-the-art compiler techniques.'
+lead = '<b>OpenVAF</b> is a state-of-the-art open-source Verilog-A compiler that brings Verilog-A models into circuit simulators.'
 url = "/docs/getting-started/introduction/"
 url_button = "Get started with OpenVAF"
 repo_version = "GitHub v0.1.2"
@@ -25,7 +25,7 @@ url = "/blog/"
 weight = 20
 
 [[extra.list]]
-title = "Fast simulation"
+title = "Blazing fast simulation"
 content = 'Compact models compiled with OpenVAF simulate up to <a href="/docs/benchmarks">two times faster</a> than those compiled with other Verilog-A compilers.'
 
 [[extra.list]]
@@ -43,11 +43,11 @@ content = 'OpenVAF employs <a href="/docs/ui">state-of-the-art compilation error
 
 
 [[extra.list]]
-title = "Fast compilation"
-content = 'OpenVAF boasts compilation times that are up to <a href="/docs/benchmarks">ten times faster</a> than alternatives used in  commercial and open-source tools. This enables compact model development and shipping Verilog-A as part of PDKs.'
+title = "Fast model compilation"
+content = 'OpenVAF boasts compilation times that are up to <a href="/docs/benchmarks">ten times faster</a> than alternatives used in  commercial and open-source circuit simulators. This enables compact model development and shipment of Verilog-A models as part of PDKs.'
 
 [[extra.list]]
 title = "Highly flexible"
-content = "OpenVAF is designed to be integrated with simulators that have vastly different architectures and supports <b>advanced simulation algorithms like harmonic balance</b>."
+content = "OpenVAF is designed to be integrated with simulators that have vastly different architectures and also supports <b>advanced simulation algorithms like harmonic balance</b>."
 
 +++

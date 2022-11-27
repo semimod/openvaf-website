@@ -1,5 +1,5 @@
 +++
-title = "Introduction to Verilog-A"
+title = "Introduction"
 description = "Introduction to compact models, Verilog-A and why they are critical for economic circuit design."
 date = 2022-12-01T08:00:00+00:00
 updated = 2022-12-01T08:00:00+00:00
@@ -10,60 +10,41 @@ template = "docs/page.html"
 
 +++
 
-## Introduction to Compact Models 
+## Circuit Simulation 
 
 Circuit simulators play a critical role in the design of electrical circuits.
-By allowing designers to test the behavior of their circuits before fabrication
-they **significantly reduce design time and costs**.
-Producing a test-wafer during IC development producing costs tens of thousands of euros.
-More importantly a lead-time of at least 6 months is required which significantly hinders design velocity.
-Accurate simulations alleviate this problem by reducing the number of required design iterations,
-ideally enabling a first-time-right design.
+Accurate simulations allow circuit designers to validate the behavior of circuits before actual fabrication happens, 
+potentially saving **significantly costs due to re-design.**
+Of course, the simulation of a circuit critically depends on the so-called compact models that are employed in the simulator.
 
-Circuit simulators require models that describe the behavior of the used electronic devices.
-Full simulation of device physics (TCAD) is impractical, because it requires usually secret foundry data
-and takes an hour to simulate just a single transistor 
-Instead, so-called compact models are used that
-mathematically describe the terminal characteristics of devices as functions of terminal voltages and model parameters.
+* The **accuracy of the compact-model** 
+* The quality of the **model parameters** 
 
-There are two primary variables that influence the accuracy of a simulation:
+## Compact Models 
 
-* The accuracy of the compact-model
-* The quality of the model parameters extracted from measurements of the electronic devices.
+Compact models are mathematical models that allows to predict the device **terminal characteristics** by means of computationally inexpensive equations. 
+With increasingly advanced technologies, compact models have been **growing significantly in complexity**. 
+At the same time an increasingly diverse set of technologies is offered to designers, requiring **specific compact models for each kind of electron device**. 
 
-If you require a high-quality set of model-parameters, please [contact us](https://wwww.semimod.de) we are experts!
-However, even the best parameter extraction can not compensate an inaccurate compact-model.
-Therefore, compact models have **grown in complexity** significantly to reduce development costs and **keep up with modern technologies**.
+The complexity of compact models has made the manual integration into simulators **a tedious, error-prone and expensive** task.
+One reason for this is that not only the model equations have to be implemented, but also their derivatives. 
+The necessary accuracy of the derivatives is high because even small errors may lead to non-convergence, rendering numeric differentiation impractical. 
+It is not uncommon, even in commercial tools, to find model **implementation bugs** or observing **convergence problems** that fundamentally results from errors in 
+derivatives. 
+Some simulators with no or limited Verilog-A integration **lack many compact-models and can therefore not be used at all to simulate many processes**.
 
-However, this complexity has made **integrating** these models **into simulators manually tedious, error-prone task and expensive** process.
-In particular, the derivatives of all computed terminal characteristics are required by simulators.
-These symbolic derivatives quickly balloon to unmanageable terms that are many times larger than the (already complex) model equations.
-Numeric derivatives are not an option as they are an order of magnitude slower to compute and often cause convergence problems.
-As a result, we frequently encountered **incorrect compact models** when working with our customers.
-Furthermore, some simulators with no/limited Verilog-A integration **are lacking many compact-models**.
+Manually implemented compact models may **differ between simulators** since EDA vendors like to rename parameters or change particular model equations.
+Since there may be simulator specific peculiarities for model implementations, PDKs can usually only be used with a few specific simulators.
 
-Finally, these manually implemented compact models often **differ between multiple simulators** as EDA vendors rename parameters or change model equations.
-Therefore, PDKs are often only usable with a select few simulators.
+## Verilog-A 
 
-## Moving the industry forward with Verilog-A 
+Verilog-A has been developed to address these problems and has become the [de-facto standard](https://si2.org/standard-models/) for developing and distributing compact models. 
+It allows implementing compact models via a **simulator independent** and well-defined language. 
+Simulators can then implement a **model compiler** for Verilog-A models that allows to use the models **without the need to manually implement them**. 
 
-To address these problems it has become the [de-facto standard](https://si2.org/standard-models/) to develop and distribute compact models in Verilog-A.
-Verilog-A allows implementing compact models in a **simulator independent** language.
-Furthermore, derivatives do not need to be implemented by hand.
-This tedious and error-prone process is instead automatically performed when the Verilog-A code
-is compiled for use within a circuit simulator.
-
-Verilog-A also makes compact-models more flexible by allowing modifications without considering
-complex implementation details like derivatives or interaction with the simulator. 
-This makes identifying problems and advanced design tasks easier.
-For example most compact-models do not produce correct results at cryogenic temperatures.
-When Verilog-A integration is available, model equations are can be adjusted to correctly account for low temperatures.
-
-Verilog-A can be useful beyond compact modelling by also facilitating the implementation of behavioral models
-or even entire circuits.
-Implementing these in Verilog-A instead of net lists has the advantage of being portable across simulators
-and also allows for increased ergonomics and flexibility by offering a more powerful language
-compared to netlists.
+Verilog-A makes **model development** easier as it enables to modify the model code without having to worry about model implementation details and derivatives. 
+Verilog-A can also be used for **implementing behavioral or data-driven models**, or even entire circuits.
+Models and PDK implementation with Verilog-A instead of traditional netlists also has the advantage of being inherently **portable between simulators**. 
 
 
 <!-- The difficulty of incorporating Verilog-A models into circuit simulators has been overcome 
