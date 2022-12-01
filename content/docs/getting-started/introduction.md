@@ -27,25 +27,27 @@ With increasingly advanced technologies, compact models have been **growing sign
 At the same time an increasingly diverse set of technologies is offered to designers, requiring **specific compact models for each kind of electron device**. 
 
 The complexity of compact models has made the manual integration into simulators **a tedious, error-prone and expensive** task.
-One reason for this is that not only the model equations have to be implemented, but also their derivatives. 
-The necessary accuracy of the derivatives is high because even small errors may lead to non-convergence, rendering numeric differentiation impractical. 
-It is not uncommon, even in commercial tools, to find model **implementation bugs** or observing **convergence problems** that fundamentally results from errors in 
-derivatives. 
-Some simulators with no or limited Verilog-A integration **lack many compact-models and can therefore not be used at all to simulate many processes**.
+One reason for this is that not only the model equations have to be implemented, but also their symbolic derivatives. 
+<!--The necessary accuracy of the derivatives is high because even small errors may lead to non-convergence, rendering numeric differentiation impractical. -->
+Numeric derivatives are not an option because they are orders of magnitude slower to compute and can introduce convergence problems.
+It is not uncommon, even in commercial tools, to find model **implementation bugs** or observing **convergence problems** that result 
+from incorrectly implemented derivatives. 
+Some simulators with no or limited Verilog-A integration **lack many compact-models and can therefore not simulate many processes at all**.
 
-Manually implemented compact models may **differ between simulators** since EDA vendors like to rename parameters or change particular model equations.
+Manually implemented compact models may **differ between simulators** since EDA vendors often rename parameters or change particular model equations.
 Since there may be simulator specific peculiarities for model implementations, PDKs can usually only be used with a few specific simulators.
 
 ## Verilog-A 
 
 Verilog-A has been developed to address these problems and has become the [de-facto standard](https://si2.org/standard-models/) for developing and distributing compact models. 
-It allows implementing compact models via a **simulator independent** and well-defined language. 
-Simulators can then implement a **model compiler** for Verilog-A models that allows to use the models **without the need to manually implement them**. 
+It allows implementing compact models via a **simulator independent** and standardized language.
+**Verilog-A compiler** can translate these models to machine code and allow simulators to use these models **without manually implementing them**. 
 
-Verilog-A makes **model development** easier as it enables to modify the model code without having to worry about model implementation details and derivatives. 
+Verilog-A also makes **model development and customization** easier as it enables to modify the model code without having to worry about model implementation details and derivatives. 
+This can enable advanced designs.
+For example most compact-models do not produce correct results at cryogenic temperatures.
 Verilog-A can also be used for **implementing behavioral or data-driven models**, or even entire circuits.
 Models and PDK implementation with Verilog-A instead of traditional netlists also has the advantage of being inherently **portable between simulators**. 
-
 
 <!-- The difficulty of incorporating Verilog-A models into circuit simulators has been overcome 
 with the help of specialized tools such as ADMS, which should eliminate the need for implementing all model
