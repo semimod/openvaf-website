@@ -21,5 +21,5 @@ openvaf <VerilogA-File>.va
 
 in a terminal. This invokes the compilation process.
 
-If there are no errors in the Verilog-A source, a file called **VerilogA-File.osdi** will be generated that can be used by circuit simulators 
-that implement the OSDI interface (todo: link), such as Ngspice.
+If there are no errors in the Verilog-A source, a file called **VerilogA-File.osdi** will be generated that can be used by 
+circuit simulators that implement the [OSDI interface](../../implementation_details/osdi), such as Ngspice.

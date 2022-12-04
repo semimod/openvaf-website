@@ -130,7 +130,7 @@ weight = 20
 
 # Footer contents
 [extra.footer]
-info = 'Developed by <a href="https://www.semimod.de">SemiMod</a>'
+info = 'Developed by <a href="https://www.semimod.de">SemiMod GmbH</a>'
 
 # [[extra.footer.nav]]
 # name = "Privacy"
