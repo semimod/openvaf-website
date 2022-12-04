@@ -16,7 +16,19 @@ The following paragraphs describe the installation of OpenVAF on several operati
 
 ## System Requirements
 
-Before using the theme, you need to install the [Zola](https://www.getzola.org/documentation/getting-started/installation/) ≥ 0.15.0.
+OpenVAF is shipped as a standalone executable for several OS:
+
+* Unix systems released from RHEL 7 on are supported. 
+* Windows systems from Windows 10 on are supported. 
+* OSX is currently not supported.
+
+## Download
+
+The pre-compiled OpenVAF executable can be downloaded [here](todo).
+
+## Compilation
+
+Compilation ... 
 
 ### Unix
 
