@@ -10,13 +10,14 @@ template = "docs/page.html"
 
 +++
 
-## Introduction 
+# Introduction 
 
 In the following, the simulation of some circuits that rely on Verilog-A defined compact models is detailed using **Ngspice**
 as an exemplary circuit simulator. 
 For this purpose, please install Ngspice as is explained on the [Ngspice website](https://ngspice.sourceforge.io/).
 
 **The OSDI interface of Ngspice is only available in the pre-master branch at this time!**
+
 
 ## Netlist Syntax 
 
@@ -37,11 +38,11 @@ First, create a folder that will be used for the simulation.
 
 In this folder, place the following three files: 
 
-* the netlist below, which you can also download [here](/hicuml2/netlist_osdi.sp). 
-* the model parameters [model.l](/hicuml2/model.l) that specify the model parameters.
-* the **hicumL2V3p0p0.va** file that you can download [here](https://www.iee.et.tu-dresden.de/iee/eb/forsch/Hicum_PD/HicumQ/hicumL2V3p0p0.va).
+* the **netlist** shown below, which you can also download [here](/hicuml2/netlist_osdi.sp). 
+* the model parameter file **model.l** that specifies the model parameters and can be downloaded [here](/hicuml2/model.l).
+* the **hicumL2V3p0p0.va** Verilog-A source file that you can download [here](https://www.iee.et.tu-dresden.de/iee/eb/forsch/Hicum_PD/HicumQ/hicumL2V3p0p0.va).
 
-```bash
+```text
 OSDI Example
 
 VB B  0 DC 0.1 AC 1 SIN (0.5 0.4 1M)
@@ -62,20 +63,23 @@ plot -i(VC)
 .end
 ```
 
-The netlist specifies a bipolar transistor that uses the model **hicuml2va** and the model parameters **model.l**. 
-The model is made available to Ngspice via the line 
+The netlist specifies a bipolar transistor that uses the model **hicuml2va** which is defined in the Verilog-A source file. 
+The model is made available to Ngspice via the **pre_osdi** command.
 
-```bash
-pre_osdi hicumL2V3p0p0.osdi
-```
-
-To generate this osdi file you must compile the Verilog-A code by running
+For generating this osdi file you must compile the Verilog-A code by running
 
 ```bash
 openvaf hicumL2V3p0p0.va
 ``` 
 
-in the folder.
+in the simulation folder. This will generate the **hicumL2V3p0p0.osdi** file. 
+Now you can run the circuit simulation using 
+
+```bash
+ngspice netlist_osdi.sp
+``` 
+
+and the output characteristics of the bipolar transistor will be plotted.
 
 
 

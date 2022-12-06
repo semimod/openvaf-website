@@ -10,24 +10,15 @@ template = "docs/page.html"
 
 +++
 
-👉 Make sure to read the [Code of Conduct](../code-of-conduct/).
+# Roadmap
 
-## Contribute to Doks
+These are the things that are on the Roadmap for this project long-term:
 
-👉 The AdiDoks code lives in the [`adidoks` repository](https://github.com/aaranxu/adidoks)
+- Support for **noise analysis**
+- OSDI integration in **Xyce**
+- Faster model evaluation by means of **parallelization**
+- Improved documentation
+- A detailed **release paper** and attendance at **international conferences**
 
-- Follow the [GitHub flow](https://guides.github.com/introduction/flow/).
-- Follow the [Conventional Commits Specification](https://www.conventionalcommits.org/en/v1.0.0/)
-
-### Create an issue
-
-- [Bug report](https://github.com/aaranxu/adidoks/issues/new?template=bug-report---.md)
-- [Feature request](https://github.com/aaranxu/adidoks/issues/new?template=feature-request---.md)
-
-## Improve documentation
-
-👉 The documentation lives in [`./content/docs/`](https://github.com/aaranxu/adidoks/tree/master/content/docs)
-of the [`adidoks` repository](https://github.com/h-enk/getdoks.org).
-
-- Follow the [GitHub flow](https://guides.github.com/introduction/flow/).
-- Follow the [Conventional Commits Specification](https://www.conventionalcommits.org/en/v1.0.0/)
+We are always looking for cooperation partners and financial support, please 
+do not hesitate to contact [SemiMod GmbH](https://www.semimod.de). 
