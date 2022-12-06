@@ -10,25 +10,33 @@ template = "docs/page.html"
 
 +++
 
-## Installation
-
-The following paragraphs describe the installation of OpenVAF on several operating systems.
+# Installation
 
 ## System Requirements
 
-OpenVAF is shipped as a standalone executable for several OS:
+OpenVAF is shipped as a pre-compiled standalone executable for several OS:
 
-* Unix systems released from RHEL 7 on are supported. 
-* Windows systems from Windows 10 on are supported. 
-* OSX is currently not supported.
+* All Unix systems released from RHEL 7 on. 
+* Windows systems from Windows 10 on. 
 
-## Download
+Note that OSX is currently not supported.
 
-The pre-compiled OpenVAF executable can be downloaded [here](todo).
+## Pre-compiled Executable
+
+Pre-compiled OpenVAF executables for all supported platforms [can be downloaded here](todo). 
+After download, place the **openvaf**  executable in your PATH, so that it can be called from everywhere. 
+
+Try to run 
+
+```bash
+openvaf
+``` 
+
+in a terminal and see if the executable is found.
 
 ## Compilation
 
-Compilation ... 
+Compilation todo ... 
 
 ### Unix
 
@@ -42,5 +50,4 @@ Visit `http://127.0.0.1:1111/` in the browser.
 
 ### Windows
 
-## Testing the Installation
 

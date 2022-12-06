@@ -34,7 +34,11 @@ content = 'Compact models that <a href="/docs/veriloga_support">adhere to the Ve
 
 [[extra.list]]
 title = "User friendly"
-content = 'OpenVAF employs <a href="/docs/ui">state-of-the-art compilation error reporting</a> to Verilog-A. Never guess where a problem came from again!'
+content = 'OpenVAF features <a href="/docs/ui">state-of-the-art compilation error reporting</a> for Verilog-A source files. Never guess where a problem came from again!'
+
+[[extra.list]]
+title = "100% Open source"
+content = 'OpenVAF comes under the GPL license and therefore is a key enabler for the growing open-source community around semiconductors. Now, all PDKs can easily be ported to circuit simulators!'
 
 # Not user facing
 # [[extra.list]]

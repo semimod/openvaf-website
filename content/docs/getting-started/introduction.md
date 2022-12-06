@@ -22,17 +22,16 @@ The simulation of a circuits critically depends on the so-called compact models 
 
 ## Compact Models 
 
-Compact models are used to predict the device **terminal characteristics** by means of computationally inexpensive equations. 
+Compact models predict the device **terminal characteristics** by means of computationally inexpensive equations. 
 With increasingly advanced technologies, compact models have been **growing significantly in complexity**. 
 At the same time an increasingly diverse set of technologies is offered to designers, requiring **specific compact models for each kind of electron device**. 
 
-The complexity of compact models has made the manual integration into simulators **a tedious, error-prone and expensive** task.
+The complexity of compact models has made the manual integration into simulators **a tedious, error-prone and therefore expensive** task.
 One reason for this is that not only the model equations have to be implemented, but also their symbolic derivatives. 
-<!--The necessary accuracy of the derivatives is high because even small errors may lead to non-convergence, rendering numeric differentiation impractical. -->
 Numeric derivatives are not an option because they are orders of magnitude slower to compute than analytical derivatives and can introduce convergence problems due to inaccuracies.
-It is not uncommon, even in commercial tools, to find model **implementation bugs** or observing **convergence problems** that result 
+It is not uncommon - even in commercial tools - to find model **implementation bugs** or to observe **convergence problems** that result 
 from incorrectly implemented derivatives. 
-Some simulators with no or limited Verilog-A integration **do not implement many compact-models and can therefore not simulate many processes at all**.
+Some simulators with no or limited Verilog-A integration **do not implement certain compact-models and can therefore not be used to simulate some processes at all**.
 
 Manually implemented compact models may **differ between simulators** since EDA vendors often rename parameters or alter particular model equations.
 Due to these simulator specific peculiarities, PDKs can usually only be used by a few specific simulators.
