@@ -12,8 +12,8 @@ template = "docs/page.html"
 
 ### Why did you develop OpenVAF?
 
-Coming from a software-engineering/academic background we noticed at the beginning of 2019 that 
-commercial Verilog-A compilers had serious shortcomings (speed, standard compliance, license cost). 
+Coming from a modeling/software-engineering/academic background we noticed at the beginning of 2019 that 
+commercial Verilog-A compilers had serious shortcomings (slow compilation and simulation speed, questionable Verilog-A standard compliance, license cost, convergence issues). 
 Even worse, the ADMS tool used in the open-source circuit simulators is notoriously buggy and slow, 
 and not anymore maintained.
 
@@ -42,9 +42,10 @@ developed further for over a decade.
 
 ### Why did you license OpenVAF under GPL?
 
-The choice for open-source was clear, since we needed the tool for our own sake. There is only advantage in giving the tool to the open-soure 
-community.
-This enables finding bugs, but also shows the commercial EDA vendors what is technically possible. 
+The choice for open-source was clear, since we needed the tool for our own sake and wanted people to 
+also benefit. 
+Sharing brings nothing but advantages to everyone. 
+It enables to locate bugs, improve the tools, but also shows the commercial EDA vendors what is technically possible. 
 
 
 ### I need help integrating OpenVAF into my simulator, can you guys help me?
