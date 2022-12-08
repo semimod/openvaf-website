@@ -25,11 +25,21 @@ CMC models are available in most commercial circuit simulators and are widely us
 
 ### BSIM (FET)
 
-[The BSIM group](http://bsim.berkeley.edu/) develops and releases **several FET models** including BSIM4, BSIM-CMG, BSIM-SOI, BSIM-IMG and BSIM-BULK. 
+[The BSIM group](http://bsim.berkeley.edu/) develops and releases **several FET models** including 
+
+* [BSIM4](https://github.com/cogenda/VA-BSIM48) is an outdated MOSFET model that only has a non-official Verilog-A file.
+* [BSIM-CMG](https://bsim.berkeley.edu/models/bsimcmg/) for common multi-gate FETs.
+* [BSIM-SOI](https://bsim.berkeley.edu/models/bsimsoi/) is a SPICE compact model for SOI (Silicon-On-Insulator) FETs.
+* [BSIM-IMG](https://bsim.berkeley.edu/models/bsimimg/) has been developed to model the electrical characteristics of the independent double-gate structures like Ultra-Thin Body and BOX SOI transistors (UTBB).
+* [BSIM-BULK](https://bsim.berkeley.edu/models/bsimbulk/) is a state-of-the-art FET model for bulk FETs.
 
 ### PSP Model (FET)
 
-PSP is a Compact Model for bulk Metal-Oxide-Semiconductor Field Effect Transistors (MOSFET's) and is available [here](https://www.cea.fr/cea-tech/leti/pspsupport).
+PSP is a Compact Model for bulk Metal-Oxide-Semiconductor Field Effect Transistors (MOSFET's) and is available [here](https://www.cea.fr/cea-tech/leti/pspsupport/CurrentRelease).
+
+### JUNCAP Model (Diode)
+
+[The juncap diode model](https://www.cea.fr/cea-tech/leti/pspsupport/Pages/Welcome.aspx) is developed by NXP Research and CEA-Leti. 
 
 ### HiSIM (FET)
 

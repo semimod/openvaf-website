@@ -19,10 +19,16 @@ url = "/docs/getting-started/introduction/"
 weight = 10
 
 [[extra.menu.main]]
+name = "Download"
+section = "download"
+url = "/download/"
+weight = 20
+
+[[extra.menu.main]]
 name = "Blog"
 section = "blog"
 url = "/blog/"
-weight = 20
+weight = 30
 
 [[extra.list]]
 title = "Blazing fast simulation"
