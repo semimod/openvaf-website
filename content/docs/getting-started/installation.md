@@ -44,6 +44,6 @@ This is not recommended for users that do not want to actively take part in the 
 since the build process is quite involved because of its **LLVM dependency**. 
 This is no problem on most up to date Unix systems that have LLVM pre-compiled in their repos.
 
-The compilation is detailed in the **README.md** of the [OpenVAF repository](https://gitlab.com/DSPOM/OpenVAF).
+The compilation is detailed in the **README.md** of the [OpenVAF repository](https://github.com/pascalkuthe/OpenVAF).
 
 

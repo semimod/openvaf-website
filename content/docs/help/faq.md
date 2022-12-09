@@ -25,7 +25,7 @@ With OpenVAF, you get a **real Verilog-A compiler** that directly generates exec
 an intermediate language such as C. The compilation is fast and the generated machine code is highly optimized for speed using state-of-the-art compiler techniques.
 
 OpenVAF is also Verilog-A standard compliant. If you have problems or questions, [SemiMod GmbH](https://semimod.de/) 
-can directly be contacted, or you can get in touch using the [Git repo](https://gitlab.com/DSPOM/OpenVAF). 
+can directly be contacted, or you can get in touch using the [Git repo](https://github.com/pascalkuthe/OpenVAF). 
 
 ### What are potential future applications?
 
@@ -67,4 +67,4 @@ we may discuss potential collaboration options.
 
 ### Who should I contact if I have problems, questions or feature requests?
 
-You can post all questions, bugs or feature requests on the [OpenVAF Git repository](https://gitlab.com/DSPOM/OpenVAF).
+You can post all questions, bugs or feature requests on the [OpenVAF Git repository](https://github.com/pascalkuthe/OpenVAF).
