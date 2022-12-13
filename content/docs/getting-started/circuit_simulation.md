@@ -1,5 +1,5 @@
 +++
-title = "Ngspice circuit simulation"
+title = "Circuit Examples"
 description = "One page summary of how to start a new AdiDoks project."
 date = 2021-05-01T08:20:00+00:00
 updated = 2021-05-01T08:20:00+00:00
@@ -16,7 +16,7 @@ In the following, the simulation of some circuits that rely on Verilog-A defined
 as an exemplary circuit simulator. 
 For this purpose, please install Ngspice as is explained on the [Ngspice website](https://ngspice.sourceforge.io/).
 
-**The OSDI interface of Ngspice is only available in the "veriloga_osdi2" branch at this time!**
+**The OSDI interface of Ngspice is only available in the "veriloga_osdi3" branch at this time! Soon it will be available in the release.**
 
 
 ## Netlist Syntax 
@@ -27,8 +27,8 @@ After having compiled a Verilog-A source file as [described here](../model-compi
 pre_osdi hicumL2V3p0p0.osdi
 ```
 
-Ngspice will look for the **osdi** at the path specified in the **pre_osdi** command 
-that is either absolute or relative to the current working directory. 
+Ngspice will look for the **osdi** in the path specified via the **pre_osdi** command. 
+The path can be either absolute, or relative to the current working directory. 
 
 ## Example 1: HICUM/L2 Model
 
@@ -62,10 +62,10 @@ plot -i(VC)
 .end
 ```
 
-The netlist specifies a bipolar transistor that uses the model **hicuml2va** which is defined in the Verilog-A source file. 
-The model is made available to Ngspice via the **pre_osdi** command.
+This netlist specifies a bipolar transistor that uses the model **hicuml2va** which is defined in the Verilog-A source file. 
+The Verilog-A model is made available to Ngspice using the **pre_osdi** command.
 
-For generating this osdi file you must compile the Verilog-A code by running
+For generating the osdi file you must **compile** the Verilog-A code by running
 
 ```bash
 openvaf hicumL2V3p0p0.va
@@ -78,7 +78,7 @@ Now you can run the circuit simulation using
 ngspice netlist_osdi.sp
 ``` 
 
-and the output characteristics of the bipolar transistor will be plotted.
+and the output characteristics of the bipolar transistor are plotted.
 
 
 
@@ -184,7 +184,7 @@ cd psp_inverter/PSP103.8.0_vacode/vacode/
 openvaf psp103.va
 ``` 
 
-This will compile the Verilog-A source file to **psp103.osdi** file for use in Ngspice.
+This will **compile** the Verilog-A source file to **psp103.osdi** file for usage in Ngspice.
 Now, in the simulation folder, run
 
 ```bash
@@ -192,12 +192,12 @@ cd psp_inverter
 ngspice psp_inverter.sp
 ``` 
 
-to see the simulated inverter characteristics.
+to calculate and plot the simulated inverter characteristics.
 
 
 ## Example 3: ISCAS85 Benchmark Circuit
 
-In this example we will simulate the massive ISCAS85 benchmark circuit that is often used to benchmark circuit simulators. 
+In this example the massive ISCAS85 benchmark circuit that is often used for benchmarking circuit simulators is simulated. 
 First, create a folder **iscas85_benchmark_circuit** that will be used for the circuit simulation. 
 In this folder place the following files:
 
@@ -222,7 +222,7 @@ cd iscas85_benchmark_circuit/PSP103.8.0_vacode/vacode/
 openvaf psp103.va
 ``` 
 
-This will compile the Verilog-A source file to **psp103.osdi** file for use in Ngspice.
+This will compile the Verilog-A source file to **psp103.osdi** file for usage in Ngspice.
 Now, in the simulation folder, run
 
 ```bash
@@ -230,4 +230,4 @@ cd iscas85_benchmark_circuit
 ngspice iscas85_benchmark_circuit.sp
 ``` 
 
-to see the results. Note that this is a very large circuit whose simulation can take minutes.
+to see the results. Note that this is a very large circuit whose simulation **can take more than ten minutes**.

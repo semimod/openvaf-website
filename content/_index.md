@@ -32,7 +32,7 @@ weight = 30
 
 [[extra.list]]
 title = "Blazing fast simulation"
-content = 'Compact models compiled with OpenVAF simulate up to <a href="/docs/benchmarks">two times faster</a> than those compiled with other Verilog-A compilers.'
+content = 'Compact models compiled with OpenVAF simulate up to <a href="/docs/benchmarks">30 % faster</a> than those compiled with other Verilog-A compilers.'
 
 [[extra.list]]
 title = "Standard compliant and correct"
@@ -54,7 +54,7 @@ content = 'OpenVAF comes under the GPL license and therefore is a key enabler fo
 
 [[extra.list]]
 title = "Fast model compilation"
-content = 'OpenVAF boasts compilation times that are up to <a href="/docs/benchmarks">ten times faster</a> than alternatives used in  commercial and open-source circuit simulators. This enables compact model development and shipment of Verilog-A models as part of PDKs.'
+content = 'OpenVAF compiles models <a href="/docs/benchmarks">ten times faster</a> than alternatives used in  commercial and open-source circuit simulators. This enables compact model development and shipment of Verilog-A models as part of PDKs.'
 
 [[extra.list]]
 title = "Highly flexible"

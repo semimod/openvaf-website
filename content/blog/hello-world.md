@@ -13,4 +13,4 @@ authors = ["Markus Müller"]
 
 Today, after years of developement, we have finally finished the first version of the OpenVAF website. 
 Let us see how fast we can get into Ngspice and bring modern compiler techniques to the Verilog-A world. 
-In the future, we will put all relevant information to the project here, so stay tuned!
+In the future, we will post all relevant information related to the OpenVAF project here, so stay tuned!
