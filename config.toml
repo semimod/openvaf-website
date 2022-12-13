@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://golden-caramel-e41c84.netlify.app"
+base_url = "https://openvaf.semimod.de"
 title = "OpenVAF"
 description = "OpenVAF | A Verilog-A compiler for the 21 century"
 
