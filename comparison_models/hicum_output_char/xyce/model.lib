@@ -1,4 +1,4 @@
-.MODEL _0 hicumL2_test (
+.MODEL _0 hicumL2_test 
 + c10 =  9.074e-030 
 + qp0 =  1.008e-013 
 + hfe =  10.01 
@@ -121,5 +121,5 @@
 + ahjei =  3 
 + rhjei =  2 
 + delck =  2 
-+ zetahjei =  -0.5 )
++ zetahjei =  -0.5 
 

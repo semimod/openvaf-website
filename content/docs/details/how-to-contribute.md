@@ -18,5 +18,5 @@ Everyone is invited to contribute to this project. There are three main Git repo
 * The **OSDI** interface definition is maintained [here](https://gitlab.com/mario.k/osdi) and is summarized [here](/osdi/osdi_v0p3.pdf). 
 * **Ngspice** is maintained [here](https://ngspice.sourceforge.io/). The OSDI interface of Ngspice is defined in **src/osdi**. 
 
-You are free to ask questions, make pull requests and report bugs. 
+You are invited to ask questions, create pull requests and report bugs. 
 

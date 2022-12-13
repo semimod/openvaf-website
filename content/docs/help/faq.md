@@ -47,6 +47,10 @@ also benefit.
 Sharing brings nothing but advantages to everyone. 
 It enables to locate bugs, improve the tools, but also shows the commercial EDA vendors what is technically possible. 
 
+### Will OpenVAF remain open-source?
+
+Yes, OpenVAF and the OSDI interface will remain open-source projects. 
+However, SemiMod offers potential commercial partners to build or integrate OpenVAF into a proprietary interface. 
 
 ### I need help integrating OpenVAF into my simulator, can you guys help me?
 

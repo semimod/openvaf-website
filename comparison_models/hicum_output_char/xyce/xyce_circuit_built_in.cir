@@ -16,7 +16,6 @@ VV_C n_C 0 DC {V_C}
 
 .DC V_C 0 2 0.001 V_B 0.65 0.9 0.001 
 
-.PRINT DC V(n_B) V(n_C)
 
 
 .END
