@@ -9,10 +9,13 @@ VC C  0 DC 1
 N1 C B 0 0 npn_full_sh
 
 .control
+set filetype ascii
+set wr_vecnames
+set wr_singlescale
 pre_osdi hicumL2V3p0p0.osdi
 
 dc VC 0 2 0.01 VB 0.76 0.9 0.02 ; 
-plot -i(VC)
+wrdata output.csv all
 .endc
 
 .end

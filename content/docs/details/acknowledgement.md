@@ -19,4 +19,4 @@ The following people have made this project possible and are acknowledged for th
 * Holger Vogt and Dietmar Warning (NGspice developers)
 * Wladek Grabinski (MOS-AK, open-source community "glue")
 
-SemiMod GmbH also acknowledges financial support by its valued customers. 
+SemiMod GmbH acknowledges financial support by its valued customers. 
