@@ -21,14 +21,43 @@ For this purpose, please install Ngspice as is explained on the [Ngspice website
 
 ## Netlist Syntax 
 
-After having compiled a Verilog-A source file as [described here](../model-compilation), the compiled **osdi** file can be included into a netlist after the **.control** statement like this:
+After having compiled a Verilog-A source file as [described here](../model-compilation), the compiled **osdi** file is included into a netlist after the 
+**.control** statement like this:
 
 ```bash
-pre_osdi hicumL2V3p0p0.osdi
+pre_osdi <Verilog-A name>.osdi
 ```
 
 Ngspice will look for the **osdi** in the path specified via the **pre_osdi** command. 
 The path can be either absolute, or relative to the current working directory. 
+
+Then, a Verilog-A device in a netlist is initiated like this
+
+```bash
+N<instance name> <nodes>* <model name> <instance parameters>*
+```
+
+where the model has to be defined like this:
+
+```bash
+.model <model name> <Verilog-A module name> <model parameters>*
+```
+
+A minimalist example netlist looks like this:
+
+```text
+OSDI Example
+
+.model hicum_model hicuml2va c10=1e-30
+
+N1 C B E S hicum_model
+
+.control
+pre_osdi hicumL2V3p0p0.osdi
+op
+.endc
+.end
+```
 
 ## Example 1: HICUM/L2 Model
 
@@ -78,10 +107,9 @@ Now you can run the circuit simulation using
 ngspice netlist_osdi.sp
 ``` 
 
-and the output characteristics of the bipolar transistor are plotted.
+and the output characteristics of the bipolar transistor are plotted:
 
-
-
+{{ resize_image(path="/static/hicuml2/ICVCE.png", width=600, op="fit_width") }}
 
 ## Example 2: PSP MOS Inverter
 
@@ -192,7 +220,13 @@ cd psp_inverter
 ngspice psp_inverter.sp
 ``` 
 
-to calculate and plot the simulated inverter characteristics.
+to calculate and plot the inverter characteristics:
+
+{{ resize_image(path="/static/psp103/plots/transfer.png", width=600, op="fit_width") }}
+
+{{ resize_image(path="/static/psp103/plots/tran.png", width=600, op="fit_width") }}
+
+{{ resize_image(path="/static/psp103/plots/curr.png", width=600, op="fit_width") }}
 
 
 ## Example 3: ISCAS85 Benchmark Circuit
