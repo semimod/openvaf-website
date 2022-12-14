@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "Xyce_Plugin_bsimsoi_bootstrap.C": "cpp",
+        "N_DEV_ADMSbsimsoi.C": "cpp"
+    }
+}

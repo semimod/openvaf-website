@@ -13,16 +13,22 @@ repo_url = "https://github.com/aaranxu/adidoks"
 
 # Menu items
 [[extra.menu.main]]
-name = "Dokumentaatio"
+name = "Dokumentation"
 section = "docs"
 url = "/docs/getting-started/introduction/"
 weight = 10
 
 [[extra.menu.main]]
 name = "Blogi"
+section = "download"
+url = "/download/"
+weight = 20
+
+[[extra.menu.main]]
+name = "Blogi"
 section = "blog"
 url = "/blog/"
-weight = 20
+weight = 30
 
 [[extra.list]]
 title = "Turvallisuustietoinen"
