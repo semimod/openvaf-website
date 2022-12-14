@@ -16,7 +16,7 @@ In the following, the simulation of some circuits that rely on Verilog-A defined
 as an exemplary circuit simulator. 
 For this purpose, please install Ngspice as is explained on the [Ngspice website](https://ngspice.sourceforge.io/).
 
-**The OSDI interface of Ngspice is only available in the "veriloga_osdi3" branch at this time! Soon it will be available in the release.**
+**The OSDI interface of Ngspice is only available in the "veriloga_osdi3" [git](https://sourceforge.net/p/ngspice/ngspice/ci/master/tree/) development branch at this time! Soon it will be available in the release.**
 
 
 ## Netlist Syntax 
