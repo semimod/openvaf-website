@@ -95,7 +95,7 @@ og_locale = "en_US"
 ## JSON-LD
 [extra.schema]
 type = "Organization"
-logo = "logo-doks.png"
+logo = "logo.svg"
 twitter = "https://twitter.com/aaranxu"
 linked_in = ""
 github = "https://github.com/aaranxu"
