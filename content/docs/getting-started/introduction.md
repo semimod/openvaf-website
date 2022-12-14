@@ -13,41 +13,44 @@ template = "docs/page.html"
 ## Circuit Simulation 
 
 Circuit simulators play a critical role in the design of electrical circuits.
-Accurate simulations allow circuit designers to validate the behavior of circuits before actual fabrication happens, 
-potentially saving **significantly costs due to re-design.**
-Of course, the simulation of a circuit critically depends on the so-called compact models that are employed in the simulator.
+Accurate simulations allow circuit designers to validate circuit behavior before actual fabrication happens, 
+potentially saving **significantly re-design costs.**
+The simulation of a circuits critically depends on the so-called compact models and therefore:
 
 * The **accuracy of the compact-model** 
 * The quality of the **model parameters** 
 
 ## Compact Models 
 
-Compact models are mathematical models that allows to predict the device **terminal characteristics** by means of computationally inexpensive equations. 
+Compact models predict the device **terminal characteristics** by means of computationally inexpensive equations. 
 With increasingly advanced technologies, compact models have been **growing significantly in complexity**. 
 At the same time an increasingly diverse set of technologies is offered to designers, requiring **specific compact models for each kind of electron device**. 
 
-The complexity of compact models has made the manual integration into simulators **a tedious, error-prone and expensive** task.
+The complexity of compact models has made the manual integration into simulators **a tedious, error-prone and therefore expensive** task.
 One reason for this is that not only the model equations have to be implemented, but also their symbolic derivatives. 
-<!--The necessary accuracy of the derivatives is high because even small errors may lead to non-convergence, rendering numeric differentiation impractical. -->
-Numeric derivatives are not an option because they are orders of magnitude slower to compute and can introduce convergence problems.
-It is not uncommon, even in commercial tools, to find model **implementation bugs** or observing **convergence problems** that result 
+Numeric derivatives are not an option because they are orders of magnitude slower to compute than analytical derivatives and can introduce convergence problems due to inaccuracies.
+It is not uncommon - even in commercial tools - to find model **implementation bugs** or to observe **convergence problems** that result 
 from incorrectly implemented derivatives. 
-Some simulators with no or limited Verilog-A integration **lack many compact-models and can therefore not simulate many processes at all**.
+Some simulators with no or limited Verilog-A integration **do not implement certain compact-models and can therefore not be used to simulate some processes at all**.
 
-Manually implemented compact models may **differ between simulators** since EDA vendors often rename parameters or change particular model equations.
-Since there may be simulator specific peculiarities for model implementations, PDKs can usually only be used with a few specific simulators.
+Manually implemented compact models may **differ between simulators** since EDA vendors often rename parameters or alter particular model equations.
+Due to these simulator specific peculiarities, PDKs can usually only be used by a few specific simulators.
 
 ## Verilog-A 
 
 Verilog-A has been developed to address these problems and has become the [de-facto standard](https://si2.org/standard-models/) for developing and distributing compact models. 
 It allows implementing compact models via a **simulator independent** and standardized language.
-**Verilog-A compiler** can translate these models to machine code and allow simulators to use these models **without manually implementing them**. 
+**Verilog-A compilers** can translate these models to machine code and allow simulators to use these models **without manually implementing them**. 
 
-Verilog-A also makes **model development and customization** easier as it enables to modify the model code without having to worry about model implementation details and derivatives. 
-This can enable advanced designs.
-For example most compact-models do not produce correct results at cryogenic temperatures.
-Verilog-A can also be used for **implementing behavioral or data-driven models**, or even entire circuits.
-Models and PDK implementation with Verilog-A instead of traditional netlists also has the advantage of being inherently **portable between simulators**. 
+Verilog-A enables...
+
+* **model development and customization** by allowing to quickly modify the model equations without having to worry about model implementation details. 
+* implementing **behavioral or data-driven models**, or even entire circuits.
+* inherent **portability between simulators** for both models and PDKs that would not be possible with traditional netlist-based formats.
+
+Model development and customization is necessary for advanced technologies and applications, for example quantum computing, 
+where existing models cannot provide satisfactory results and must be adjusted. 
+It also enables research and development.
 
 <!-- The difficulty of incorporating Verilog-A models into circuit simulators has been overcome 
 with the help of specialized tools such as ADMS, which should eliminate the need for implementing all model

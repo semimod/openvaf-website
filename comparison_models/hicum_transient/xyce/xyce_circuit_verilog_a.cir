@@ -1,0 +1,16 @@
+HICUM/L2 Output Characteristics Xyce Simulation
+.options nonlin reltol=1e-6 abstol=1e-12
+.options device temp=26.85
+.options timeint method=trap reltol=1.0e-6 abstol=1e-12
+
+* Netlist
+YhicumL2_test Q_H n_C n_B 0 0 n_TNODE _0
+.INCLUDE "model.lib"
+
+VV_B n_B 0 DC 0.8 SIN (0.8 0.1 1G)
+VV_C n_C 0 DC 1
+
+.tran 0.0001ns 200ns
+
+
+.END

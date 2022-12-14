@@ -1,41 +1,16 @@
 +++
-title = "Hello World"
-description = "Introducing Doks, a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
-date = 2021-05-01T09:19:42+00:00
-updated = 2021-05-01T09:19:42+00:00
+title = "OpenVAF Website Launched"
+description = "First blog entry for the OpenVAF website."
+date = 2022-12-08T09:19:42+00:00
+updated = 2022-12-08T09:19:42+00:00
 draft = false
 template = "blog/page.html"
 
 [taxonomies]
-authors = ["Rustaceans"]
+authors = ["Markus Müller"]
 
-[extra]
-lead = "This is the source code of the traditional <b>Hello World</b> program."
 +++
 
-```rust
-// This is a comment, and is ignored by the compiler
-
-// This is the main function
-fn main() {
-    // Statements here are executed when the compiled binary is called
-
-    // Print text to the console
-    println!("Hello World!");
-}
-```
-
-`println!` is a macro that prints text to the console.
-
-A binary can be generated using the Rust compiler: `rustc`.
-
-```bash
-$ rustc hello.rs
-```
-
-`rustc` will produce a `hello` binary that can be executed.
-
-```bash
-$ ./hello
-Hello World!
-```
+Today, after years of developement, we have finally finished the first version of the OpenVAF website. 
+Let us see how fast we can get into Ngspice and bring modern compiler techniques to the Verilog-A world. 
+In the future, we will post all relevant information related to the OpenVAF project here, so stay tuned!
