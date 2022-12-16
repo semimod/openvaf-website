@@ -29,7 +29,7 @@ weight = 30
 
 [[extra.list]]
 title = "Blazing fast simulation"
-content = 'Compact models compiled with OpenVAF simulate <a href="/docs/details/performance"> % faster</a> than those compiled with other Verilog-A compilers.'
+content = 'Compact models compiled with OpenVAF simulate <a href="/docs/details/performance"> much faster</a> than those compiled with other Verilog-A compilers.'
 
 [[extra.list]]
 title = "Standard compliant and correct"

@@ -9,7 +9,7 @@ sort_by = "weight"
 template = "docs/page.html"
 
 [extra]
-toc = true
+toc = false
 
 +++
 
@@ -38,7 +38,7 @@ Two tests have been conducted, since no test machine with all tools at the same 
 <!-- The employed CPU in test (2) was an AMD Opteron 8220 with 64 GB of DDR3 RAM.  -->
 The employed OpenVAF version was the latest master from 08.12.22, XYCE 7.5, Keysight ADS 512.update2.0 and Spectre 18.1.077.
 
-Test results on machine (1):
+Test results:
 
 |               | HICUM/L2v3.0 | PSPv103 | BSIM4 | JUNCAP200 | EKV2.6 | BSIM-SOI 4.6.1 | BSIM-BULK 107.0.0 |
 |---------------|--------------|---------|-------|-----------|--------|----------------|-------------------|
@@ -52,13 +52,13 @@ Test results on machine (1):
     - BSIM-Bulk: Non-independent initializations and node collapses, could not easily fix
     - EKV: par. range macros, noise sources not working
 
-On machine (2) OpenVAF is not available as it runs on a very old RHEL distro that does not support recent LLVM versions. 
+<!-- On machine (2) OpenVAF is not available as it runs on a very old RHEL distro that does not support recent LLVM versions. 
 Test results on machine (2):
 
 |               | HICUM/L2v3.0 | PSPv103 | BSIM4 | JUNCAP200 | EKV2.6 | BSIM-SOI 4.6.1 | BSIM-BULK 107.0.0 |
 |---------------|--------------|---------|-------|-----------|--------|----------------|-------------------|
 | Spectre       |    35.6      |   28.5  | 118.9 |  21.18    |  12.85 | 24.1           |     26.3          |
-| ADS           |    30.6      |  128.32 | 111.0 |  25.7     |   9.5  |  120           |     115.16        |
+| ADS           |    30.6      |  128.32 | 111.0 |  25.7     |   9.5  |  120           |     115.16        | -->
 
 **=> OpenVAF compiles around x10 faster than existing tools!**
 
@@ -82,7 +82,7 @@ Results:
 Notes:
 
 * Ngspice with OpenVAF runs faster than built in Ngspice HICUM/L2 model as this particular built-in implementation uses slow dual-number based derivatives
-* that the Xyce evaluation time is very likely larger due to difference in convergence algorithms, and not inherently due to Xyce itself.
+* Xyce evaluation time is very likely larger due to difference in convergence algorithms, and not inherently due to Xyce itself.
 
 
 <!--**=> Both Xyce and ADS run slower with Verilog-A model.**
