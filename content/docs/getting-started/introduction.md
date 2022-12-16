@@ -13,11 +13,11 @@ template = "docs/page.html"
 ## Circuit Simulation 
 
 Circuit simulators play a critical role in the design of electrical circuits.
-Accurate simulations allow circuit designers to validate circuit behavior before actual fabrication happens, 
-potentially saving **significantly re-design costs.**
-The simulation of a circuits critically depends on the so-called compact models and therefore:
+Accurate simulations enable circuit designers to validate circuit behavior before actual fabrication happens, 
+potentially saving **significant re-design costs.**
+The simulation of a circuit critically depends on the so-called compact models and therefore:
 
-* The **accuracy of the compact-model** 
+* The **accuracy of the compact-model equations** 
 * The quality of the **model parameters** 
 
 ## Compact Models 

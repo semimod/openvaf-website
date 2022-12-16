@@ -23,8 +23,9 @@ The chosen test cases are relatively simple, since mainly the
 famous **load** function that is called in the simulators during model evaluation is of interest. 
 The employed CPU in the tests is an Intel i7-9750H@2.60GHz with 16 GB of DDR4 RAM and a SSD, if not mentioned otherwise.
 
-In all ADS and Spectre simulations, the **license checkout time has been removed** from the the run-time. 
-As far as possible, writing to the hard-disk has been turned off for reducing the impact of read/write calls that are not of interest here. This has not been achieved for the Keysight ADS netlist that still have some overhead due to read/write access.
+In all ADS and Spectre simulations, the **license checkout time has been removed** from the run-time. 
+As far as possible, writing to the hard-disk has been turned off for reducing the impact of read/write calls that are not of interest here. 
+This has not been achieved for the Keysight ADS netlists that still cause some overhead due to read/write access.
 
 ## 1 Model Compilation
 
@@ -119,7 +120,7 @@ Test: Simulation of MOSFET output characteristics with very fine bias steps.
 
 **=> OpenVAF generally around 30% faster than ADMS based simulation.**
 
-### 2.4 BSIMSOI 106.2 Transient 
+### 2.4 BSIMBULK 106.2 Transient 
 
 Test: Simulation of MOSFET transient characteristics with very fine fixed time steps.
 
