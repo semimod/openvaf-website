@@ -11,6 +11,7 @@ template = "docs/page.html"
 +++
 
 # Examples
+
 In the following, the simulation of some circuits that rely on Verilog-A defined compact models is detailed using **Ngspice**
 as an exemplary circuit simulator. 
 For this purpose, please install Ngspice as is explained on the [Ngspice website](https://ngspice.sourceforge.io/).

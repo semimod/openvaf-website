@@ -1,6 +1,6 @@
 +++
 title = "Performance"
-description = "Contribute to AdiDoks, improve documentation, or submit to showcase."
+description = "A list of benchmarks that showcase the performance of OpenVAF"
 date = 2022-12-01T18:10:00+00:00
 updated = 2022-12-01T18:10:00+00:00
 draft = false
@@ -13,7 +13,7 @@ toc = true
 
 +++
 
-# OpenVAF Performance 
+# Performance 
 
 The following paragraphs give an overview on OpenVAF`s performance. 
 Both compilation and simulation speed are analyzed. 
@@ -26,7 +26,7 @@ The chosen test cases are relatively simple, since mainly the
 famous **load** function that is called in the simulators during model evaluation is of interest. 
 The employed CPU in the tests is an Intel i7-9750H@2.60GHz with 16 GB of DDR4 RAM and a SSD, if not mentioned otherwise.
 
-In all ADS and Spectre simulations, the **license checkout time has been removed** from the the run-time. 
+In all simulations with commercial simulations, the **license checkout time has been removed** from the run-time. 
 As far as possible, writing to the hard-disk has been turned off for reducing the impact of read/write calls that are not of interest here. This has not been achieved for the Keysight ADS netlist that still have some overhead due to read/write access.
 
 ## 1 Model Compilation
