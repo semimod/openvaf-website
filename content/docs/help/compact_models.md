@@ -1,12 +1,15 @@
 +++
 title = "Available compact models"
 description = "Answers to frequently asked questions."
-date = 2021-05-01T19:30:00+00:00
-updated = 2021-05-01T19:30:00+00:00
+date = 2022-12-01T18:10:00+00:00
+updated = 2022-12-01T18:10:00+00:00
 draft = false
 weight = 30
 sort_by = "weight"
 template = "docs/page.html"
+
+[extra]
+toc = true
 
 +++
 
@@ -18,7 +21,7 @@ Do not hesitate to drop us a mail if we forgot your favorite model!
 Note that for legal reasons, OpenVAF does not ship with these models. Users are encouraged to download them themselves. 
 We also encourage users to only employ freely available models. 
 
-# CMC Models
+## CMC Models
 
 The [Compact Model Coalition (CMC)](https://si2.org/cmc/) is a working collaborative group focused on the standardization of SPICE (Simulation Program with Integration Circuit Emphasis) device models. 
 CMC models are available in most commercial circuit simulators and are widely used in industry and academia.
@@ -61,7 +64,7 @@ The [ASM-HEMT model](https://iitk.ac.in/asm/) is a robust surface-potential base
 
 
 
-# Non CMC Models
+## Non CMC Models
 
 There are models that are released without CMC involvement. Some of these models are listed below.
 

@@ -1,12 +1,15 @@
 +++
 title = "Performance"
 description = "Contribute to AdiDoks, improve documentation, or submit to showcase."
-date = 2021-05-01T18:10:00+00:00
-updated = 2021-05-01T18:10:00+00:00
+date = 2022-12-01T18:10:00+00:00
+updated = 2022-12-01T18:10:00+00:00
 draft = false
 weight = 480
 sort_by = "weight"
 template = "docs/page.html"
+
+[extra]
+toc = true
 
 +++
 
@@ -75,13 +78,17 @@ Results:
 * ADS (Verilog-A ): 8.63s
 * ADS (built-in): 7.01s
 
-**=> Ngspice with OpenVAF runs faster than built in Ngspice HICUM/L2 model, likely due to slow dual-number based derivative calculation.**
 
-**=> Both Xyce and ADS run slower with Verilog-A model.**
+Notes:
 
-**=> Ngspice runs comparably fast as commercial ADS simulator.**
+* Ngspice with OpenVAF runs faster than built in Ngspice HICUM/L2 model as this particular built-in implementation uses slow dual-number based derivatives
+* that the Xyce evaluation time is very likely larger due to difference in convergence algorithms, and not inherently due to Xyce itself.
 
-Note that the Xyce evaluation time is very likely larger due to difference in convergence algorithms, and not inherently due to Xyce itself.
+
+<!--**=> Both Xyce and ADS run slower with Verilog-A model.**
+
+**=> Ngspice runs comparably fast as commercial ADS simulator.**-->
+
 
 ### 2.2 HICUM/L2v2p4p0 Transient Simulation
 
@@ -95,7 +102,7 @@ Test: Simulation of HBT transient behavior with 1 GHz input signal at the base n
 
 Note that the ADS evaluation time is very likely larger due to excessive writing to the hard-disk that could not be turned off easily. 
 
-**=> Ngspice with OpenVAF runs reasonably fast.**
+<!-- **=> Ngspice with OpenVAF runs reasonably fast.** -->
 
 ### 2.3 BSIMSOI 4.4.0 Output Characteristics
 
@@ -118,7 +125,7 @@ Test: Simulation of MOSFET output characteristics with very fine bias steps.
 * ADS (Verilog-A): 79.63s
 * ADS (built-in): 76.87s
 
-**=> OpenVAF generally around 30% faster than ADMS based simulation.**
+<!-- **=> OpenVAF generally around 30% faster than ADMS based simulation.** -->
 
 ### 2.4 BSIMBULK 106.2 Transient 
 
