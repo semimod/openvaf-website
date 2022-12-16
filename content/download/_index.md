@@ -14,7 +14,7 @@ Here you can download pre-compiled OpenVAF executables for your operating system
 
 # Version 1.0
 
-* [Portable Linux Binary (REHL 7 or other newer distro)](todo)
-* [Windows binary](todo)
-* [Windows Installer](todo)
+* [Portable Linux Binary (REHL 7 or other newer distro)](https://openva.fra1.cdn.digitaloceanspaces.com/openvaf_linux_amd64.tar.gz)
+* [Windows binary](https://openva.fra1.cdn.digitaloceanspaces.com/openvaf_windows_amd64.zip)
+* Windows Installer - coming soon
 
