@@ -8,7 +8,13 @@ weight = 30
 sort_by = "weight"
 template = "docs/page.html"
 
+[extra]
+toc = true
+top = false
 +++
+# FAQ
+
+Answers to frequently asked questions.
 
 ### Why did you develop OpenVAF?
 
