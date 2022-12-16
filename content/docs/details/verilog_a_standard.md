@@ -32,32 +32,24 @@ toc=true
 # Verilog-A Standard Compliance
 
 
-OpenVAF follows the [Verilog-AMS Language Reference Manual 2.4.0][vams] language standard.
-The current goal is to support only the analog (Verilog-A) subset defined within this standard, 
-digital models can not (yet) be parsed.
-We take the standard seriously and try to follow it closely to ensure all models are supported.
+OpenVAF implements the [Verilog-AMS Language Reference Manual 2.4.0][vams] language standard.
+The main goal is to support the analog (Verilog-A) subset defined within this standard, digital models can not (yet) be parsed.
+Strict adherence to the language standard was taken very seriously during development to ensure that all standard compliant models 
+are supported.
 
-We were not yet able to implement all features of the Verilog-A standard (take a look at our [roadmap](../roadmap)).
-However, OpenVAF is primarily aimed at compact modeling at the moment.
-The subset of the standard that is used by compact models (and more) is already implemented.
-Therefore, the compiler was released with partial support for the language standard as it already supports many practical applications.
+Not all features of the Verilog-A standard are implemented yet, see our [roadmap](../roadmap) for more details.
+However, the subset of the standard that is used by compact models (and more) is already implemented.
+Therefore, OpenVAF has been released as this already suffices for all standard compact models. 
 
-To better facilitating compact modeling in particular a few additional features were also added to OpenVAF.
-On this page all differences between the language subset implemented by OpenVAF and the Verilog-A subset of the 
-[Verilog-AMS Language Reference Manual][vams] are documented.
-
-
-
-
+To better facilitating compact modeling a few additional features were added to OpenVAF.
+This page documents all **differences** between the language subset implemented by OpenVAF and the Verilog-A subset of the 
+[Verilog-AMS Language Reference Manual][vams].
 
 ## Incomplete Features
 
-
-
 Some features in the [Verilog-AMS Language Reference Manual][vams] are aimed at behavioral modeling or describing 
 entire circuits.
-Some of these features are not yet implemented by OpenVAF.
-Here all language features not implemented by OpenVAF are laid out.
+The following features are not yet implemented by OpenVAF.
 
 
 ### (Analog) Event Control Statements
@@ -67,16 +59,16 @@ Here all language features not implemented by OpenVAF are laid out.
 
 The Verilog-AMS standard allows to mark statements with event control.
 Such statements are only executed when the indicated event has occurred.
-The events are usually not used in compact models as they may introduce discontinuities.
-Therefore, OpenVAF only supports the `inital_step` and `final_step` events for initialization code.
-These events are always executed on every iteration and time step.
-Historically `inital_step` was used in compact models to mark initialization code.
-OpenVAF automatically separates initialization code and therefore ignoring `intial_step` has the desired effect. 
+Most events are usually not used in compact models as they may introduce discontinuities.
+OpenVAF currently supports the `inital_step` and `final_step` events for initialization of code.
+These events are executed on every iteration and time step.
+Historically `inital_step` was used in compact models to mark model initialization code.
+OpenVAF automatically separates initialization code and therefore `intial_step` can be ignored. 
 
 #### Examples
 
 There are four kinds of events specified in the standard.
-They are listed here with an example and an indication to show whether OpenVAF currently supports this syntax:
+They are listed below with an example and an indication to show whether OpenVAF currently supports this syntax:
 
 * Global events (`@(initial_step)`, `@(final_step)`) *supported*
 * Named (manually triggered) events (`@foo`) *not supported*
@@ -98,14 +90,14 @@ The need for these features arose when OpenVAF was used in practice for compact 
 extraction. Below is a table that lists these additional features and a corresponding example.
 
 In the following section each feature -including a motivation- is explained in detail.
-To make it easy to remain standard-compliant, 
-OpenVAF will emit a warning by default when any one of the listed features is used.
+For making it easy to remain standard-compliance, 
+OpenVAF emits a warning by default when any one of the listed features is used.
 
 ### Symbolic Derivatives with respect to Temperature 
 
 The [Verilog-AMS Language Reference Manual][vams] allows calculating derivatives with the `ddx` analog filter.
 However, only derivatives w.r.t. node voltages `V(node)` or branch currents (`I(branch)`) are allowed.
-For parameter extraction derivatives by ambient Temperature (`$temperature`) may be of interest for extracting temperature dependencies.
+For parameter extraction derivatives w.r.t. ambient Temperature (`$temperature`) may be of interest for extracting temperature dependencies.
 
 #### Guide
 
@@ -132,12 +124,12 @@ bar = ddx(foo,$temperature)
 
 ### Symbolic Derivatives with respect to Voltages
 
-Equations of compact models usually depend upon voltage differences `V(a,b)` (or equivalently branch voltage `V(br_ab)`).
+Equations of compact models usually depend on voltage differences `V(a,b)` (or equivalently branch voltages `V(br_ab)`).
 The derivatives of these model Equations are required/useful during parameter extraction and for use in circuit simulators. However, Verilog-A only allows derivatives w.r.t. to node potentials. 
 
 Usually, such voltage derivatives are instead calculated with respect to the derivative of the voltage's 
 upper node `ddx(foo,V(a,b) = ddx(foo,V(a))`.
-This approach can fail when an equation depends on multiple branch voltages, as is demonstrated by the example below.
+This approach fails when an equation depends on multiple branch voltages, as is demonstrated by the example below.
 For ensuring correct behavior it is therefore more desirable to calculate the derivative by `V(a,b)` directly.
 
 ``` verilog
@@ -178,7 +170,8 @@ end
 #### Technical Background
 
 For performance reasons OpenVAF uses voltage derivatives instead of potential derivatives to calculate the Jacobian matrix entries.
-Consider a network with two nodes `a` and `b` which are connected by a single branch `br_ab` whose current only depends upon the voltage difference of the two nodes. 
+Consider a network with two nodes `a` and `b` which are connected by a single branch `br_ab` whose current only depends on 
+the voltage difference between the two nodes. 
 The matrix entries can then be calculated as follows: 
 
 ``` verilog
@@ -186,9 +179,10 @@ ddx(I(<a>),V(a))=ddx(I(<b>),V(b)) = ddx(I(br_ab),V(a,b))
 ddx(I(<a>),V(b))= ddx(I(<a>),V(b)) = - ddx(I(br_ab),V(a,b))
 ```
 
-Almost all equations in compact models have above form using this technique effectively enables to reduce the number of derivatives by a factor of 4.
-Considering how complicated and therefore computationally expensive such derivatives can be, it is unlikely even modern compilers could optimize these duplication's away completely.
-Therefore, it is preferable for OpenVAF to calculate derivatives by voltage difference and then calculate the Matrix entries from the results.
+Almost all equations in compact models have above form. Using voltage differences effectively enables to reduce the number of derivatives by a factor of 4.
+Considering how complicated and therefore computationally expensive such derivatives can be, 
+it is unlikely even modern compilers could optimize these duplication's away completely.
+Therefore, it is preferable for OpenVAF to calculate derivatives using voltage difference and then calculate the Matrix entries from the results.
 
 [vams]: https://www.accellera.org/images/downloads/standards/v-ams/VAMS-LRM-2-4.pdf
 [vae]: dspom.gitlab.io/VerilogAE
