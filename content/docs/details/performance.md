@@ -27,9 +27,11 @@ famous **load** function that is called in the simulators during model evaluatio
 The employed CPU in the tests is an Intel i7-9750H@2.60GHz with 16 GB of DDR4 RAM and a SSD, if not mentioned otherwise.
 
 In all simulations with commercial simulations, the **license checkout time has been removed** from the run-time. 
-As far as possible, writing to the hard-disk has been turned off for reducing the impact of read/write calls that are not of interest here. This has not been achieved for the Keysight ADS netlist that still have some overhead due to read/write access.
+As far as possible, writing to the hard-disk has been turned off for reducing the impact of read/write calls that are not of interest here.
+For Keysight ADS turning off all IO was not possible and therefore some overhead due to read/write access is still present.
+Note that fairly comparing simulators is very difficult due to mismatch in configuration options.
 
-## 1 Model Compilation
+## Model Compilation
 
 The model compilation time in seconds is compared between different models and different tools, next. 
 Two tests have been conducted, since no test machine with all tools at the same time was available. 
@@ -37,7 +39,7 @@ Two tests have been conducted, since no test machine with all tools at the same 
 <!-- The employed CPU in test (2) was an AMD Opteron 8220 with 64 GB of DDR3 RAM.  -->
 The employed OpenVAF version was the latest master from 08.12.22, XYCE 7.5, Keysight ADS 512.update2.0 and Spectre 18.1.077.
 
-Test results on machine (1):
+Test results:
 
 |               | HICUM/L2v3.0 | PSPv103 | BSIM4 | JUNCAP200 | EKV2.6 | BSIM-SOI 4.6.1 | BSIM-BULK 107.0.0 |
 |---------------|--------------|---------|-------|-----------|--------|----------------|-------------------|
@@ -51,18 +53,18 @@ Test results on machine (1):
     - BSIM-Bulk: Non-independent initializations and node collapses, could not easily fix
     - EKV: par. range macros, noise sources not working
 
-On machine (2) OpenVAF is not available as it runs on a very old RHEL distro that does not support recent LLVM versions. 
+<!-- On machine (2) OpenVAF is not available as it runs on a very old RHEL distro that does not support recent LLVM versions. 
 Test results on machine (2):
 
 |               | HICUM/L2v3.0 | PSPv103 | BSIM4 | JUNCAP200 | EKV2.6 | BSIM-SOI 4.6.1 | BSIM-BULK 107.0.0 |
 |---------------|--------------|---------|-------|-----------|--------|----------------|-------------------|
 | Spectre       |    35.6      |   28.5  | 118.9 |  21.18    |  12.85 | 24.1           |     26.3          |
-| ADS           |    30.6      |  128.32 | 111.0 |  25.7     |   9.5  |  120           |     115.16        |
+| ADS           |    30.6      |  128.32 | 111.0 |  25.7     |   9.5  |  120           |     115.16        | -->
 
 **=> OpenVAF compiles around x10 faster than existing tools!**
 
-## 2 Model Evaluation 
-### 2.1 HICUM/L2v4p0 Output Characteristics
+## Model Evaluation 
+### HICUM/L2v4p0 Output Characteristics
 
 Test: Simulation of HBT output characteristics using HICUM/L2 for the exemplary model from the OpenVAF examples 
 
@@ -81,7 +83,7 @@ Results:
 Notes:
 
 * Ngspice with OpenVAF runs faster than built in Ngspice HICUM/L2 model as this particular built-in implementation uses slow dual-number based derivatives
-* that the Xyce evaluation time is very likely larger due to difference in convergence algorithms, and not inherently due to Xyce itself.
+* Xyce evaluation time is very likely larger due to difference in convergence algorithms, and not inherently due to Xyce itself.
 
 
 <!--**=> Both Xyce and ADS run slower with Verilog-A model.**
@@ -89,7 +91,7 @@ Notes:
 **=> Ngspice runs comparably fast as commercial ADS simulator.**-->
 
 
-### 2.2 HICUM/L2v2p4p0 Transient Simulation
+### HICUM/L2v2p4p0 Transient Simulation
 
 Test: Simulation of HBT transient behavior with 1 GHz input signal at the base node and fixed ultra short time step.
 
@@ -103,7 +105,7 @@ Note that the ADS evaluation time is very likely larger due to excessive writing
 
 <!-- **=> Ngspice with OpenVAF runs reasonably fast.** -->
 
-### 2.3 BSIMSOI 4.4.0 Output Characteristics
+### BSIMSOI 4.4.0 Output Characteristics
 
 Test: Simulation of MOSFET output characteristics with very fine bias steps.
 
@@ -115,7 +117,7 @@ Note: Use of BSIMSOI v4.5.0 in Xyce
 * ADS (Verilog-A): 430.4s
 * ADS (built-in): 408.4s
 
-### 2.4 BSIMBULK 106.2 Output Characteristics
+### BSIMBULK 106.2 Output Characteristics
 
 Test: Simulation of MOSFET output characteristics with very fine bias steps.
 
@@ -126,7 +128,7 @@ Test: Simulation of MOSFET output characteristics with very fine bias steps.
 
 <!-- **=> OpenVAF generally around 30% faster than ADMS based simulation.** -->
 
-### 2.4 BSIMSOI 106.2 Transient 
+### BSIMBULK 106.2 Transient 
 
 Test: Simulation of MOSFET transient characteristics with very fine fixed time steps.
 
@@ -135,14 +137,14 @@ Test: Simulation of MOSFET transient characteristics with very fine fixed time s
 * ADS (Verilog-A): 74.9s
 * ADS (built-in): 74.5s
 
-### 2.4 PSP 103.8 Inverter 
+### PSP 103.8 Inverter 
 
 Test: Transient simulation of the inverter from the examples section using a very fine bias grid.
 
 * **Ngspice (OpenVAF): 20.01s**
 * Ngspice (ADMS): 25.07s
 
-### 2.4 ISCAS Benchmark Circuit with PSP 103.8 
+### ISCAS Benchmark Circuit with PSP 103.8 
 
 Test: Transient simulation of the ISCAS benchmark circuit from the examples section using a very fine bias grid. 
 Note that Ngspice has been built with openmp for this example to enable parallelization.

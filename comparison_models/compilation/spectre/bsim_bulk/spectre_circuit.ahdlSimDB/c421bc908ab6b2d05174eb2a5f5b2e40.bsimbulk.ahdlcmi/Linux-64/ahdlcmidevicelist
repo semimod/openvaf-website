@@ -1,0 +1,8 @@
+bsimbulk_ufunc
+bsimbulk_func
+bsimbulk_DcFuncDerLoad
+bsimbulk_DcFuncLoad
+bsimbulk_TranFuncDerLoad
+bsimbulk_TranFuncLoad
+bsimbulk_OpPointCalc
+bsimbulk_cmi_c
