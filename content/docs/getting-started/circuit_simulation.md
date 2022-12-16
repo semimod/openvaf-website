@@ -1,8 +1,8 @@
 +++
-title = "Circuit Examples"
-description = "One page summary of how to start a new AdiDoks project."
-date = 2021-05-01T08:20:00+00:00
-updated = 2021-05-01T08:20:00+00:00
+title = "Examples"
+description = "Examples using OpenVAF compiled models with ngspice"
+date = 2022-12-16T08:20:00+00:00
+updated = 2022-12-16T08:20:00+00:00
 draft = false
 weight = 40
 sort_by = "weight"
@@ -10,8 +10,7 @@ template = "docs/page.html"
 
 +++
 
-# Introduction 
-
+# Examples
 In the following, the simulation of some circuits that rely on Verilog-A defined compact models is detailed using **Ngspice**
 as an exemplary circuit simulator. 
 For this purpose, please install Ngspice as is explained on the [Ngspice website](https://ngspice.sourceforge.io/).

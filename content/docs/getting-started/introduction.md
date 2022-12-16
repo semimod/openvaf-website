@@ -8,6 +8,8 @@ weight = 5
 sort_by = "weight"
 template = "docs/page.html"
 
+[extra]
+lead = "Introduction"
 +++
 
 ## Circuit Simulation 
@@ -15,7 +17,7 @@ template = "docs/page.html"
 Circuit simulators play a critical role in the design of electrical circuits.
 Accurate simulations allow circuit designers to validate circuit behavior before actual fabrication happens, 
 potentially saving **significantly re-design costs.**
-The simulation of a circuits critically depends on the so-called compact models and therefore:
+The simulation of a circuits' critically depends on the so-called compact models and therefore:
 
 * The **accuracy of the compact-model** 
 * The quality of the **model parameters** 

@@ -7,9 +7,6 @@ title = "OpenVAF"
 lead = '<b>OpenVAF</b> is a state-of-the-art open-source Verilog-A compiler that brings Verilog-A models into circuit simulators.'
 url = "/docs/getting-started/introduction/"
 url_button = "Get started with OpenVAF"
-repo_version = "GitHub v0.1.2"
-repo_license = "Open-source GPL License."
-repo_url = "https://github.com/aaranxu/adidoks"
 
 # Menu items
 [[extra.menu.main]]
@@ -19,7 +16,7 @@ url = "/docs/getting-started/introduction/"
 weight = 10
 
 [[extra.menu.main]]
-name = "Download"
+name = "Downloads"
 section = "download"
 url = "/download/"
 weight = 20
@@ -32,7 +29,7 @@ weight = 30
 
 [[extra.list]]
 title = "Blazing fast simulation"
-content = 'Compact models compiled with OpenVAF simulate up to <a href="/docs/details/performance">30 % faster</a> than those compiled with other Verilog-A compilers.'
+content = 'Compact models compiled with OpenVAF simulate <a href="/docs/details/performance"> % faster</a> than those compiled with other Verilog-A compilers.'
 
 [[extra.list]]
 title = "Standard compliant and correct"
