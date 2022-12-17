@@ -26,7 +26,7 @@ If there are no errors in the Verilog-A source, a file called `<file>.osdi` will
 circuit simulators that implement the [OSDI interface](../../details/osdi), such as Ngspice.
 
 
-## Ngspice Integrationg 
+## Ngspice Integration 
 
 Once you have a compiled OSDI file as described above, it can be loaded by Ngspice with a simple simulator command.
 
