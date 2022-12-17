@@ -31,8 +31,8 @@
 
 .logo {
   content:url("logo_dark.svg");
-  width: 100%; 
-  height: auto; 
+  max-height: 100%; 
+  max-width: 100%; 
 }
 
 /* @import custom styles */
