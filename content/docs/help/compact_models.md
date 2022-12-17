@@ -4,7 +4,7 @@ description = "Answers to frequently asked questions."
 date = 2022-12-01T18:10:00+00:00
 updated = 2022-12-01T18:10:00+00:00
 draft = false
-weight = 30
+weight = 40
 sort_by = "weight"
 template = "docs/page.html"
 
@@ -15,11 +15,12 @@ toc = true
 
 # Compact Models
 
-This section of the OpenVAF docs gives an in-complete list of Verilog-A compact models that are available online. 
+This pages provides an in-complete overview of Verilog-A compact models that are available online. 
+All of these models (and more) are automatically tested during OpenVAF development to ensure they work correctly.
 Do not hesitate to drop us a mail if we forgot your favorite model!
 
-Note that for legal reasons, OpenVAF does not ship with these models. Users are encouraged to download them themselves. 
-We also encourage users to only employ freely available models. 
+<!--Note that for legal reasons, OpenVAF does not ship with these models. Users are encouraged to download them themselves. 
+We also encourage users to only employ freely available models. -->
 
 ## CMC Models
 
@@ -28,17 +29,17 @@ CMC models are available in most commercial circuit simulators and are widely us
 
 ### BSIM (FET)
 
-[The BSIM group](http://bsim.berkeley.edu/) develops and releases **several FET models** including 
+[The BSIM group](http://bsim.berkeley.edu/) develops and releases **several FET models**:
 
-* [BSIM4](https://github.com/cogenda/VA-BSIM48) is an outdated MOSFET model that only has a non-official Verilog-A file.
-* [BSIM-CMG](https://bsim.berkeley.edu/models/bsimcmg/) for common multi-gate FETs.
-* [BSIM-SOI](https://bsim.berkeley.edu/models/bsimsoi/) is a SPICE compact model for SOI (Silicon-On-Insulator) FETs.
-* [BSIM-IMG](https://bsim.berkeley.edu/models/bsimimg/) has been developed to model the electrical characteristics of the independent double-gate structures like Ultra-Thin Body and BOX SOI transistors (UTBB).
-* [BSIM-BULK](https://bsim.berkeley.edu/models/bsimbulk/) is a state-of-the-art FET model for bulk FETs.
+* [BSIM4](https://github.com/cogenda/VA-BSIM48) is an older MOSFET model that only has a unofficial Verilog-A file.
+* [BSIM-CMG](https://bsim.berkeley.edu/models/bsimcmg/) for common multi-gate MOSFETs like FinFETs.
+* [BSIM-SOI](https://bsim.berkeley.edu/models/bsimsoi/) for SOI (Silicon-On-Insulator) MOSFETs.
+* [BSIM-IMG](https://bsim.berkeley.edu/models/bsimimg/) for independent double-gate structures like Ultra-Thin Body and BOX SOI transistors (UTBB).
+* [BSIM-BULK](https://bsim.berkeley.edu/models/bsimbulk/) for state-of-the-art bulk FETs.
 
 ### PSP Model (FET)
 
-PSP is a Compact Model for bulk Metal-Oxide-Semiconductor Field Effect Transistors (MOSFET's) and is available [here](https://www.cea.fr/cea-tech/leti/pspsupport/CurrentRelease).
+PSP is a Compact Model for bulk MOSFETs and is available [here](https://www.cea.fr/cea-tech/leti/pspsupport/CurrentRelease).
 
 ### JUNCAP Model (Diode)
 
@@ -51,16 +52,19 @@ FET model for circuit simulation based on the drift-diffusion approximation.
 
 ### L-UTSOI (SOI-FET)
 
-The [L-UTSOI compact model](https://www.cea.fr/cea-tech/leti/l-utsoisupport) is dedicated to FDSOI technologies, and is the new name of Leti-UTSOI, a high maturity model in development since 2007 and used in industrial environments for nearly 8 years.
+The [L-UTSOI compact model](https://www.cea.fr/cea-tech/leti/l-utsoisupport) is dedicated to FDSOI technologies, and is the new name of Leti-UTSOI,
+ a high maturity model in development since 2007 and used in industrial environments for nearly 8 years.
 
 ### HICUM (Bipolar Transistors)
 
 The [HICUM/L2 and HICUM/L0 models](https://www.iee.et.tu-dresden.de/iee/eb/hic_new/hic_intro.html) are developed by Prof. Michael Schröter. 
-HICUM stands for HIgh CUrrent Model and is a physics-based geometry-scalable compact model for homo- and heterojunction bipolar transistors. It targets the design of circuits using Si, SiGe or III-V based processes and is particularly accurate at high-frequencies and high-current densities.
+HICUM stands for HIgh CUrrent Model and is a physics-based geometry-scalable compact model for homo- and heterojunction bipolar transistors.
+It targets the design of circuits using Si, SiGe or III-V based processes and is particularly accurate at high-frequencies and high-current densities.
 
 ### ASM-HEMT (GAN HEMT)
 
-The [ASM-HEMT model](https://iitk.ac.in/asm/) is a robust surface-potential based compact model for Gallium Nitride (GaN) High Electron Mobility Transistors. It was developed as a joint effort between Indian Institute of Technology Kanpur and Macquarie University.
+The [ASM-HEMT model](https://iitk.ac.in/asm/) is a robust surface-potential based compact model for Gallium Nitride (GaN) High Electron Mobility Transistors.
+It was developed as a joint effort between Indian Institute of Technology Kanpur and Macquarie University.
 
 
 

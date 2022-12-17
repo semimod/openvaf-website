@@ -8,9 +8,9 @@ weight = 5
 sort_by = "weight"
 template = "docs/page.html"
 
-[extra]
-lead = "Introduction"
 +++
+
+# Introduction
 
 ## Circuit Simulation 
 
