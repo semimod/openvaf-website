@@ -20,7 +20,7 @@ As a result it can both support modern harmonic balance solvers and traditional 
 This interface is described in [the OSDI manual](/osdi/osdi_v0p3.pdf).
 An implementation that bringes the internal spice API and OSDI has been added to `ngspice`.
 
+<!-- <br>
 <br>
 <br>
-<br>
-<img src="../../../osdi.svg" style='height: auto; width: 100%'/>
+<img src="../../../osdi.svg" style='height: auto; width: 100%'/> -->
