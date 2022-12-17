@@ -16,7 +16,7 @@ lead = "installation"
 
 OpenVAF is [available](../../../download) as a pre-compiled standalone executable for 
 Windows and Linux.
-Compiling OpenVAF yourself is also possible but not recommended as is involved to setup correctly at the moment.
+Compiling OpenVAF yourself is possible but not recommended as setting up the dependencies is difficult at the moment.
 
 ## System Requirements
 
@@ -41,6 +41,23 @@ openvaf --help
 
 in a terminal and see if the executable is found.
 
+
+<div class="card">
+  <div class="card-body">
+   <i> <strong>Note:</strong> Support for OSDI/OpenVAF is currently only available in the pre-master branch of Ngspice
+  until Ngspice-39 releases at the beginning of 2023.
+
+  You can obtain the sourecode for this version by running the following commands:
+  ``` bash
+  git clone git://git.code.sf.net/p/ngspice/ngspice
+  cd ngspice
+  git checkout pre-master
+  ````
+  and follow the usual NGSPICE installation instructions.
+  </i>
+  </div>
+</div>
+
 ## Compilation
 
 Users can also compile OpenVAF themselves. 
@@ -48,5 +65,4 @@ This is not recommended for users that do not want to actively take part in the 
 since the build process is quite involved because of its **LLVM dependency**. 
 
 The compilation is detailed in the **README.md** of the [OpenVAF repository](https://github.com/pascalkuthe/OpenVAF).
-
 

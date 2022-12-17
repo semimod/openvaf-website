@@ -132,10 +132,10 @@ weight = 20
 [extra.footer]
 info = 'Developed by <a href="https://www.semimod.de">SemiMod GmbH</a>'
 
-# [[extra.footer.nav]]
-# name = "Privacy"
-# url = "/privacy-policy/"
-# weight = 10
+[[extra.footer.nav]]
+name = "Privacy Policy"
+url = "/privacy-policy/"
+weight = 10
 
 # [[extra.footer.nav]]
 # name = "Code of Conduct"

@@ -20,7 +20,7 @@ openvaf <file>.va
 ``` 
 
 in a terminal and the compilation should complete quickly.
-OpenVAF offers advanced options which are shown by `openvaf --help`, but these won't usually be required.
+OpenVAF offers options which are displayed when executing `openvaf --help`, but these won't usually be required.
 
 If there are no errors in the Verilog-A source, a file called `<file>.osdi` will be generated that can be used by 
 circuit simulators that implement the [OSDI interface](../../details/osdi), such as Ngspice.
@@ -28,14 +28,14 @@ circuit simulators that implement the [OSDI interface](../../details/osdi), such
 
 ## Ngspice Integrationg 
 
-Once you have obtained a compiled OSDI file as described above it can be loaded into ngspice with a simple simulator command.
+Once you have a compiled OSDI file as described above, it can be loaded by Ngspice with a simple simulator command.
 
 ```bash
 osdi <path>.osdi
 ```
 
-If the path specified is a relative path like `folder/example.osdi` it will be resolved in current working directory.
-To load a model within a netlist the `pre_osdi` command must be used to ensure the model is loaded before the netlist is resolved:
+If the path specified is a relative path like `folder/example.osdi` it will be resolved in the current working directory.
+To load a model within a netlist the `pre_osdi` command must be used for ensuring that the model is loaded before the netlist is resolved:
 
 ```bash
 .control
@@ -49,7 +49,7 @@ If a relative path is used with the `pre_osdi` command, the path will be resolve
 The path can be either absolute, or relative to the current working directory. -->
 
 Once an OSDI file has been loaded, Verilog-A modules can be initiated in a netlist as shown below.
-Note that the `N` prefix is important for the device name to ensure correct behaviour.
+Note that the `N` prefix of the device name is important for ensuring correct behavior.
 
 ```bash
 .model <model name> <Verilog-A module name> <model parameters>*
@@ -57,8 +57,8 @@ Note that the `N` prefix is important for the device name to ensure correct beha
 N<instance name> <nodes>* <model name> <instance parameters>*
 ```
 
-A minimal example netlist that create a single instance of the HICUM/L2 model is shown below.
-Further examples can be found 
+A minimal example netlist that creates a single instance of the HICUM/L2 model is shown below.
+Further, examples can be found [here](../examples).
 
 ```bash
 OSDI Example

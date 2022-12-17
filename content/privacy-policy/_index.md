@@ -1,6 +1,6 @@
 +++
 title = "Privacy Policy"
-description = "We do not use cookies and we do not collect any personal data."
+description = "We do not use cookies, and we do not collect any personal data."
 date = 2021-05-01T08:00:00+00:00
 updated = 2020-05-01T08:00:00+00:00
 draft = false
@@ -9,7 +9,7 @@ draft = false
 class = "page single"
 +++
 
-__TLDR__: We do not use cookies and we do not collect any personal data.
+__TLDR__: We do not use cookies, and we do not collect any personal data.
 
 ## Website visitors
 
@@ -20,8 +20,13 @@ __TLDR__: We do not use cookies and we do not collect any personal data.
 - No information is mined and harvested for personal and behavioral trends.
 - No information is monetized.
 
+## Third Parties
+
+This website is hosted on github pages and therefore delivered by the GitHub CDN.
+You can read the GitHub privacy policy [here]
+
 ## Contact us
 
 [Contact us](https://semimod.de) if you have any questions.
 
-Effective Date: _15st Nov 2022_
+Effective Date: _16st Dec 2022_
