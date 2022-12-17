@@ -24,6 +24,13 @@ For this purpose, please install Ngspice as is explained on the [Ngspice website
   <div class="card-body">
    <i> <strong>Note:</strong> Support for OSDI/OpenVAF is currently only available in the pre-master branch of Ngspice
   until Ngspice-39 releases at the beginning of 2023.
+
+  You can obtain the sourecode for this version by running the following commands:
+  ``` bash
+  git clone git://git.code.sf.net/p/ngspice/ngspice
+  cd ngspice
+  git checkout pre-master
+  ````
   </i>
   </div>
 </div>
@@ -39,7 +46,7 @@ In this folder, place the following three files:
 * The model parameter file **model.l** that specifies the model parameters and can be downloaded [here](/hicuml2/model.l).
 * The **hicumL2V3p0p0.va** Verilog-A source file that you can download [here](https://www.iee.et.tu-dresden.de/iee/eb/forsch/Hicum_PD/HicumQ/hicumL2V3p0p0.va).
 
-```text
+``` bash
 OSDI Example
 
 VB B  0 DC 0.1 AC 1 SIN (0.5 0.4 1M)
@@ -106,7 +113,7 @@ The tree structure of your folder should then look like this:
 This is the content of **psp_inverter.sp**:
 
 
-```text
+```bash
 * PSP models
 * simple inverter
 
