@@ -18,7 +18,7 @@ a **simulator independent** interface called OSDI (**O**pen **S**ource **D**evic
 This interface is very flexible and allows efficient integration with a wide variety of different simulators.
 As a result it can both support modern harmonic balance solvers and traditional SPICE based engines.
 This interface is described in [the OSDI manual](/osdi/osdi_v0p3.pdf).
-An implementation that bringes the internal spice API and OSDI has been added to `ngspice`.
+An implementation that bridges the internal spice API and OSDI has been added to `ngspice`.
 
 <!-- <br>
 <br>

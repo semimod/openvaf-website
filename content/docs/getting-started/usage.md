@@ -58,7 +58,7 @@ N<instance name> <nodes>* <model name> <instance parameters>*
 ```
 
 A minimal example netlist that create a single instance of the HICUM/L2 model is shown below.
-Further examples can be found 
+More examples can be found [here](../examples)
 
 ```bash
 OSDI Example
