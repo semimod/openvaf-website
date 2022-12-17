@@ -130,7 +130,6 @@ Note: As mentinoed above comparisons  -->
 
 ### BSIMSOI 4.4.0 Output Characteristics (builtin vs OpenVAF)
 
-<<<<<<< HEAD
 BSIMSOI is available as a very mature and highly optimized hardcoded model in Ngspice. 
 The derivatives are all handwritten and haven been manually optimized over many years.
 Therefore, comparing OpenVAF to this handwritten version allows evaluating the quality
