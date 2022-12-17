@@ -16,7 +16,7 @@ lead = "installation"
 
 OpenVAF is [available](../../../download) as a pre-compiled standalone executable for 
 Windows and Linux.
-Compiling OpenVAF yourself is also possible but not recommended as is involved to setup correctly at the moment.
+Compiling OpenVAF yourself is possible but not recommended as setting up the dependencies is difficult at the moment.
 
 ## System Requirements
 
