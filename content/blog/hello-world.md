@@ -1,16 +1,27 @@
 +++
-title = "OpenVAF Website Launched"
-description = "First blog entry for the OpenVAF website."
-date = 2022-12-08T09:19:42+00:00
-updated = 2022-12-08T09:19:42+00:00
+title = "OpenVAF Beta Launch"
+description = "OpenVAF beta launches with support in Ngspice 39"
+date = 2022-12-16T09:19:42+00:00
+updated = 2022-12-16T09:19:42+00:00
 draft = false
 template = "blog/page.html"
 
 [taxonomies]
-authors = ["Markus Müller"]
+authors = ["Pascal Kuthe"]
 
 +++
 
-Today, after years of developement, we have finally finished the first version of the OpenVAF website. 
-Let us see how fast we can get into Ngspice and bring modern compiler techniques to the Verilog-A world. 
-In the future, we will post all relevant information related to the OpenVAF project here, so stay tuned!
+Today, after long development, we have finally reached a long awaited development milestone:
+A first beta version of OpenVAF is available first to a limited group of people and to the
+will be announced publicly soon after.
+Today we are also launching a first version of this website which contains documentation,
+examples, technical details and benchmarks.
+
+There is a long journey still ahead of us as we continue to improve both OpenVAF and our documentation.
+However, today we are proud of what we have accomplished so far.
+OpenVAF easily outperforms all other Verilog-A compilers we [benchmarked](../../docs/details/performance)
+Furthermore support for [OSDI](../../docs/details/osdi) **landed in the ngspice pre-master branch today**.
+With that support for OpenVAF is slated to be included in the upcoming ngspice 39 release.
+
+If you don't mind building the pre-master branch yourself,
+you can already try out [some examples](../../docs/getting-started/examples).

@@ -1,0 +1,16 @@
+Options ASCII_Rawfile=no DuplicateFunc="warning" DuplicateParam="warning" I_AbsTol=1e-12 A I_RelTol=1e-6 ResourceUsage=yes Temp=26.850000000000023 UseNutmegFormat=yes V_AbsTol=1e-6 V V_RelTol=1e-6 
+
+simulator lang = spectre
+
+ahdl_include "bsimbulkk.va"
+
+; Netlist
+Q_H (0  0  0  0) bsimbulk
+
+simulator lang = spice
+
+Rb (n_B 0) R=1e3
+
+
+
+

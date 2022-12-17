@@ -1,63 +1,32 @@
 +++
-title = "Circuit Examples"
-description = "One page summary of how to start a new AdiDoks project."
-date = 2021-05-01T08:20:00+00:00
-updated = 2021-05-01T08:20:00+00:00
+title = "Examples"
+description = "Examples using OpenVAF compiled models with ngspice"
+date = 2022-12-16T08:20:00+00:00
+updated = 2022-12-16T08:20:00+00:00
 draft = false
 weight = 40
 sort_by = "weight"
 template = "docs/page.html"
 
+[extra]
+toc=true
+
 +++
 
-# Introduction 
+# Examples
 
-In the following, the simulation of some circuits that rely on Verilog-A defined compact models is detailed using **Ngspice**
-as an exemplary circuit simulator. 
+In the following, some example simulation that rely on Verilog-A defined compact models are shown.
+The Verilog-A models are compiled with OpenVAF and **Ngspice** is used for simulation.
 For this purpose, please install Ngspice as is explained on the [Ngspice website](https://ngspice.sourceforge.io/).
 
-**The OSDI interface of Ngspice is only available in the "veriloga_osdi3" [git](https://sourceforge.net/p/ngspice/ngspice/ci/master/tree/) development branch at this time! Soon it will be available in the release.**
 
-
-## Netlist Syntax 
-
-After having compiled a Verilog-A source file as [described here](../model-compilation), the compiled **osdi** file is included into a netlist after the 
-**.control** statement like this:
-
-```bash
-pre_osdi <Verilog-A name>.osdi
-```
-
-Ngspice will look for the **osdi** in the path specified via the **pre_osdi** command. 
-The path can be either absolute, or relative to the current working directory. 
-
-Then, a Verilog-A device in a netlist is initiated like this
-
-```bash
-N<instance name> <nodes>* <model name> <instance parameters>*
-```
-
-where the model has to be defined like this:
-
-```bash
-.model <model name> <Verilog-A module name> <model parameters>*
-```
-
-A minimalist example netlist looks like this:
-
-```text
-OSDI Example
-
-.model hicum_model hicuml2va c10=1e-30
-
-N1 C B E S hicum_model
-
-.control
-pre_osdi hicumL2V3p0p0.osdi
-op
-.endc
-.end
-```
+<div class="card">
+  <div class="card-body">
+   <i> <strong>Note:</strong> Support for OSDI/OpenVAF is currently only available in the pre-master branch of Ngspice
+  until Ngspice-39 releases at the beginning of 2023.
+  </i>
+  </div>
+</div>
 
 ## Example 1: HICUM/L2 Model
 
@@ -66,9 +35,9 @@ First, create a folder that will be used for the simulation.
 
 In this folder, place the following three files: 
 
-* the **netlist** shown below, which you can also download [here](/hicuml2/netlist_osdi.sp). 
-* the model parameter file **model.l** that specifies the model parameters and can be downloaded [here](/hicuml2/model.l).
-* the **hicumL2V3p0p0.va** Verilog-A source file that you can download [here](https://www.iee.et.tu-dresden.de/iee/eb/forsch/Hicum_PD/HicumQ/hicumL2V3p0p0.va).
+* The **netlist** shown below, which you can also download [here](/hicuml2/netlist_osdi.sp). 
+* The model parameter file **model.l** that specifies the model parameters and can be downloaded [here](/hicuml2/model.l).
+* The **hicumL2V3p0p0.va** Verilog-A source file that you can download [here](https://www.iee.et.tu-dresden.de/iee/eb/forsch/Hicum_PD/HicumQ/hicumL2V3p0p0.va).
 
 ```text
 OSDI Example
@@ -100,7 +69,7 @@ For generating the osdi file you must **compile** the Verilog-A code by running
 openvaf hicumL2V3p0p0.va
 ``` 
 
-in the simulation folder. This will generate the **hicumL2V3p0p0.osdi** file. 
+in the simulation folder. This will generate the `hicumL2V3p0p0.osdi` file. 
 Now you can run the circuit simulation using 
 
 ```bash
@@ -109,7 +78,8 @@ ngspice netlist_osdi.sp
 
 and the output characteristics of the bipolar transistor are plotted:
 
-{{ resize_image(path="/static/hicuml2/ICVCE.png", width=600, op="fit_width") }}
+
+{{ resize_image(path="/static/hicuml2/ICVCE.png", width=1920, op="fit_width") }}
 
 ## Example 2: PSP MOS Inverter
 
@@ -222,11 +192,11 @@ ngspice psp_inverter.sp
 
 to calculate and plot the inverter characteristics:
 
-{{ resize_image(path="/static/psp103/plots/transfer.png", width=600, op="fit_width") }}
+{{ resize_image(path="/static/psp103/plots/transfer.png", width=1920, op="fit_width") }}
 
-{{ resize_image(path="/static/psp103/plots/tran.png", width=600, op="fit_width") }}
+{{ resize_image(path="/static/psp103/plots/tran.png", width=1920, op="fit_width") }}
 
-{{ resize_image(path="/static/psp103/plots/curr.png", width=600, op="fit_width") }}
+{{ resize_image(path="/static/psp103/plots/curr.png", width=1920, op="fit_width") }}
 
 
 ## Example 3: ISCAS85 Benchmark Circuit
@@ -264,4 +234,5 @@ cd iscas85_benchmark_circuit
 ngspice iscas85_benchmark_circuit.sp
 ``` 
 
-to see the results. Note that this is a very large circuit whose simulation **can take more than ten minutes**.
+to see the results.
+Note that this is a very large circuit whose simulation **may take a long time**.
