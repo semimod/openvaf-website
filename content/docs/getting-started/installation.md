@@ -8,8 +8,6 @@ weight = 10
 sort_by = "weight"
 template = "docs/page.html"
 
-[extra]
-lead = "installation"
 +++
 
 # Installation
@@ -56,10 +54,10 @@ in a terminal and see if the executable is found.
   git checkout pre-master
   sudo ./compile_linux.sh
   ```
-  Note that Ngspice has some requirements that must be installed on the system.
+  Note that Ngspice has some dependencies that must be installed on the system.
   Consult the Ngspice documentation for details.
 
-  For windows a precompiled version of the pre-master branch is [available on the Ngspice website](https://ngspice.sourceforge.io/download.html#nightly).
+  For Windows a precompiled version of the pre-master branch is [available on the Ngspice website](https://ngspice.sourceforge.io/download.html#nightly).
   </i>
   </div>
 </div>

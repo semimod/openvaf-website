@@ -23,7 +23,7 @@ __TLDR__: We do not use cookies, and we do not collect any personal data.
 ## Third Parties
 
 This website is hosted on github pages and therefore delivered by the GitHub CDN.
-You can read the GitHub privacy policy [here]
+You can read the GitHub privacy policy [here](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement).
 
 ## Contact us
 
