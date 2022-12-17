@@ -11,8 +11,8 @@ draft = false
 # "author-name-in-url" = "the-full-path-of-the-author-page"
 #
 # Note: We use quoted keys here.
-[extra.author_pages]
-"pascal-kuthe" = "authors/pascal-kuthe.md"
+# [extra.author_pages]
+#"pascal-kuthe" = "authors/pascal-kuthe.md"
 +++
 
 The authors of the blog articles.
