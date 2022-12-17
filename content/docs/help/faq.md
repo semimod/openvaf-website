@@ -33,17 +33,16 @@ This caused problems both for both open source and commercial simulators using t
 OpenVAF directly generates executable machine code and does not use an intermediate language such as C.
 The compilation is very fast (up to 10 times faster than alternatives).
 Furthermore, this approach allows implementation of better auto-differentiation algorithms
-that can generated highly optimized machine code that can run faster than code produced by traditional compilers.
+that can create highly optimized machine code that runs faster than code produced by traditional compilation approaches.
 
-OpenVAF also takes Verilog-A standard compliance seriously.
-The approach described above allows OpenVAF to support more Verilog-A features without
+OpenVAF takes Verilog-A standard compliance seriously.
+The approach described above allows OpenVAF to support many Verilog-A features without
 sacrificing compilation or simulation performance.
-As a result OpenVAF can compile a wide variety of standard compliant models
-without modifications while offering better performance then other compilers.
+As a result OpenVAF compiles a wide variety of standard compliant models
+without modifications while offering better performance than other compilers.
 
-Finally, OpenVAF also puts a great focus on ease of use.
-No complicated setup is required to install the compiler
-Furthermore 
+OpenVAF also puts a great focus on ease of use.
+No complicated setup is required to install the compiler. 
 
 <!-- If you have problems or questions youc [SemiMod GmbH](https://semimod.de/) 
 can directly be contacted, or you can get in touch using the [Git repo](https://github.com/pascalkuthe/OpenVAF). -->
@@ -72,14 +71,13 @@ It enables to locate bugs, improve the tools, but also shows the commercial EDA 
 ### Will OpenVAF remain open-source?
 
 Yes, OpenVAF and the OSDI specification will always remain open-source projects. 
-However, SemiMod offers potential commercial partners to build or integrate OpenVAF into proprietary tooling. 
-Some tools developed as part of this cooperation may not become open-source.
+However, SemiMod offers potential commercial partners to build or integrate OpenVAF into proprietary tools. 
 
 ### Why is additional parameter information like description, units and type (instance parameters) not available for some models?
 
 Some older Verilog-A models use non-standard syntax for indicating parameter information
 that can not be supported by OpenVAF.
-Recently released compact models usually use the newer syntax.
+Recently released compact models usually use the newer (correct) syntax.
 
 The old syntax looks as follows:
 
@@ -93,7 +91,7 @@ The syntax is often abbreviated with a macro that disables the syntax outside AD
 paramter real example=1.0 `P(type="instance");
 ```
 
-The Verilog-A standard (and therefore OpenVAF) support the following syntax instead:
+The Verilog-A standard (and therefore OpenVAF) supports the following syntax:
 
 ```
 (*type="instance"*) paramter real example=1.0;
