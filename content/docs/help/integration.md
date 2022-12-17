@@ -12,10 +12,8 @@ template = "docs/page.html"
 
 ## Integration Service
 
-If you are interested in integration OpenVAF in your simulator to obtain
-and obtain state-of-the-art Verilog-A support, we can help you. 
-We can implement a compatibility layer for [OSDI interface](../../details/osdi) into your simulator
-or even offer fully custom solutions.
+We can help you to integrate OpenVAF into your simulator and help you obtain state-of-the-art Verilog-A support. 
+We can implement a compatibility layer for [OSDI interface](../../details/osdi) or even offer fully customized solutions.
 
 Feel free to contact us at info@semimod.de.
 
