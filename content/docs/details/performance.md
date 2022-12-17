@@ -13,7 +13,7 @@ toc = true
 
 +++
 
-# Performance 
+# Performance (Under Construction)
 
 The following paragraphs give an overview on OpenVAF`s performance. 
 Both compilation and simulation speed are analyzed. 
@@ -53,12 +53,11 @@ Benchmark results:
 | **Xyce ADMS** |   22*        |     102.1*     |    -*             |
 | **ADS**       |   7.7        |     30.7       |    34.5           |
 
-Model compilation speed can be easily compared across tools.
-The benchmarks above show that OpenVAF usually outperforms alternative compilers by a factor of 10.
-For models like BSIM4 with a very large number of parameters but (comparatively) small evaluation code,
-performance is currently slightly worse than it could be.
+The benchmarks above exemplify that OpenVAF tends to outperform alternative compilers by a factor of 10 w.r.t. to compilation speed.
+For models like BSIM4 that have a very large number of model parameters, but (comparatively) small evaluation code,
+performance is currently slightly worse than it will be with coming OpenVAF releases.
 This problem is a known limitation and will be addressed in the future.
-Nonetheless, OpenVAF still outperforms other compilers by a factor of 4 in this case.
+Nonetheless, OpenVAF outperforms other compilers by a factor of 4 in the worst case.
 
 <!-- On machine (2) OpenVAF is not available as it runs on a very old RHEL distro that does not support recent LLVM versions. 
 Benchmark results on machine (2):
@@ -80,11 +79,9 @@ Benchmark results on machine (2):
 
 ### HICUM/L2v4p0 Output Characteristics
 
-The aim of this benchmark is to provide a general overview of Verilog-A performance across multiple different simulators.
-As noted in the introduction comparisons between different simulators
-are not always meaning full. In particular different simulation configuration and convergence algorithms may
-affect the results. Therefore, the results below mostly show that Ngspice can nearly match commercial simulators
-with OpenVAF.
+The aim of this benchmark is to provide a rough overview of Verilog-A model performance across different simulators.
+As noted in the introduction, comparisons between different simulators are not easy to interpret. 
+In particular, different simulation configuration and convergence algorithms may affect the results. 
 
 Benchmark Setup: Simulation of HBT output characteristics using HICUM/L2 model shown in the examples.
 The collector and base voltage step width is set to 1 mV, increasing the simulation time significantly.
@@ -125,10 +122,8 @@ Note: As mentinoed above comparisons  -->
 
 ### BSIMSOI 4.4.0 Output Characteristics (builtin vs OpenVAF)
 
-The BSIMSOI model is available as a hardcoded model inside Ngspice that has been around for a long time.
-The derivatives are all handwritten and have the 
-and is well optimized by human
-OpenVAF is able to get within 6%
+BSIMSOI is available as a very mature and highly optimized hardcoded model in Ngspice. 
+The compiled model has only 6% more evaluation time than the hardcoded version.
 Benchmark: Simulation of MOSFET output characteristics with very fine bias steps.
 
 <!-- Note: Use of BSIMSOI v4.5.0 in Xyce -->
@@ -147,8 +142,8 @@ Benchmark: Simulation of MOSFET output characteristics with very fine bias steps
 
 
 The BSIMBULK model is not available in Ngspice by default.
-However, an experimental Verilog-A file that was adjusted for compilation with ADMS is available
-which allows a good comparison between ADMS based simulations and OpenVAF based simulations with Ngspice.
+However, an experimental Verilog-A model that was adjusted for compilation with ADMS is available. 
+Hence, this enables a fair comparison between ADMS and OpenVAF in the same simulator.
 
 Benchmark: Simulation of MOSFET output characteristics with very fine bias steps.
 
@@ -171,16 +166,16 @@ Benchmark: Simulation of MOSFET transient characteristics with very fine fixed t
 
 ### PSP 103.8 Inverter 
 
-This benchmark demonstrates a use-case that is closer to real-world usage.
+This benchmark demonstrates a use-case that is close to a real-world use case.
 Note that the performance difference here is smaller in relative terms
-as more time is spent on other tasks such as matrix factorization.
+because more time is spent on other simulator tasks such as matrix factorization.
 
-Benchmark: Transient simulation of the inverter from the examples' section using a very fine bias grid.
+Benchmark: Transient simulation of the inverter from the examples section using a very fine bias grid.
 
 * **Ngspice (OpenVAF): 20.01s**
 * Ngspice (ADMS): 25.07s
 
-=> OpenVAF provides a 20% speedup compared to ADMS in realistic transient simulations
+=> OpenVAF provides a 20% speedup compared to ADMS in a realistic transient simulation of a simple circuit
 
 ### ISCAS Benchmark Circuit with PSP 103.8 
 
@@ -190,4 +185,4 @@ Note that Ngspice has been built with openmp for this example to enable parallel
 * **Ngspice (OpenVAF): 20min**
 * Ngspice (ADMS): 25min
 
-=> OpenVAF provides a 20% speedup compared to ADMS in realistic transient simulations
+=> OpenVAF has a 20% speedup compared to ADMS in  massively parallel transient simulation

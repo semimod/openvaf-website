@@ -16,7 +16,7 @@ OpenVAF is still in development and there many goals we aim to achieve in the lo
 
 - Noise analysis *(planned for 2023)*
 - Reaching full compliance with the Verilog-A standard
-  - Behavior modelling features
+  - Behavioral modelling features
   - Support for features that allow defining full circuits/full PDKs in Verilog-A
 - OSDI integration in Xyce
 - Improved documentation
