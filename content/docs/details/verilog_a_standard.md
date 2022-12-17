@@ -20,7 +20,7 @@ toc=true
 					<div class="col-md col-lg col-xxl">
 						<article>
 							<h1 class="text-center">Preview</h1>
-							<p class="text-center">This page is not yet fully complete and is missing some conent.</p>
+							<p class="text-center">This page is not yet fully complete and is missing some content.</p>
 						</article>
 					</div>
 				</div>
@@ -181,7 +181,7 @@ ddx(I(<a>),V(b))= ddx(I(<a>),V(b)) = - ddx(I(br_ab),V(a,b))
 
 Almost all equations in compact models have above form. Using voltage differences effectively enables to reduce the number of derivatives by a factor of 4.
 Considering how complicated and therefore computationally expensive such derivatives can be, 
-it is unlikely even modern compilers could optimize these duplication's away completely.
+it is unlikely even modern compilers could optimize these duplications away completely.
 Therefore, it is preferable for OpenVAF to calculate derivatives using voltage difference and then calculate the Matrix entries from the results.
 
 [vams]: https://www.accellera.org/images/downloads/standards/v-ams/VAMS-LRM-2-4.pdf

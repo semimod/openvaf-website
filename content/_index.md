@@ -4,7 +4,7 @@ title = "OpenVAF"
 
 # The homepage contents
 [extra]
-lead = '<b>OpenVAF</b> is a Next-Generation Verilog-A compiler that empowers open source silicon revolution.'
+lead = '<b>OpenVAF</b> is a Next-Generation Verilog-A compiler that empowers the open source silicon revolution.'
 url = "/docs/getting-started/introduction/"
 url_button = "Get started with OpenVAF"
 
