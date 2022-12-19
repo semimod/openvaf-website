@@ -33,6 +33,8 @@ Note that multithreaded model evaluation with OpenMP support was turned off in N
 These benchmarks were run on an Intel i7-9750H@2.60GHz with 16 GB of DDR4 RAM and a SSD, if not mentioned otherwise.
 The benchmarks were performed with OpenVAF 22.12.0, XYCE 7.5 and Keysight ADS 512.update2.0. and Cadence Spectre 18.1.077. 
 
+We acknowledge our academic partner for help with these comparisons.
+
 ## Model Compilation
 
 The model compilation time in seconds is compared between different models and different tools. 
