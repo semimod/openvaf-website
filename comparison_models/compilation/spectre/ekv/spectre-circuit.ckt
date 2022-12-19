@@ -2,10 +2,10 @@ Options ASCII_Rawfile=no DuplicateFunc="warning" DuplicateParam="warning" I_AbsT
 
 simulator lang = spectre
 
-ahdl_include "bsimbulk.va"
+ahdl_include "ekv2p6.va"
 
 ; Netlist
-Q_H (0  0  0  0) bsimbulk
+Q_H (0  0  0  0) ekv_va temp=273
 
 simulator lang = spice
 

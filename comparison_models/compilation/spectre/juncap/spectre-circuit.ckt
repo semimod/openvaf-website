@@ -2,10 +2,10 @@ Options ASCII_Rawfile=no DuplicateFunc="warning" DuplicateParam="warning" I_AbsT
 
 simulator lang = spectre
 
-ahdl_include "bsimbulk.va"
+ahdl_include "juncap20x.va"
 
 ; Netlist
-Q_H (0  0  0  0) bsimbulk
+Q_H (0  n_B) JUNCAP200
 
 simulator lang = spice
 

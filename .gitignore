@@ -23,4 +23,16 @@ public
 */**/*.h
 */**/*.latexmk
 */**/*.dvi
+*/**/*.dep
+*/**/*.out
+*/**/*.lst
+spectre-circuit_verilog_a.ahdlSimDB/
+spectre-circuit_built_in.ahdlSimDB/
+spectre-circuit_verilog_a.raw/
+spectre-circuit_built_in.raw/
+spectre-circuit.ahdlSimDB/
+spectre_circuit.ahdlSimDB/
+spectre-circuit.raw/
+spectre_circuit.raw/
 static/processed_images/*
+comparison_models/compilation/spectre/bsim_bulk/spectre_circuit.ahdlSimDB/c421bc908ab6b2d05174eb2a5f5b2e40.bsimbulk.ahdlcmi/Linux-64/sminfo
