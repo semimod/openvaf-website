@@ -26,7 +26,7 @@ and unmaintained.
 
 This problem became particularly pressing in recent years as CMC models moved to using newer Verilog-A features
 that are not supported by ADMS.
-This caused problems both for both open source and commercial simulators using this tool.
+This caused problems for both open source and commercial simulators using this tool.
 
 ### What are the main benefits of OpenVAF?
 

@@ -15,7 +15,7 @@ toc = true
 
 # Performance
 
-The following paragraphs give an overview on OpenVAFs' performance. 
+The following paragraphs give an overview on OpenVAF's performance. 
 Both **compilation speed** and **simulation speed** are analyzed. 
 Compilation speed of different Verilog-A compilers is straightforward to compare. 
 However, comparing the simulation speed of different simulators is difficult.
@@ -75,7 +75,7 @@ Nonetheless, OpenVAF outperforms other compilers by a factor of 4 in the worst c
 
 ## Model Evaluation 
 
-### HICUM/L2v4p0 Output Characteristics
+### HICUM/L2v2p4p0 Output Characteristics
 
 The aim of this benchmark is to provide a rough overview of Verilog-A model performance across different simulators.
 As noted in the introduction, comparisons between different simulators are not easy to interpret. 

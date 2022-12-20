@@ -12,7 +12,7 @@ template = "docs/page.html"
 
 # Roadmap
 
-OpenVAF is still in development and there many goals we aim to achieve in the longterm:
+OpenVAF is still in development and there are still many goals on the roadmap:
 
 - Noise analysis *(planned for 2023)*
 - Reaching full compliance with the Verilog-A standard
