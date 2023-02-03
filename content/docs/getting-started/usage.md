@@ -10,7 +10,7 @@ template = "docs/page.html"
 
 +++
 
-# Usage
+# Verilog-A Compilation
 
 Once OpenVAF is installed, compilation of Verilog-A models to an OSDI library suitable for circuit simulation is easy. 
 Simply run 
@@ -26,16 +26,17 @@ If there are no errors in the Verilog-A source, a file called `<file>.osdi` will
 circuit simulators that implement the [OSDI interface](../../details/osdi), such as Ngspice.
 
 
-## Ngspice Integration 
+# Ngspice Integration 
 
-Once you have a compiled OSDI file as described above, it can be loaded by Ngspice with a simple simulator command.
+## Loading OSDI Files
+
+Once you have a compiled an OSDI file as described above, it can be loaded by Ngspice using a simple Ngspice simulator command.
 
 ```bash
 osdi <path>.osdi
 ```
 
-If the path specified is a relative path like `folder/example.osdi` it will be resolved in the current working directory.
-To load a model within a netlist the `pre_osdi` command must be used for ensuring that the model is loaded before the netlist is resolved:
+To load a model in a netlist, one must add `pre` to the  `osdi` command for ensuring that the model is loaded before the netlist is resolved:
 
 ```bash
 .control
@@ -44,9 +45,12 @@ pre_osdi <file>.osdi
 .endc
 ```
 
-If a relative path is used with the `pre_osdi` command, the path will be resolved in **the parent directory of the netlist**.
-<!--Ngspice will look for the **osdi** in the path specified via the **pre_osdi** command. 
-The path can be either absolute, or relative to the current working directory. -->
+* The path to the file can be an absolute path like `/home/folder/example.osdi`. 
+* The path can be a relative path like `folder/example.osdi`, it is then resolved in the netlist directory.
+* You can also omit the path and just write `example.osdi` if the file is located in the `lib/ngspice` directory. To activate this feature you must comment out `unset osdi_enabled` in `share/ngspice/scripts/spinit` . This method is recommended if you want to make this model permanently available to Ngspice. 
+
+
+## Using Verilog-A Modules
 
 Once an OSDI file has been loaded, Verilog-A modules can be initiated in a netlist as shown below.
 Note that the `N` prefix of the device name is important for ensuring correct behavior.

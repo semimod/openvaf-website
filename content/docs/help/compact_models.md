@@ -17,7 +17,7 @@ toc = true
 
 This pages provides an in-complete overview of Verilog-A compact models that are available online. 
 All of these models (and more) are automatically tested during OpenVAF development to ensure they work correctly.
-Do not hesitate to drop us a mail if we forgot your favorite model!
+Do not hesitate to drop us a mail if we forgot your favorite model! 
 
 <!--Note that for legal reasons, OpenVAF does not ship with these models. Users are encouraged to download them themselves. 
 We also encourage users to only employ freely available models. -->
