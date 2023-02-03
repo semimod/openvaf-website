@@ -26,6 +26,11 @@ OpenVAF supports:
 Note that OSX is currently not supported.
 If you are interested in OSX support reach out to us.
 
+Furthermore, OpenVAF requires that a **linker is installed**:
+* On Linux the `ld` linker must be available in the path (usually installed together with gcc)
+* On Windows the MSVC build tools must be downloaded and installed [from the microsoft website](https://visualstudio.microsoft.com/downloads/?q=build+tools#build-tools-for-visual-studio-2022)
+
+
 ## Pre-compiled Executable
 
 Pre-compiled OpenVAF executables for all supported platforms [can be downloaded here](../../../download). 
@@ -43,21 +48,19 @@ in a terminal and see if the executable is found.
 <div class="card">
   <div class="card-body">
    <i>
-  <strong>Note:</strong> Support for OSDI/OpenVAF is currently only available in the pre-master branch of Ngspice
-  until Ngspice-39 releases at the beginning of 2023.
+  <strong>Note:</strong> Support for OSDI/OpenVAF is currently only available starting with the Ngspice-39 release. Earlier versions can not be used.
 
-  On Linux you can install this version with the following commands:
+  On Linux you can either install Ngspice with your package manager (if ngspice-39 is already available). Alternatively you can build Ngspice from source as follows:
   
   ``` bash
   git clone git://git.code.sf.net/p/ngspice/ngspice
   cd ngspice
-  git checkout pre-master
   sudo ./compile_linux.sh
   ```
   Note that Ngspice has some dependencies that must be installed on the system.
-  Consult the Ngspice documentation for details.
+  Consult the [Ngspice website](https://ngspice.sourceforge.io/ for details regarding Ngspice installation.
 
-  For Windows a precompiled version of the pre-master branch is [available on the Ngspice website](https://ngspice.sourceforge.io/download.html#nightly).
+  For Windows a precompiled version is [available on the Ngspice website](https://ngspice.sourceforge.io/download.html).
   </i>
   </div>
 </div>
