@@ -68,7 +68,7 @@ in a terminal and see if the executable is found.
 
 ## Compilation
 
-Users can also compile OpenVAF yourself. 
+Users can compile OpenVAF themselves. 
 This is not recommended for users that do not want to actively take part in the development of OpenVAF
 since the build process is quite involved because of its **LLVM dependency**. 
 

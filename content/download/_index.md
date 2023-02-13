@@ -33,7 +33,7 @@ See our [installation](https://openvaf.semimod.de/docs/getting-started/installat
 
 * Correctly detect file encoding.
 * Improve diagnostic messages.
-* Removed bug when a user defined function is used with `$limit`.
+* Removed error when a user defined function is used with `$limit`.
 * Correctly parse net declarations without attached discipline (`ground`).
 * Fix crash when a model contains no branch contributes.
 * Fix crash when the associated current of a voltage source is unused.
