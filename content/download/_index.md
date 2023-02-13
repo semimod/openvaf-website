@@ -27,7 +27,7 @@ See our [installation](https://openvaf.semimod.de/docs/getting-started/installat
 
 **Breaking Changes**
 
-* Removed LLD integration which made packaging exceptionally difficult and caused crashes on Windows in rare cases. This mean that OpenVAF now requires that the system linker (and `msvcrt.lib` when targeting windows) are available.
+* Removed LLD integration which made packaging exceptionally difficult and caused crashes on Windows in some cases. OpenVAF now requires that the system linker (and `msvcrt.lib` when targeting windows) is available.
 
 **Fixes**
 
@@ -40,7 +40,7 @@ See our [installation](https://openvaf.semimod.de/docs/getting-started/installat
 * Fix crash for parameters with `exclude` expressions.
 * Fix crash when using instance parameters.
 * Fix swapped signatures for `slew` and `transition`.
-* Do not ignore `aliasparam` declarations .
+* Take into account `aliasparam` declarations .
 
 #### OpenVAF 22.12.0 (2022-12-16)
 

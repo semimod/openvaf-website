@@ -1,6 +1,6 @@
 +++
 title = "OpenVAF Beta Launch"
-description = "OpenVAF beta launches with support in Ngspice 39"
+description = "OpenVAF beta launches with support in Ngspice 38 pre-master Branch"
 date = 2022-12-16T09:19:42+00:00
 updated = 2022-12-16T09:19:42+00:00
 draft = false
