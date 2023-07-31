@@ -18,7 +18,7 @@ See our [installation](https://openvaf.semimod.de/docs/getting-started/installat
 |Link                                        |   Description                               |
 |--------------------------------------------|--------------------------------------------:|
 |[openvaf_23_5_0_windows_amd64.zip](https://openva.fra1.cdn.digitaloceanspaces.com/openvaf_23_5_0_windows_amd64.zip)   |  Windows x86-64 executable                  |
-|[openvaf_23_5_0_linux_amd64.tar.gz](https://openva.fra1.cdn.digitaloceanspaces.com/openvaf_23_5_0_linux_amd64.tar.xz)  |  Linux x86-64 executable                    |
+|[openvaf_23_5_0_linux_amd64.tar.gz](https://openva.fra1.cdn.digitaloceanspaces.com/openvaf_23_5_0_linux_amd64.tar.gz)  |  Linux x86-64 executable                    |
 |*To be added in the future*                 |  Windows x86-64 installer                   |
 |*To be added in the future*                 |  Debian x86-64 package                      |
 |*To be added in the future*                 |  REHL x86-64 package                        |
