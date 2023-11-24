@@ -12,12 +12,19 @@ class = "page single"
 Below you can download precompiled binaries for the latest releases and read the changelog between each version.
 See our [installation](https://openvaf.semimod.de/docs/getting-started/installation/) instructions for details.
 
+#### OpenVAF With Noise Support (Beta)
+
+|Link                                        |   Description                               |
+|--------------------------------------------|--------------------------------------------:|
+|[openvaf_noise_windows_amd64.zip](https://datashare.tu-dresden.de/s/TZr4qr4bfHfcAYd)   |  Windows x86-64 executable                  |
+|[openvaf_noise_linux_amd64.tar.gz](https://datashare.tu-dresden.de/s/deELsiBGyitSS3o)  |  Linux x86-64 executable                    |
+
 #### OpenVAF 23.5.0 (2023-5-16)
 
 
 |Link                                        |   Description                               |
 |--------------------------------------------|--------------------------------------------:|
-|[openvaf_23_5_0_windows_amd64.zip](https://openva.fra1.cdn.digitaloceanspaces.com/openvaf_23_5_0_windows_amd64.zip)   |  Windows x86-64 executable                  |
+|[openvaf_23_5_0_windows_amd64.zip](https://datashare.tu-dresden.de/s/ZAC8qcGfge2FM8o)   |  Windows x86-64 executable                  |
 |[openvaf_23_5_0_linux_amd64.tar.gz](https://openva.fra1.cdn.digitaloceanspaces.com/openvaf_23_5_0_linux_amd64.tar.gz)  |  Linux x86-64 executable                    |
 |*To be added in the future*                 |  Windows x86-64 installer                   |
 |*To be added in the future*                 |  Debian x86-64 package                      |
