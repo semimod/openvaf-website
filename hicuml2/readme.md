@@ -1,0 +1,1 @@
+pdftoppm -scale-to 1920 -png ICVCE.pdf > ICVCE.png
