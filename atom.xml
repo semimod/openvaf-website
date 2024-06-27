@@ -1,0 +1,987 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>OpenVAF</title>
+	<subtitle>OpenVAF | A Verilog-A compiler for the 21st century</subtitle>
+	<link href="https://openvaf.semimod.de/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://openvaf.semimod.de"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2024-06-27T09:19:42+00:00</updated>
+	<id>https://openvaf.semimod.de/atom.xml</id>
+	<entry xml:lang="en">
+		<title>OSDI integration in VACASK Circuit Simulator</title>
+		<published>2024-06-27T09:19:42+00:00</published>
+		<updated>2023-06-27T09:19:42+00:00</updated>
+		<link rel="alternate" href="https://openvaf.semimod.de/blog/vacask/" type="text/html"/>
+		<id>https://openvaf.semimod.de/blog/vacask/</id>
+		<content type="html">&lt;p&gt;Recently, Arpad Bürmen has released the &lt;a href=&quot;https:&#x2F;&#x2F;codeberg.org&#x2F;arpadbuermen&#x2F;VACASK&quot;&gt;VACASK&lt;&#x2F;a&gt; circuit simulator 
+which makes heavy use of the OpenVAF circuit simulator for compiling its device models. 
+It is also exciting to see that several bugfixes for OpenVAF have been released in &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;arpadbuermen&#x2F;OpenVAF&quot;&gt;his clone&lt;&#x2F;a&gt; of our OpenVAF repository. 
+We are happy to see this development and hope this new tool will have a substantial impact on the open-source community. &lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>SemiMod stops support of OpenVAF</title>
+		<published>2024-06-25T09:19:42+00:00</published>
+		<updated>2023-06-25T09:19:42+00:00</updated>
+		<link rel="alternate" href="https://openvaf.semimod.de/blog/pascal/" type="text/html"/>
+		<id>https://openvaf.semimod.de/blog/pascal/</id>
+		<content type="html">&lt;p&gt;Unfortunately, the former main developer of OpenVAF has left SemiMod and is no longer active in the OpenVAF project. 
+Due to additional issues that will not me bade public, SemiMod is no longer able to financially support this great project.&lt;&#x2F;p&gt;
+&lt;p&gt;Still, the power of open-source will carry the project on. Several individuals have started to fix bugs in their clones of the repository 
+and further develop OpenVAF. 
+OpenVAF is used on a daily basis by many people and we sincerely hope it will remain useful for the whole community.
+We especially thank IHP for their valuable support.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>OSDI Integration in Spice OPUS</title>
+		<published>2023-04-18T09:19:42+00:00</published>
+		<updated>2023-04-18T09:19:42+00:00</updated>
+		<link rel="alternate" href="https://openvaf.semimod.de/blog/spice-opus/" type="text/html"/>
+		<id>https://openvaf.semimod.de/blog/spice-opus/</id>
+		<content type="html">&lt;p&gt;The &lt;a href=&quot;https:&#x2F;&#x2F;www.spiceopus.si&#x2F;&quot;&gt;Spice OPUS&lt;&#x2F;a&gt; developers have recently integrated our OSDI interface into their simulator (release 3.0) and thereby 
+enabled Verilog-A support in their tool. We are very excited to hear this and wish them all the best!&lt;&#x2F;p&gt;
+&lt;p&gt;This shows that the OSDI documentation is on a level that enables other developers to independently 
+integrate OSDI into their simulators. 
+Also, the Spice OPUS devs have contributed valuable feedback to further improve OpenVAF. &lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>OpenVAF at Analog Working Group</title>
+		<published>2023-03-21T09:19:42+00:00</published>
+		<updated>2023-03-21T09:19:42+00:00</updated>
+		<link rel="alternate" href="https://openvaf.semimod.de/blog/awg-23-03-23/" type="text/html"/>
+		<id>https://openvaf.semimod.de/blog/awg-23-03-23/</id>
+		<content type="html">&lt;p&gt;The &lt;a href=&quot;https:&#x2F;&#x2F;www.chipsalliance.org&#x2F;workgroups&#x2F;&quot;&gt;analog working group&lt;&#x2F;a&gt; of the chips alliance organization 
+had a meeting on 21st. March 2023 where OpenVAF was presented. 
+Legendary Ken Kundert (Spectre creator) and SemiMod (represented by Pascal Kuthe) gave presentations 
+on OpenVAF and its benefits to the EDA ecosystem. 
+After the talks, there was a productive discussion regarding the current state of Verilog-A and funding opportunities 
+for OpenVAF. 
+You can find a recording of the meeting and the presentations, &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=4Cf00ZeueNc&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>OpenVAF Official Release</title>
+		<published>2023-02-03T09:19:42+00:00</published>
+		<updated>2023-02-03T09:19:42+00:00</updated>
+		<link rel="alternate" href="https://openvaf.semimod.de/blog/release/" type="text/html"/>
+		<id>https://openvaf.semimod.de/blog/release/</id>
+		<content type="html">&lt;p&gt;Today is another day for celebration: &lt;&#x2F;p&gt;
+&lt;p&gt;The OpenVAF beta test phase is completed and we have uploaded a first release version of OpenVAF that is not 
+considered &amp;quot;beta&amp;quot; anymore. 
+OpenVAF integration is now available in the latest Ngspice release and can thus reach a broader audience. &lt;&#x2F;p&gt;
+&lt;p&gt;We have received many bug reports that helped us improve the software. 
+In particular rigorous testing of OpenVAF by the Ngspice team must be acknowledged here.&lt;&#x2F;p&gt;
+&lt;p&gt;We hope to be able to attend a few conferences this year and meet face-to-face with people that use OpenVAF. 
+Furthermore, we have some exciting news that we cannot share yet, so stay tuned!&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Compiler Internals</title>
+		<published>2022-12-16T18:20:00+00:00</published>
+		<updated>2022-12-16T18:20:00+00:00</updated>
+		<link rel="alternate" href="https://openvaf.semimod.de/docs/details/compiler-internals/" type="text/html"/>
+		<id>https://openvaf.semimod.de/docs/details/compiler-internals/</id>
+		<content type="html">&lt;div class=&quot;wrap container&quot; role=&quot;document&quot;&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;section class=&quot;section container-fluid mt-n3 pb-3&quot;&gt;
+      &lt;div class=&quot;row justify-content-center&quot;&gt;
+        &lt;div class=&quot;row justify-content-center&quot;&gt;
+					&lt;div class=&quot;col-md col-lg col-xxl&quot;&gt;
+						&lt;article&gt;
+							&lt;h1 class=&quot;text-center&quot;&gt;Under Construction&lt;&#x2F;h1&gt;
+							&lt;p class=&quot;text-center&quot;&gt;This page is not yet complete.&lt;&#x2F;p&gt;
+						&lt;&#x2F;article&gt;
+					&lt;&#x2F;div&gt;
+				&lt;&#x2F;div&gt;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;section&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>OpenVAF Beta Launch</title>
+		<published>2022-12-16T09:19:42+00:00</published>
+		<updated>2022-12-16T09:19:42+00:00</updated>
+		<link rel="alternate" href="https://openvaf.semimod.de/blog/beta-launch/" type="text/html"/>
+		<id>https://openvaf.semimod.de/blog/beta-launch/</id>
+		<content type="html">&lt;p&gt;Today, after long development, we have finally reached a long awaited development milestone:
+A beta version of OpenVAF is now available to a limited group of people. 
+Furthermore, we are also launching a first version of the OpenVAF website which contains documentation,
+examples, technical details and benchmarks.&lt;&#x2F;p&gt;
+&lt;p&gt;While we are proud of what OpenVAF can do today, there is a long journey ahead of us as we continue to improve both OpenVAF and the documentation.
+OpenVAF already outperforms all other Verilog-A compilers that &lt;a href=&quot;..&#x2F;..&#x2F;docs&#x2F;details&#x2F;performance&quot;&gt;have been benchmarked by us&lt;&#x2F;a&gt;. 
+Furthermore, support for &lt;a href=&quot;..&#x2F;..&#x2F;docs&#x2F;details&#x2F;osdi&quot;&gt;OSDI&lt;&#x2F;a&gt; &lt;strong&gt;is available in the ngspice pre-master branch today&lt;&#x2F;strong&gt; 
+and will be included in the ngspice 39 release. &lt;&#x2F;p&gt;
+&lt;p&gt;If you don&#x27;t mind building the Ngspice pre-master branch yourself, you can already try out &lt;a href=&quot;..&#x2F;..&#x2F;docs&#x2F;getting-started&#x2F;examples&quot;&gt;some OpenVAF examples&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Examples</title>
+		<published>2022-12-16T08:20:00+00:00</published>
+		<updated>2022-12-16T08:20:00+00:00</updated>
+		<link rel="alternate" href="https://openvaf.semimod.de/docs/getting-started/examples/" type="text/html"/>
+		<id>https://openvaf.semimod.de/docs/getting-started/examples/</id>
+		<content type="html">&lt;h1 id=&quot;examples&quot;&gt;Examples&lt;&#x2F;h1&gt;
+&lt;p&gt;In the following, some example simulation that rely on Verilog-A defined compact models are shown.
+The Verilog-A models are compiled with OpenVAF and &lt;strong&gt;Ngspice&lt;&#x2F;strong&gt; is used for simulation.
+For this purpose, please install Ngspice as is explained on the &lt;a href=&quot;https:&#x2F;&#x2F;ngspice.sourceforge.io&#x2F;&quot;&gt;Ngspice website&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;div class=&quot;card&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+   &lt;i&gt; &lt;strong&gt;Note:&lt;&#x2F;strong&gt; Support for OSDI&#x2F;OpenVAF is currently only available in the pre-master branch of Ngspice
+  until Ngspice-39 releases at the beginning of 2023.
+&lt;p&gt;You can obtain the sourecode for this version by running the following commands:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; clone git:&#x2F;&#x2F;git.code.sf.net&#x2F;p&#x2F;ngspice&#x2F;ngspice
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;cd&lt;&#x2F;span&gt;&lt;span&gt; ngspice
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; checkout pre-master
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;i&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;h2 id=&quot;example-1-hicum-l2-model&quot;&gt;Example 1: HICUM&#x2F;L2 Model&lt;&#x2F;h2&gt;
+&lt;p&gt;This example demonstrates how to simulate the HICUM&#x2F;L2 model using OpenVAF.&lt;br &#x2F;&gt;
+First, create a folder that will be used for the simulation. &lt;&#x2F;p&gt;
+&lt;p&gt;In this folder, place the following three files: &lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;netlist&lt;&#x2F;strong&gt; shown below, which you can also download &lt;a href=&quot;&#x2F;hicuml2&#x2F;netlist_osdi.sp&quot;&gt;here&lt;&#x2F;a&gt;. &lt;&#x2F;li&gt;
+&lt;li&gt;The model parameter file &lt;strong&gt;model.l&lt;&#x2F;strong&gt; that specifies the model parameters and can be downloaded &lt;a href=&quot;&#x2F;hicuml2&#x2F;model.l&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;The &lt;strong&gt;hicumL2V3p0p0.va&lt;&#x2F;strong&gt; Verilog-A source file that you can download &lt;a href=&quot;https:&#x2F;&#x2F;www.iee.et.tu-dresden.de&#x2F;iee&#x2F;eb&#x2F;forsch&#x2F;Hicum_PD&#x2F;HicumQ&#x2F;hicumL2V3p0p0.va&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;OSDI&lt;&#x2F;span&gt;&lt;span&gt; Example
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;VB&lt;&#x2F;span&gt;&lt;span&gt; B  0 DC 0.1 AC 1 SIN (0.5 0.4 1M)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;VC&lt;&#x2F;span&gt;&lt;span&gt; C  0 DC 1
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;.model&lt;&#x2F;span&gt;&lt;span&gt; npn_full_sh hicuml2va
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;.include&lt;&#x2F;span&gt;&lt;span&gt; model.l
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;N1&lt;&#x2F;span&gt;&lt;span&gt; C B 0 0 npn_full_sh
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;.control
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;pre_osdi&lt;&#x2F;span&gt;&lt;span&gt; hicumL2V3p0p0.osdi
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;dc&lt;&#x2F;span&gt;&lt;span&gt; VC 0 2 0.01 VB 0.65 0.9 0.05 ; 
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;plot -i&lt;&#x2F;span&gt;&lt;span&gt;(VC)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;.endc
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;.end
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This netlist specifies a bipolar transistor that uses the model &lt;strong&gt;hicuml2va&lt;&#x2F;strong&gt; which is defined in the Verilog-A source file. 
+The Verilog-A model is made available to Ngspice using the &lt;strong&gt;pre_osdi&lt;&#x2F;strong&gt; command.&lt;&#x2F;p&gt;
+&lt;p&gt;For generating the osdi file you must &lt;strong&gt;compile&lt;&#x2F;strong&gt; the Verilog-A code by running&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;openvaf&lt;&#x2F;span&gt;&lt;span&gt; hicumL2V3p0p0.va
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;in the simulation folder. This will generate the &lt;code&gt;hicumL2V3p0p0.osdi&lt;&#x2F;code&gt; file. 
+Now you can run the circuit simulation using &lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;ngspice&lt;&#x2F;span&gt;&lt;span&gt; netlist_osdi.sp
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;and the output characteristics of the bipolar transistor are plotted:&lt;&#x2F;p&gt;
+
+&lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;openvaf.semimod.de&amp;#x2F;processed_images&amp;#x2F;287d79a6e718f6b500.png&quot; style=&#x27;height: auto; width: 100%&#x27;&#x2F;&gt;&lt;h2 id=&quot;example-2-psp-mos-inverter&quot;&gt;Example 2: PSP MOS Inverter&lt;&#x2F;h2&gt;
+&lt;p&gt;This example shows the simulation of a MOS inverter using the PSP model. 
+First, create a folder &lt;strong&gt;psp_inverter&lt;&#x2F;strong&gt; that will be used for the circuit simulation. &lt;&#x2F;p&gt;
+&lt;p&gt;In this folder, place the following files: &lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;the &lt;strong&gt;netlist&lt;&#x2F;strong&gt; shown below, together with the example &lt;strong&gt;modelcards&lt;&#x2F;strong&gt;. These files can be download &lt;a href=&quot;&#x2F;psp103&#x2F;psp_inverter.zip&quot;&gt;here&lt;&#x2F;a&gt;. &lt;&#x2F;li&gt;
+&lt;li&gt;the &lt;strong&gt;PSP compact model&lt;&#x2F;strong&gt; Verilog-A source files can be downloaded &lt;a href=&quot;https:&#x2F;&#x2F;www.cea.fr&#x2F;cea-tech&#x2F;leti&#x2F;pspsupport&#x2F;Documents&#x2F;PSP103.8.0_vacode.tar&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The tree structure of your folder should then look like this:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;├── psp_inverter
+&lt;&#x2F;span&gt;&lt;span&gt;│   ├── PSP103.8.0_vacode
+&lt;&#x2F;span&gt;&lt;span&gt;│   │   ├── **&#x2F;*
+&lt;&#x2F;span&gt;&lt;span&gt;│   ├── Modelcards
+&lt;&#x2F;span&gt;&lt;span&gt;│   │   ├── psp103_nmos.mod
+&lt;&#x2F;span&gt;&lt;span&gt;│   │   ├── psp103_pmos.mod
+&lt;&#x2F;span&gt;&lt;span&gt;│   ├── psp_inverter.sp
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This is the content of &lt;strong&gt;psp_inverter.sp&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt; PSP models
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt; simple inverter
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;.param&lt;&#x2F;span&gt;&lt;span&gt; Vcc = 1.2
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;.csparam&lt;&#x2F;span&gt;&lt;span&gt; vcc=&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Vcc&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt; Path to the models
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;.include&lt;&#x2F;span&gt;&lt;span&gt; Modelcards&#x2F;psp103_nmos.mod
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;.include&lt;&#x2F;span&gt;&lt;span&gt; Modelcards&#x2F;psp103_pmos.mod
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt; the voltage sources: 
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Vdd&lt;&#x2F;span&gt;&lt;span&gt; vdd gnd DC &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Vcc&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;V1&lt;&#x2F;span&gt;&lt;span&gt; in gnd pulse(0 &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Vcc&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39; 0p 200p 100p 1n 2n)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Vmeas&lt;&#x2F;span&gt;&lt;span&gt; vss 0 0
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Xnot1&lt;&#x2F;span&gt;&lt;span&gt; in vdd vss out not1
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;*Rout&lt;&#x2F;span&gt;&lt;span&gt; out 0 1k
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;.subckt&lt;&#x2F;span&gt;&lt;span&gt; not1 a vdd vss z
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;*m01&lt;&#x2F;span&gt;&lt;span&gt;   z a     vdd     vdd pch  l=0.1u  w=1u  as=0.26235  ad=0.26235  ps=2.51   pd=2.51
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;nmp1&lt;&#x2F;span&gt;&lt;span&gt;  z a     vdd     vdd pch
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;+l&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;0.1u
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;+w&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;1u
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;+sa&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;0.0e+00
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;+sb&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;0.0e+00
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;+absource&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;1.0e-12
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;+lssource&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;1.0e-06
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;+lgsource&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;1.0e-06
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;+abdrain&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;1.0e-12
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;+lsdrain&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;1.0e-06
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;+lgdrain&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;1.0e-06
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;+mult&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;1.0e+00
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;*m02&lt;&#x2F;span&gt;&lt;span&gt;   z a     vss     vss nch  l=0.1u  w=0.5u as=0.131175 ad=0.131175 ps=1.52   pd=1.52
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;nmn1&lt;&#x2F;span&gt;&lt;span&gt;  z a     vss     vss nch
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;+l&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;0.1u
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;+w&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;1u
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;+sa&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;0.0e+00
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;+sb&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;0.0e+00
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;+absource&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;1.0e-12
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;+lssource&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;1.0e-06
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;+lgsource&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;1.0e-06
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;+abdrain&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;1.0e-12
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;+lsdrain&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;1.0e-06
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;+lgdrain&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;1.0e-06
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;+mult&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;1.0e+00
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;c3&lt;&#x2F;span&gt;&lt;span&gt;  a     vss   0.384f
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;c2&lt;&#x2F;span&gt;&lt;span&gt;  z     vss   0.576f
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;.ends
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt; simulation command: 
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;.tran&lt;&#x2F;span&gt;&lt;span&gt; 10ps 10ns
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;.dc&lt;&#x2F;span&gt;&lt;span&gt; V1 0 &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;vcc&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39; &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;vcc&#x2F;100&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;.control
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;pre_osdi&lt;&#x2F;span&gt;&lt;span&gt; PSP103.8.0_vacode&#x2F;vacode&#x2F;psp103.osdi
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;run
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;*set&lt;&#x2F;span&gt;&lt;span&gt; nolegend
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;plot&lt;&#x2F;span&gt;&lt;span&gt; in out
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;plot&lt;&#x2F;span&gt;&lt;span&gt; dc1.out
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;plot&lt;&#x2F;span&gt;&lt;span&gt; dc1.i(Vmeas)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;rusage
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;.endc
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;.end
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Next, &lt;strong&gt;cd&lt;&#x2F;strong&gt; into the folder and run the following commands&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;cd&lt;&#x2F;span&gt;&lt;span&gt; psp_inverter&#x2F;PSP103.8.0_vacode&#x2F;vacode&#x2F;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;openvaf&lt;&#x2F;span&gt;&lt;span&gt; psp103.va
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This will &lt;strong&gt;compile&lt;&#x2F;strong&gt; the Verilog-A source file to &lt;strong&gt;psp103.osdi&lt;&#x2F;strong&gt; file for usage in Ngspice.
+Now, in the simulation folder, run&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;cd&lt;&#x2F;span&gt;&lt;span&gt; psp_inverter
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;ngspice&lt;&#x2F;span&gt;&lt;span&gt; psp_inverter.sp
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;to calculate and plot the inverter characteristics:&lt;&#x2F;p&gt;
+
+&lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;openvaf.semimod.de&amp;#x2F;processed_images&amp;#x2F;68d6f8c4ecd6da1500.png&quot; style=&#x27;height: auto; width: 100%&#x27;&#x2F;&gt;
+&lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;openvaf.semimod.de&amp;#x2F;processed_images&amp;#x2F;6bc325163ec3f6c300.png&quot; style=&#x27;height: auto; width: 100%&#x27;&#x2F;&gt;
+&lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;openvaf.semimod.de&amp;#x2F;processed_images&amp;#x2F;4270d31801054b4900.png&quot; style=&#x27;height: auto; width: 100%&#x27;&#x2F;&gt;&lt;h2 id=&quot;example-3-iscas85-benchmark-circuit&quot;&gt;Example 3: ISCAS85 Benchmark Circuit&lt;&#x2F;h2&gt;
+&lt;p&gt;In this example the massive ISCAS85 benchmark circuit that is often used for benchmarking circuit simulators is simulated. 
+First, create a folder &lt;strong&gt;iscas85_benchmark_circuit&lt;&#x2F;strong&gt; that will be used for the circuit simulation. 
+In this folder place the following files:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;the &lt;strong&gt;netlist&lt;&#x2F;strong&gt; together with the example &lt;strong&gt;modelcards&lt;&#x2F;strong&gt; that can be download &lt;a href=&quot;&#x2F;psp103&#x2F;iscas85_benchmark_circuit.zip&quot;&gt;here&lt;&#x2F;a&gt;. &lt;&#x2F;li&gt;
+&lt;li&gt;the &lt;strong&gt;PSP compact model&lt;&#x2F;strong&gt; Verilog-A source files can be downloaded &lt;a href=&quot;https:&#x2F;&#x2F;www.cea.fr&#x2F;cea-tech&#x2F;leti&#x2F;pspsupport&#x2F;Documents&#x2F;PSP103.8.0_vacode.tar&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;├── iscas85_benchmark_circuit
+&lt;&#x2F;span&gt;&lt;span&gt;│   ├── PSP103.8.0_vacode
+&lt;&#x2F;span&gt;&lt;span&gt;│   │   ├── **&#x2F;*
+&lt;&#x2F;span&gt;&lt;span&gt;│   ├── Modelcards
+&lt;&#x2F;span&gt;&lt;span&gt;│   │   ├── psp103_nmos.mod
+&lt;&#x2F;span&gt;&lt;span&gt;│   │   ├── psp103_pmos.mod
+&lt;&#x2F;span&gt;&lt;span&gt;│   ├── iscas85_benchmark_circuit.sp
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Next, &lt;strong&gt;cd&lt;&#x2F;strong&gt; into the folder and run the following commands&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;cd&lt;&#x2F;span&gt;&lt;span&gt; iscas85_benchmark_circuit&#x2F;PSP103.8.0_vacode&#x2F;vacode&#x2F;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;openvaf&lt;&#x2F;span&gt;&lt;span&gt; psp103.va
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This will compile the Verilog-A source file to &lt;strong&gt;psp103.osdi&lt;&#x2F;strong&gt; file for usage in Ngspice.
+Now, in the simulation folder, run&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;cd&lt;&#x2F;span&gt;&lt;span&gt; iscas85_benchmark_circuit
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;ngspice&lt;&#x2F;span&gt;&lt;span&gt; iscas85_benchmark_circuit.sp
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;to see the results.
+Note that this is a very large circuit whose simulation &lt;strong&gt;may take a long time&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Performance</title>
+		<published>2022-12-01T18:10:00+00:00</published>
+		<updated>2022-12-01T18:10:00+00:00</updated>
+		<link rel="alternate" href="https://openvaf.semimod.de/docs/details/performance/" type="text/html"/>
+		<id>https://openvaf.semimod.de/docs/details/performance/</id>
+		<content type="html">&lt;h1 id=&quot;performance&quot;&gt;Performance&lt;&#x2F;h1&gt;
+&lt;p&gt;The following paragraphs give an overview on OpenVAF&#x27;s performance. 
+Both &lt;strong&gt;compilation speed&lt;&#x2F;strong&gt; and &lt;strong&gt;simulation speed&lt;&#x2F;strong&gt; are analyzed. 
+Compilation speed of different Verilog-A compilers is straightforward to compare. 
+However, comparing the simulation speed of different simulators is difficult.
+Each simulator implements different convergence algorithms, and might perform better under different circumstances. 
+The netlists and options have been made as equal as possible, yet it must be stressed 
+that the simulation performance of &lt;strong&gt;different simulators&lt;&#x2F;strong&gt; cannot be compared.&lt;&#x2F;p&gt;
+&lt;p&gt;In simulations with commercial simulations, the &lt;strong&gt;license checkout time has been removed&lt;&#x2F;strong&gt; from the run-time. 
+As far as possible, writing to the hard-disk has been turned off for reducing the impact of read&#x2F;write calls that are not of interest here.
+For Keysight ADS turning off all IO was not possible. &lt;&#x2F;p&gt;
+&lt;p&gt;The chosen benchmarks are mostly &lt;strong&gt;simple single-transistor benchmarks&lt;&#x2F;strong&gt;, so that the
+model evaluation code (generated by OpenVAF) is the main bottleneck instead of other algorithms in the simulator. 
+Note that multithreaded model evaluation with OpenMP support was turned off in Ngspice for these benchmarks.
+These benchmarks were run on an Intel i7-9750H@2.60GHz with 16 GB of DDR4 RAM and a SSD, if not mentioned otherwise.
+The benchmarks were performed with OpenVAF 22.12.0, XYCE 7.5 and Keysight ADS 512.update2.0. and Cadence Spectre 18.1.077. &lt;&#x2F;p&gt;
+&lt;p&gt;We acknowledge our academic partner for help with these comparisons.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;model-compilation&quot;&gt;Model Compilation&lt;&#x2F;h2&gt;
+&lt;p&gt;The model compilation time in seconds is compared between different models and different tools. &lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Benchmark results (in seconds, less is better):&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;&#x2F;th&gt;&lt;th&gt;PSPv103&lt;&#x2F;th&gt;&lt;th&gt;BSIM4&lt;&#x2F;th&gt;&lt;th&gt;EKV2.6&lt;&#x2F;th&gt;&lt;th&gt;JUNCAP200&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;OpenVAF&lt;&#x2F;strong&gt;&lt;&#x2F;td&gt;&lt;td&gt;3.48&lt;&#x2F;td&gt;&lt;td&gt;6.7&lt;&#x2F;td&gt;&lt;td&gt;0.23&lt;&#x2F;td&gt;&lt;td&gt;0.61&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Xyce ADMS&lt;&#x2F;strong&gt;&lt;&#x2F;td&gt;&lt;td&gt;109&lt;&#x2F;td&gt;&lt;td&gt;25.1&lt;&#x2F;td&gt;&lt;td&gt;9.6*&lt;&#x2F;td&gt;&lt;td&gt;16.6&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;ADS&lt;&#x2F;strong&gt;&lt;&#x2F;td&gt;&lt;td&gt;33.9&lt;&#x2F;td&gt;&lt;td&gt;27.0&lt;&#x2F;td&gt;&lt;td&gt;2.5&lt;&#x2F;td&gt;&lt;td&gt;5.1&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Spectre&lt;&#x2F;strong&gt;&lt;&#x2F;td&gt;&lt;td&gt;27.4&lt;&#x2F;td&gt;&lt;td&gt;-&lt;&#x2F;td&gt;&lt;td&gt;6.1&lt;&#x2F;td&gt;&lt;td&gt;11.4&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;&#x2F;th&gt;&lt;th&gt;HICUM&#x2F;L2v3.0&lt;&#x2F;th&gt;&lt;th&gt;BSIM-SOI 4.6&lt;&#x2F;th&gt;&lt;th&gt;BSIM-BULK 107&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;OpenVAF&lt;&#x2F;strong&gt;&lt;&#x2F;td&gt;&lt;td&gt;0.72&lt;&#x2F;td&gt;&lt;td&gt;2.1&lt;&#x2F;td&gt;&lt;td&gt;2.9&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Xyce ADMS&lt;&#x2F;strong&gt;&lt;&#x2F;td&gt;&lt;td&gt;22*&lt;&#x2F;td&gt;&lt;td&gt;102.1*&lt;&#x2F;td&gt;&lt;td&gt;-*&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;ADS&lt;&#x2F;strong&gt;&lt;&#x2F;td&gt;&lt;td&gt;7.7&lt;&#x2F;td&gt;&lt;td&gt;30.7&lt;&#x2F;td&gt;&lt;td&gt;34.5&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Spectre&lt;&#x2F;strong&gt;&lt;&#x2F;td&gt;&lt;td&gt;19.7&lt;&#x2F;td&gt;&lt;td&gt;16.9&lt;&#x2F;td&gt;&lt;td&gt;19.1&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;The benchmarks above exemplify that OpenVAF tends to outperform alternative compilers by a factor of 10 w.r.t. to compilation speed.
+For models like BSIM4 that have a very large number of model parameters, but (comparatively) small evaluation code,
+performance is currently slightly worse than it will be with coming OpenVAF releases.
+This problem is a known limitation and will be addressed in the future.
+Nonetheless, OpenVAF outperforms other compilers by a factor of 4 in the worst case.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;=&amp;gt; OpenVAF compiles around x10 faster than existing tools!&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;- = Spectre compilation fails:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;BSIM4: gcc compiler error without error message&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;* = Xyce &lt;code&gt;buildxyceplugin&lt;&#x2F;code&gt; fails:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;HICUM&#x2F;L2: brackets at macro def&lt;&#x2F;li&gt;
+&lt;li&gt;BSIM-SOI: Custom model v4.5 from Xyce repo&lt;&#x2F;li&gt;
+&lt;li&gt;BSIM-Bulk: Non-independent initializations and node collapses, could not easily fix&lt;&#x2F;li&gt;
+&lt;li&gt;EKV: par. range macros, noise sources not working&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;model-evaluation&quot;&gt;Model Evaluation&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;hicum-l2v2p4p0-output-characteristics&quot;&gt;HICUM&#x2F;L2v2p4p0 Output Characteristics&lt;&#x2F;h3&gt;
+&lt;p&gt;The aim of this benchmark is to provide a rough overview of Verilog-A model performance across different simulators.
+As noted in the introduction, comparisons between different simulators are not easy to interpret. 
+In particular, different simulation configuration and convergence algorithms may affect the results. &lt;&#x2F;p&gt;
+&lt;p&gt;Benchmark Setup: Simulation of HBT output characteristics using HICUM&#x2F;L2 model shown in the examples.
+The collector and base voltage step width is set to 1 mV, increasing the simulation time significantly.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Benchmark results (in seconds, less is better):&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Ngspice (OpenVAF): 9.16s&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Ngspice (built-in): 14.64s&lt;&#x2F;li&gt;
+&lt;li&gt;Xyce (ADMS): 36.42s&lt;&#x2F;li&gt;
+&lt;li&gt;Xyce (built-in): 26.56s&lt;&#x2F;li&gt;
+&lt;li&gt;ADS (Verilog-A): 8.63s&lt;&#x2F;li&gt;
+&lt;li&gt;ADS (built-in): 7.01s&lt;&#x2F;li&gt;
+&lt;li&gt;Spectre (Verilog-A): 52.61s&lt;&#x2F;li&gt;
+&lt;li&gt;Spectre (built-in): 25.33s&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Notes:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;The OpenVAF compiled model runs faster than the built-in Ngspice HICUM&#x2F;L2 model as this particular built-in implementation uses slow dual-number based derivatives&lt;&#x2F;li&gt;
+&lt;li&gt;Xyce evaluation time is very likely larger due to difference in convergence algorithms, and not inherently due to Xyce itself.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;!--**=&gt; Both Xyce and ADS run slower with Verilog-A model.**
+
+**=&gt; Ngspice runs comparably fast as commercial ADS simulator.**--&gt;
+&lt;!-- ### HICUM&#x2F;L2v2p4p0 Transient Simulation
+
+Benchmark: Simulation of HBT transient behavior with 1 GHz input signal at the base node and fixed ultra short time step.
+
+* **Ngspice (OpenVAF): 50.05s**
+* Ngspice (built-in): 82.39s
+* Xyce (ADMS): 56s
+* ADS (Verilog-A): 1000.4s
+* ADS (built-in): 930.9s
+* Spectre (Verilog-A): 139.20s
+* Spectre (built-in): 93.36s
+
+TODO: Ich glaube ADS macht hier VIEL mehr timesteps, das kann so nicht stimmen
+Note: As mentinoed above comparisons  --&gt;
+&lt;h3 id=&quot;bsimsoi-4-4-0-output-characteristics-builtin-vs-openvaf&quot;&gt;BSIMSOI 4.4.0 Output Characteristics (builtin vs OpenVAF)&lt;&#x2F;h3&gt;
+&lt;p&gt;BSIMSOI is available as a very mature and highly optimized hardcoded model in Ngspice. 
+The derivatives are all handwritten and haven been manually optimized over many years.
+Therefore, comparing OpenVAF to this handwritten version allows evaluating the quality
+of the OpenVAF generated derivatives.&lt;&#x2F;p&gt;
+&lt;p&gt;Benchmark Setup: Simulation of MOSFET output characteristics with very fine bias steps.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Benchmark results (in seconds, less is better):&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;!-- Note: Use of BSIMSOI v4.5.0 in Xyce --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Ngspice (OpenVAF): 8.47s&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Ngspice (built-in): 7.98s&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;=&amp;gt; OpenVAF models are only 6% slower than carefully optimized handwritten code.&lt;&#x2F;p&gt;
+&lt;!--
+* Xyce (ADMS): 42.9s
+* ADS (Verilog-A): 430.4s
+* ADS (built-in): 408.4s 
+* Spectre (Verilog-A): 60.29s
+* Spectre (built-in): 22.95.2s
+--&gt;
+&lt;h3 id=&quot;bsimbulk-106-2-output-characteristics-adms-vs-openvaf&quot;&gt;BSIMBULK 106.2 Output Characteristics (ADMS vs OpenVAF)&lt;&#x2F;h3&gt;
+&lt;p&gt;The BSIMBULK model is not available in Ngspice by default.
+However, an experimental Verilog-A model that was adjusted for compilation with ADMS is available. 
+Hence, this enables a fair comparison between ADMS and OpenVAF in the same simulator.&lt;&#x2F;p&gt;
+&lt;p&gt;Benchmark Setup: Simulation of MOSFET output characteristics with very fine bias steps.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Benchmark results (in seconds, less is better):&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Ngspice (OpenVAF): 2.08s&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Ngspice (ADMS): 3.38s&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;!--* ADS (Verilog-A): 79.63s
+* ADS (built-in): 76.87s
+* Spectre (Verilog-A-in): 19.39s
+* Spectre (built-in): 4.36s
+--&gt;
+&lt;p&gt;Benchmark Setup: Simulation of MOSFET transient characteristics with very fine fixed time steps.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Benchmark results (in seconds, less is better):&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Ngspice (OpenVAF): 9.47s&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Ngspice (ADMS): 13.70s&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;!-- * ADS (Verilog-A): 74.9s
+* ADS (built-in): 74.5s 
+* Spectre (Verilog-A): 57.46s 
+* Spectre (built-in): 14.10s --&gt;
+&lt;p&gt;=&amp;gt; OpenVAF based simulations are between &lt;strong&gt;40% and 100% faster&lt;&#x2F;strong&gt; than ADMS based simulations in Ngspice&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;psp-103-8-inverter&quot;&gt;PSP 103.8 Inverter&lt;&#x2F;h3&gt;
+&lt;p&gt;This benchmark demonstrates a use-case that is close to a real-world use case.
+Note that the performance difference here is smaller in relative terms
+because more time is spent on other simulator tasks such as matrix factorization.&lt;&#x2F;p&gt;
+&lt;p&gt;Benchmark: Transient simulation of the inverter from the examples section using a very fine bias grid.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Benchmark results (in seconds, less is better):&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Ngspice (OpenVAF): 20.01s&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Ngspice (ADMS): 25.07s&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;=&amp;gt; OpenVAF provides a 20% speedup compared to ADMS in a realistic transient simulation of a simple circuit&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;iscas-benchmark-circuit-with-psp-103-8&quot;&gt;ISCAS Benchmark Circuit with PSP 103.8&lt;&#x2F;h3&gt;
+&lt;p&gt;Benchmark: Transient simulation of the ISCAS benchmark circuit from the examples&#x27; section using a very fine bias grid. 
+Note that Ngspice has been built with openmp for this example to enable parallelization.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Benchmark results (in seconds, less is better):&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Ngspice (OpenVAF): 20min&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Ngspice (ADMS): 25min&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;=&amp;gt; OpenVAF has a 20% speedup compared to ADMS in  massively parallel transient simulation&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Available compact models</title>
+		<published>2022-12-01T18:10:00+00:00</published>
+		<updated>2022-12-01T18:10:00+00:00</updated>
+		<link rel="alternate" href="https://openvaf.semimod.de/docs/help/compact-models/" type="text/html"/>
+		<id>https://openvaf.semimod.de/docs/help/compact-models/</id>
+		<content type="html">&lt;h1 id=&quot;compact-models&quot;&gt;Compact Models&lt;&#x2F;h1&gt;
+&lt;p&gt;This pages provides an in-complete overview of Verilog-A compact models that are available online. 
+All of these models (and more) are automatically tested during OpenVAF development to ensure they work correctly.
+Do not hesitate to drop us a mail if we forgot your favorite model! &lt;&#x2F;p&gt;
+&lt;!--Note that for legal reasons, OpenVAF does not ship with these models. Users are encouraged to download them themselves. 
+We also encourage users to only employ freely available models. --&gt;
+&lt;h2 id=&quot;cmc-models&quot;&gt;CMC Models&lt;&#x2F;h2&gt;
+&lt;p&gt;The &lt;a href=&quot;https:&#x2F;&#x2F;si2.org&#x2F;cmc&#x2F;&quot;&gt;Compact Model Coalition (CMC)&lt;&#x2F;a&gt; is a working collaborative group focused on the standardization of SPICE (Simulation Program with Integration Circuit Emphasis) device models. 
+CMC models are available in most commercial circuit simulators and are widely used in industry and academia.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;bsim-fet&quot;&gt;BSIM (FET)&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a href=&quot;http:&#x2F;&#x2F;bsim.berkeley.edu&#x2F;&quot;&gt;The BSIM group&lt;&#x2F;a&gt; develops and releases &lt;strong&gt;several FET models&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cogenda&#x2F;VA-BSIM48&quot;&gt;BSIM4&lt;&#x2F;a&gt; is an older MOSFET model that only has a unofficial Verilog-A file.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;bsim.berkeley.edu&#x2F;models&#x2F;bsimcmg&#x2F;&quot;&gt;BSIM-CMG&lt;&#x2F;a&gt; for common multi-gate MOSFETs like FinFETs.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;bsim.berkeley.edu&#x2F;models&#x2F;bsimsoi&#x2F;&quot;&gt;BSIM-SOI&lt;&#x2F;a&gt; for SOI (Silicon-On-Insulator) MOSFETs.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;bsim.berkeley.edu&#x2F;models&#x2F;bsimimg&#x2F;&quot;&gt;BSIM-IMG&lt;&#x2F;a&gt; for independent double-gate structures like Ultra-Thin Body and BOX SOI transistors (UTBB).&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;bsim.berkeley.edu&#x2F;models&#x2F;bsimbulk&#x2F;&quot;&gt;BSIM-BULK&lt;&#x2F;a&gt; for state-of-the-art bulk FETs.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;psp-model-fet&quot;&gt;PSP Model (FET)&lt;&#x2F;h3&gt;
+&lt;p&gt;PSP is a Compact Model for bulk MOSFETs and is available &lt;a href=&quot;https:&#x2F;&#x2F;www.cea.fr&#x2F;cea-tech&#x2F;leti&#x2F;pspsupport&#x2F;CurrentRelease&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;juncap-model-diode&quot;&gt;JUNCAP Model (Diode)&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.cea.fr&#x2F;cea-tech&#x2F;leti&#x2F;pspsupport&#x2F;Pages&#x2F;Welcome.aspx&quot;&gt;The juncap diode model&lt;&#x2F;a&gt; is developed by NXP Research and CEA-Leti. &lt;&#x2F;p&gt;
+&lt;h3 id=&quot;hisim-fet&quot;&gt;HiSIM (FET)&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.hisim.hiroshima-u.ac.jp&#x2F;cgi&#x2F;HiSIM2&#x2F;public_release.cgi&quot;&gt;HiSIM&lt;&#x2F;a&gt; (Hiroshima-university STARC IGFET Model) is the first complete surface-potential-based MOS-
+FET model for circuit simulation based on the drift-diffusion approximation.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;l-utsoi-soi-fet&quot;&gt;L-UTSOI (SOI-FET)&lt;&#x2F;h3&gt;
+&lt;p&gt;The &lt;a href=&quot;https:&#x2F;&#x2F;www.cea.fr&#x2F;cea-tech&#x2F;leti&#x2F;l-utsoisupport&quot;&gt;L-UTSOI compact model&lt;&#x2F;a&gt; is dedicated to FDSOI technologies, and is the new name of Leti-UTSOI,
+a high maturity model in development since 2007 and used in industrial environments for nearly 8 years.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;hicum-bipolar-transistors&quot;&gt;HICUM (Bipolar Transistors)&lt;&#x2F;h3&gt;
+&lt;p&gt;The &lt;a href=&quot;https:&#x2F;&#x2F;www.iee.et.tu-dresden.de&#x2F;iee&#x2F;eb&#x2F;hic_new&#x2F;hic_intro.html&quot;&gt;HICUM&#x2F;L2 and HICUM&#x2F;L0 models&lt;&#x2F;a&gt; are developed by Prof. Michael Schröter. 
+HICUM stands for HIgh CUrrent Model and is a physics-based geometry-scalable compact model for homo- and heterojunction bipolar transistors.
+It targets the design of circuits using Si, SiGe or III-V based processes and is particularly accurate at high-frequencies and high-current densities.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;asm-hemt-gan-hemt&quot;&gt;ASM-HEMT (GAN HEMT)&lt;&#x2F;h3&gt;
+&lt;p&gt;The &lt;a href=&quot;https:&#x2F;&#x2F;iitk.ac.in&#x2F;asm&#x2F;&quot;&gt;ASM-HEMT model&lt;&#x2F;a&gt; is a robust surface-potential based compact model for Gallium Nitride (GaN) High Electron Mobility Transistors.
+It was developed as a joint effort between Indian Institute of Technology Kanpur and Macquarie University.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;non-cmc-models&quot;&gt;Non CMC Models&lt;&#x2F;h2&gt;
+&lt;p&gt;There are models that are released without CMC involvement. Some of these models are listed below.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;ekv-fet&quot;&gt;EKV (FET)&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ekv26&#x2F;model&quot;&gt;The EKV2.6 MOSFET compact model&lt;&#x2F;a&gt; has had a considerable impact on the academic and industrial community of analog integrated circuit design, since its inception in 1996. The model is available as a free open-source software (FOSS) tool coded in Verilog-A. The present depository provides a short review of foundations of the model and shows its capabilities via characterization and modeling based on a test chip in 180 nm CMOS fabricated via Europractice.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>FAQ</title>
+		<published>2022-12-01T18:10:00+00:00</published>
+		<updated>2022-12-01T18:10:00+00:00</updated>
+		<link rel="alternate" href="https://openvaf.semimod.de/docs/help/faq/" type="text/html"/>
+		<id>https://openvaf.semimod.de/docs/help/faq/</id>
+		<content type="html">&lt;h1 id=&quot;faq&quot;&gt;FAQ&lt;&#x2F;h1&gt;
+&lt;p&gt;Answers to frequently asked questions.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;why-did-you-develop-openvaf&quot;&gt;Why did you develop OpenVAF?&lt;&#x2F;h3&gt;
+&lt;p&gt;Coming from a modeling&#x2F;software-engineering&#x2F;academic background we noticed at the beginning of 2019 that 
+existing Verilog-A compilers had serious shortcomings.
+For example slow compilation and simulation speed, questionable Verilog-A standard compliance and convergence issues. 
+Even worse, the ADMS tool used in the open-source circuit simulators is notoriously buggy and slow, 
+and unmaintained.&lt;&#x2F;p&gt;
+&lt;p&gt;This problem became particularly pressing in recent years as CMC models moved to using newer Verilog-A features
+that are not supported by ADMS.
+This caused problems for both open source and commercial simulators using this tool.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;what-are-the-main-benefits-of-openvaf&quot;&gt;What are the main benefits of OpenVAF?&lt;&#x2F;h3&gt;
+&lt;p&gt;OpenVAF directly generates executable machine code and does not use an intermediate language such as C.
+The compilation is very fast (up to 10 times faster than alternatives).
+Furthermore, this approach allows implementation of better auto-differentiation algorithms
+that can create highly optimized machine code that runs faster than code produced by traditional compilation approaches.&lt;&#x2F;p&gt;
+&lt;p&gt;OpenVAF takes Verilog-A standard compliance seriously.
+The approach described above allows OpenVAF to support many Verilog-A features without
+sacrificing compilation or simulation performance.
+As a result OpenVAF compiles a wide variety of standard compliant models
+without modifications while offering better performance than other compilers.&lt;&#x2F;p&gt;
+&lt;p&gt;OpenVAF also puts a great focus on ease of use.
+No complicated setup is required to install the compiler. &lt;&#x2F;p&gt;
+&lt;!-- If you have problems or questions youc [SemiMod GmbH](https:&#x2F;&#x2F;semimod.de&#x2F;) 
+can directly be contacted, or you can get in touch using the [Git repo](https:&#x2F;&#x2F;github.com&#x2F;pascalkuthe&#x2F;OpenVAF). --&gt;
+&lt;!--### What are potential future applications?
+
+The open-source silicon movement led by Google will very likely make use of OpenVAF sooner or later, since many models 
+used in commercial PDKs cannot be run with the existing Ngspice&#x2F;Xyce simulators. We hope that the Xyce team will 
+integrate our OSDI interface.
+
+We also hope that the modeling community will notice the benefits of using OpenVAF in the coming years and OpenVAF might make it 
+into one of the commercial tools. We are available as support for potential cooperation partners. 
+
+We believe that more and more data-driven or hybrid analytical&#x2F;data driven models will be employed in the semiconductor industry.
+This may necessitate the integration of new features to OpenVAF or extending the Verilog-A standard that has not been 
+developed further for over a decade.
+
+
+ ### Why did you license OpenVAF under GPL?
+
+The choice for open-source was clear, since we needed the tool for our own sake and wanted people to 
+also benefit. 
+Sharing brings nothing but advantages to everyone. 
+It enables to locate bugs, improve the tools, but also shows the commercial EDA vendors what is technically possible. --&gt;
+&lt;h3 id=&quot;will-openvaf-remain-open-source&quot;&gt;Will OpenVAF remain open-source?&lt;&#x2F;h3&gt;
+&lt;p&gt;Yes, OpenVAF and the OSDI specification will always remain open-source projects. 
+However, SemiMod offers potential commercial partners to build or integrate OpenVAF into proprietary tools. &lt;&#x2F;p&gt;
+&lt;h3 id=&quot;why-is-additional-parameter-information-like-description-units-and-type-instance-parameters-not-available-for-some-models&quot;&gt;Why is additional parameter information like description, units and type (instance parameters) not available for some models?&lt;&#x2F;h3&gt;
+&lt;p&gt;Some older Verilog-A models use non-standard syntax for indicating parameter information
+that can not be supported by OpenVAF.
+Recently released compact models usually use the newer (correct) syntax.&lt;&#x2F;p&gt;
+&lt;p&gt;The old syntax looks as follows:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;paramter real example=1.0 (*type=&amp;quot;instance&amp;quot;*);
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The syntax is often abbreviated with a macro that disables the syntax outside ADMS:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;paramter real example=1.0 `P(type=&amp;quot;instance&amp;quot;);
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The Verilog-A standard (and therefore OpenVAF) supports the following syntax:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;(*type=&amp;quot;instance&amp;quot;*) paramter real example=1.0;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;i-need-help-integrating-openvaf-into-a-simulator-can-you-help&quot;&gt;I need help integrating OpenVAF into a simulator, can you help?&lt;&#x2F;h3&gt;
+&lt;p&gt;Please &lt;a href=&quot;https:&#x2F;&#x2F;semimod.de&#x2F;contact&#x2F;&quot;&gt;get in touch&lt;&#x2F;a&gt; with us to determine the best path for cooperation. &lt;&#x2F;p&gt;
+&lt;h3 id=&quot;i-need-help-extracting-model-parameters-for-a-technology-can-you-help&quot;&gt;I need help extracting model parameters for a technology, can you help?&lt;&#x2F;h3&gt;
+&lt;p&gt;Unfortunately, the extraction of compact model parameters is a very knowledge and tool intensive process. 
+The model parameters found in many commercial and open-source PDKs are rather questionable and a serious problem 
+for circuit designers. 
+Bad models can result in tremendous follow-up costs due to re-design.&lt;&#x2F;p&gt;
+&lt;p&gt;If you need help with model parameter extraction, do not hesitate to reach out to &lt;a href=&quot;https:&#x2F;&#x2F;semimod.de&#x2F;&quot;&gt;SemiMod&lt;&#x2F;a&gt; and 
+we may discuss potential collaboration options.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;who-should-i-contact-if-i-have-problems-questions-or-feature-requests&quot;&gt;Who should I contact if I have problems, questions or feature requests?&lt;&#x2F;h3&gt;
+&lt;p&gt;You can post all questions, bugs or feature requests on the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;pascalkuthe&#x2F;OpenVAF&quot;&gt;OpenVAF Git repository&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Contributing and Support</title>
+		<published>2022-12-01T18:10:00+00:00</published>
+		<updated>2022-12-01T18:10:00+00:00</updated>
+		<link rel="alternate" href="https://openvaf.semimod.de/docs/help/how-to-contribute/" type="text/html"/>
+		<id>https://openvaf.semimod.de/docs/help/how-to-contribute/</id>
+		<content type="html">&lt;h1 id=&quot;contributing-and-support&quot;&gt;Contributing and Support&lt;&#x2F;h1&gt;
+&lt;p&gt;OpenVAF development takes place on &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;pascalkuthe&#x2F;OpenVAF&quot;&gt;Github&lt;&#x2F;a&gt;.
+If you run into problems, please open an &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;pascalkuthe&#x2F;OpenVAF&#x2F;issues&quot;&gt;issue&lt;&#x2F;a&gt;.
+Everyone is invited to contribute to the project by forking it and opening a &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;pascalkuthe&#x2F;OpenVAF&#x2F;pulls&quot;&gt;pull request&lt;&#x2F;a&gt;.
+Development related details can be found in the README of the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;pascalkuthe&#x2F;OpenVAF&quot;&gt;github repository&lt;&#x2F;a&gt;.
+You are invited to ask questions in &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;pascalkuthe&#x2F;OpenVAF&#x2F;discussions&quot;&gt;discussions&lt;&#x2F;a&gt;, create pull requests and report bugs. &lt;&#x2F;p&gt;
+&lt;p&gt;OSDI support for &lt;code&gt;ngspice&lt;&#x2F;code&gt; is maintained in the ngspice repo &lt;a href=&quot;https:&#x2F;&#x2F;ngspice.sourceforge.io&#x2F;&quot;&gt;here&lt;&#x2F;a&gt;.
+The OSDI integration can be found in &lt;code&gt;src&#x2F;osdi&lt;&#x2F;code&gt;.
+Problems that occur during simulation instead of during compilation should be reported to the &lt;a href=&quot;https:&#x2F;&#x2F;sourceforge.net&#x2F;p&#x2F;ngspice&#x2F;bugs&#x2F;&quot;&gt;ngspice bugtracker&lt;&#x2F;a&gt;.
+If the problem turns out to be caused by OpenVAF it will be moved to the OpenVAF bug tracker.&lt;&#x2F;p&gt;
+&lt;!-- * The **OSDI** interface definition is maintained [here](https:&#x2F;&#x2F;gitlab.com&#x2F;mario.k&#x2F;osdi) and is summarized [here](&#x2F;osdi&#x2F;osdi_v0p3.pdf). --&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Integration Service</title>
+		<published>2022-12-01T18:10:00+00:00</published>
+		<updated>2022-12-01T18:10:00+00:00</updated>
+		<link rel="alternate" href="https://openvaf.semimod.de/docs/help/integration/" type="text/html"/>
+		<id>https://openvaf.semimod.de/docs/help/integration/</id>
+		<content type="html">&lt;h2 id=&quot;integration-service&quot;&gt;Integration Service&lt;&#x2F;h2&gt;
+&lt;p&gt;We can help you to integrate OpenVAF into your simulator and help you obtain state-of-the-art Verilog-A support. 
+We can implement a compatibility layer for &lt;a href=&quot;..&#x2F;..&#x2F;details&#x2F;osdi&quot;&gt;OSDI interface&lt;&#x2F;a&gt; or even offer fully customized solutions.&lt;&#x2F;p&gt;
+&lt;p&gt;Feel free to contact us at info@semimod.de.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>OSDI - Simulator Interface</title>
+		<published>2022-12-01T08:00:00+00:00</published>
+		<updated>2022-12-01T08:00:00+00:00</updated>
+		<link rel="alternate" href="https://openvaf.semimod.de/docs/details/osdi/" type="text/html"/>
+		<id>https://openvaf.semimod.de/docs/details/osdi/</id>
+		<content type="html">&lt;h1 id=&quot;osdi-simulator-interface&quot;&gt;OSDI - Simulator Interface&lt;&#x2F;h1&gt;
+&lt;p&gt;OpenVAF generates shared objects that can be loaded by circuit simulators at run-time. 
+To ensure compatibility with a wide variety of simulators SemiMod has developed 
+a &lt;strong&gt;simulator independent&lt;&#x2F;strong&gt; interface called OSDI (&lt;strong&gt;O&lt;&#x2F;strong&gt;pen &lt;strong&gt;S&lt;&#x2F;strong&gt;ource &lt;strong&gt;D&lt;&#x2F;strong&gt;evice &lt;strong&gt;I&lt;&#x2F;strong&gt;nterface).
+This interface is very flexible and allows efficient integration with a wide variety of different simulators.
+As a result it can support both modern harmonic balance solvers and traditional SPICE based engines.
+The interface is described in &lt;a href=&quot;&#x2F;osdi&#x2F;osdi_v0p3.pdf&quot;&gt;the OSDI manual&lt;&#x2F;a&gt;.
+An implementation that bridges the internal spice API and OSDI has been added to &lt;code&gt;ngspice&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;!-- &lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;osdi.svg&quot; style=&#x27;height: auto; width: 100%&#x27;&#x2F;&gt; --&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>User Interface</title>
+		<published>2022-12-01T08:00:00+00:00</published>
+		<updated>2022-12-01T08:00:00+00:00</updated>
+		<link rel="alternate" href="https://openvaf.semimod.de/docs/details/ui/" type="text/html"/>
+		<id>https://openvaf.semimod.de/docs/details/ui/</id>
+		<content type="html">&lt;div class=&quot;wrap container&quot; role=&quot;document&quot;&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;section class=&quot;section container-fluid mt-n3 pb-3&quot;&gt;
+      &lt;div class=&quot;row justify-content-center&quot;&gt;
+        &lt;div class=&quot;row justify-content-center&quot;&gt;
+					&lt;div class=&quot;col-md col-lg col-xxl&quot;&gt;
+						&lt;article&gt;
+							&lt;h1 class=&quot;text-center&quot;&gt;Under Construction&lt;&#x2F;h1&gt;
+							&lt;p class=&quot;text-center&quot;&gt;This page is not yet complete.&lt;&#x2F;p&gt;
+						&lt;&#x2F;article&gt;
+					&lt;&#x2F;div&gt;
+				&lt;&#x2F;div&gt;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;section&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Verilog-A Standard Compliance</title>
+		<published>2022-12-01T08:00:00+00:00</published>
+		<updated>2022-12-01T08:00:00+00:00</updated>
+		<link rel="alternate" href="https://openvaf.semimod.de/docs/details/verilog-a-standard/" type="text/html"/>
+		<id>https://openvaf.semimod.de/docs/details/verilog-a-standard/</id>
+		<content type="html">&lt;div class=&quot;wrap container&quot; role=&quot;document&quot;&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;section class=&quot;section container-fluid mt-n3 pb-3&quot;&gt;
+      &lt;div class=&quot;row justify-content-center&quot;&gt;
+        &lt;div class=&quot;row justify-content-center&quot;&gt;
+					&lt;div class=&quot;col-md col-lg col-xxl&quot;&gt;
+						&lt;article&gt;
+							&lt;h1 class=&quot;text-center&quot;&gt;Preview&lt;&#x2F;h1&gt;
+							&lt;p class=&quot;text-center&quot;&gt;This page is not yet fully complete and is missing some content.&lt;&#x2F;p&gt;
+						&lt;&#x2F;article&gt;
+					&lt;&#x2F;div&gt;
+				&lt;&#x2F;div&gt;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;section&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;h1 id=&quot;verilog-a-standard-compliance&quot;&gt;Verilog-A Standard Compliance&lt;&#x2F;h1&gt;
+&lt;p&gt;OpenVAF implements the &lt;a href=&quot;https:&#x2F;&#x2F;www.accellera.org&#x2F;images&#x2F;downloads&#x2F;standards&#x2F;v-ams&#x2F;VAMS-LRM-2-4.pdf&quot;&gt;Verilog-AMS Language Reference Manual 2.4.0&lt;&#x2F;a&gt; language standard.
+The main goal is to support the analog (Verilog-A) subset defined within this standard, digital models can not (yet) be parsed.
+Strict adherence to the language standard was taken very seriously during development to ensure that all standard compliant models 
+are supported.&lt;&#x2F;p&gt;
+&lt;p&gt;Not all features of the Verilog-A standard are implemented yet, see our &lt;a href=&quot;..&#x2F;roadmap&quot;&gt;roadmap&lt;&#x2F;a&gt; for more details.
+However, the subset of the standard that is used by compact models (and more) is already implemented.
+Therefore, OpenVAF has been released as this already suffices for all standard compact models. &lt;&#x2F;p&gt;
+&lt;p&gt;To better facilitating compact modeling a few additional features were added to OpenVAF.
+This page documents all &lt;strong&gt;differences&lt;&#x2F;strong&gt; between the language subset implemented by OpenVAF and the Verilog-A subset of the 
+&lt;a href=&quot;https:&#x2F;&#x2F;www.accellera.org&#x2F;images&#x2F;downloads&#x2F;standards&#x2F;v-ams&#x2F;VAMS-LRM-2-4.pdf&quot;&gt;Verilog-AMS Language Reference Manual&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;incomplete-features&quot;&gt;Incomplete Features&lt;&#x2F;h2&gt;
+&lt;p&gt;Some features in the &lt;a href=&quot;https:&#x2F;&#x2F;www.accellera.org&#x2F;images&#x2F;downloads&#x2F;standards&#x2F;v-ams&#x2F;VAMS-LRM-2-4.pdf&quot;&gt;Verilog-AMS Language Reference Manual&lt;&#x2F;a&gt; are aimed at behavioral modeling or describing 
+entire circuits.
+The following features are not yet implemented by OpenVAF.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;analog-event-control-statements&quot;&gt;(Analog) Event Control Statements&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;strong&gt;Standard Section&lt;&#x2F;strong&gt; 5.10 Analog event control statements &lt;br&gt;
+&lt;strong&gt;Status&lt;&#x2F;strong&gt; Syntax for events other than &lt;code&gt;inital_step&lt;&#x2F;code&gt; and &lt;code&gt;final_step&lt;&#x2F;code&gt; can&#x27;t be parsed&lt;&#x2F;p&gt;
+&lt;p&gt;The Verilog-AMS standard allows to mark statements with event control.
+Such statements are only executed when the indicated event has occurred.
+Most events are usually not used in compact models as they may introduce discontinuities.
+OpenVAF currently supports the &lt;code&gt;inital_step&lt;&#x2F;code&gt; and &lt;code&gt;final_step&lt;&#x2F;code&gt; events for initialization of code.
+These events are executed on every iteration and time step.
+Historically &lt;code&gt;inital_step&lt;&#x2F;code&gt; was used in compact models to mark model initialization code.
+OpenVAF automatically separates initialization code and therefore &lt;code&gt;intial_step&lt;&#x2F;code&gt; can be ignored. &lt;&#x2F;p&gt;
+&lt;h4 id=&quot;examples&quot;&gt;Examples&lt;&#x2F;h4&gt;
+&lt;p&gt;There are four kinds of events specified in the standard.
+They are listed below with an example and an indication to show whether OpenVAF currently supports this syntax:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Global events (&lt;code&gt;@(initial_step)&lt;&#x2F;code&gt;, &lt;code&gt;@(final_step)&lt;&#x2F;code&gt;) &lt;em&gt;supported&lt;&#x2F;em&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Named (manually triggered) events (&lt;code&gt;@foo&lt;&#x2F;code&gt;) &lt;em&gt;not supported&lt;&#x2F;em&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Monitored events (&lt;code&gt;@(cross(V(smpl) - thresh, dir))&lt;&#x2F;code&gt;) &lt;em&gt;not supported&lt;&#x2F;em&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Or events (a combination of multiple other events) &lt;code&gt;@(initial_step or cross(V(smpl)-2.5,+1))&lt;&#x2F;code&gt; &lt;em&gt;not supported&lt;&#x2F;em&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;arithmetic-bit-shift&quot;&gt;Arithmetic Bit Shift&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;strong&gt;Standard Section&lt;&#x2F;strong&gt; 4.2.11 Shift Operators &lt;br&gt;
+&lt;strong&gt;Status&lt;&#x2F;strong&gt; Arithmetic Shift Operator can not be parsed (no change planned)&lt;&#x2F;p&gt;
+&lt;p&gt;Arithmetic bit shifts are not allowed in analog blocks, yet they are a sub-set of the Verilog-AMS standard that is not excluded for Verilog-A. 
+To avoid having to maintain unused code, the arithmetic bit shift operator is not supported by the compiler.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;additional-features&quot;&gt;Additional Features&lt;&#x2F;h2&gt;
+&lt;p&gt;Some features that are not part of the Verilog-A standard have been added to OpenVAF.
+The need for these features arose when OpenVAF was used in practice for compact model compilation and parameter, 
+extraction. Below is a table that lists these additional features and a corresponding example.&lt;&#x2F;p&gt;
+&lt;p&gt;In the following section each feature -including a motivation- is explained in detail.
+For making it easy to remain standard-compliance, 
+OpenVAF emits a warning by default when any one of the listed features is used.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;symbolic-derivatives-with-respect-to-temperature&quot;&gt;Symbolic Derivatives with respect to Temperature&lt;&#x2F;h3&gt;
+&lt;p&gt;The &lt;a href=&quot;https:&#x2F;&#x2F;www.accellera.org&#x2F;images&#x2F;downloads&#x2F;standards&#x2F;v-ams&#x2F;VAMS-LRM-2-4.pdf&quot;&gt;Verilog-AMS Language Reference Manual&lt;&#x2F;a&gt; allows calculating derivatives with the &lt;code&gt;ddx&lt;&#x2F;code&gt; analog filter.
+However, only derivatives w.r.t. node voltages &lt;code&gt;V(node)&lt;&#x2F;code&gt; or branch currents (&lt;code&gt;I(branch)&lt;&#x2F;code&gt;) are allowed.
+For parameter extraction derivatives w.r.t. ambient Temperature (&lt;code&gt;$temperature&lt;&#x2F;code&gt;) may be of interest for extracting temperature dependencies.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;guide&quot;&gt;Guide&lt;&#x2F;h4&gt;
+&lt;p&gt;The behavior of the &lt;code&gt;ddx&lt;&#x2F;code&gt; analog filter is extended so that &lt;code&gt;ddx(foo,$temperature)&lt;&#x2F;code&gt; is valid.
+When such a derivative is evaluated, all voltages and currents are assumed to be independent of temperature. 
+Apart from this the &lt;code&gt;ddx&lt;&#x2F;code&gt; filter behaves identical as when used with nodes&#x2F;branches, 
+the derivative of the temperature is calculated by repeated application of the chain rule.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;examples-1&quot;&gt;Examples&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;verilog&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-verilog &quot;&gt;&lt;code class=&quot;language-verilog&quot; data-lang=&quot;verilog&quot;&gt;&lt;span&gt;x = ddx($temperature,$temperature)
+&lt;&#x2F;span&gt;&lt;span&gt;y = ddx(v(node),$temperature)
+&lt;&#x2F;span&gt;&lt;span&gt;z = ddx(i(branch),$temperature)
+&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;&#x2F; x = 1, y=z=0
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;foo = 20*exp($temperature&#x2F;10)+V(node)
+&lt;&#x2F;span&gt;&lt;span&gt;bar = ddx(foo,$temperature)
+&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;&#x2F; bar = 2*exp($temperature&#x2F;10)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;symbolic-derivatives-with-respect-to-voltages&quot;&gt;Symbolic Derivatives with respect to Voltages&lt;&#x2F;h3&gt;
+&lt;p&gt;Equations of compact models usually depend on voltage differences &lt;code&gt;V(a,b)&lt;&#x2F;code&gt; (or equivalently branch voltages &lt;code&gt;V(br_ab)&lt;&#x2F;code&gt;).
+The derivatives of these model Equations are required&#x2F;useful during parameter extraction and for use in circuit simulators. However, Verilog-A only allows derivatives w.r.t. to node potentials. &lt;&#x2F;p&gt;
+&lt;p&gt;Usually, such voltage derivatives are instead calculated with respect to the derivative of the voltage&#x27;s 
+upper node &lt;code&gt;ddx(foo,V(a,b) = ddx(foo,V(a))&lt;&#x2F;code&gt;.
+This approach fails when an equation depends on multiple branch voltages, as is demonstrated by the example below.
+For ensuring correct behavior it is therefore more desirable to calculate the derivative by &lt;code&gt;V(a,b)&lt;&#x2F;code&gt; directly.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;verilog&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-verilog &quot;&gt;&lt;code class=&quot;language-verilog&quot; data-lang=&quot;verilog&quot;&gt;&lt;span&gt;foo = V(a,b) + V(c,a)
+&lt;&#x2F;span&gt;&lt;span&gt;dfoo1 = ddx(foo, V(a))
+&lt;&#x2F;span&gt;&lt;span&gt;dfoo2 = ddx(foo,V(a,b))
+&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;&#x2F; dfoo1 = 0, dfoo2 = 1
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;guide-1&quot;&gt;Guide&lt;&#x2F;h4&gt;
+&lt;p&gt;The behavior of the &lt;code&gt;ddx&lt;&#x2F;code&gt; analog filter is extended so that &lt;code&gt;ddx(foo,V(node1,node2))&lt;&#x2F;code&gt; is valid.
+Branch currents are treated as constants. Voltage derivatives w.r.t. &lt;code&gt;V(node1,node2)&lt;&#x2F;code&gt; are implemented as follows:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;The derivative of &lt;code&gt;V(node1,node2)&lt;&#x2F;code&gt; is 1&lt;&#x2F;li&gt;
+&lt;li&gt;The derivative of &lt;code&gt;V(node2,node1)&lt;&#x2F;code&gt; is -1&lt;&#x2F;li&gt;
+&lt;li&gt;The derivative of &lt;code&gt;V(branchX)&lt;&#x2F;code&gt; is 1 if the branches nodes are &lt;code&gt;node1&lt;&#x2F;code&gt; and &lt;code&gt;node2&lt;&#x2F;code&gt;: &lt;code&gt;branch (node1, node2) branchX&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;The derivative of &lt;code&gt;V(branchX)&lt;&#x2F;code&gt; is -1 if the branches nodes are &lt;code&gt;node2&lt;&#x2F;code&gt; and &lt;code&gt;node1&lt;&#x2F;code&gt;: &lt;code&gt;branch (node2, node1) branchX&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;In all other cases the derivative is 0&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Otherwise, the &lt;code&gt;ddx&lt;&#x2F;code&gt; filter behaves identical as when used with nodes&#x2F;branches.
+The derivative of the argument is calculated by repeated application of the chain rule.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;example&quot;&gt;Example&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;verilog&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-verilog &quot;&gt;&lt;code class=&quot;language-verilog&quot; data-lang=&quot;verilog&quot;&gt;&lt;span&gt;branch (b,e) br_be;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;begin
+&lt;&#x2F;span&gt;&lt;span&gt;    Vt = $vt;
+&lt;&#x2F;span&gt;&lt;span&gt;    Ib = Isbc * exp(V(b,c)&#x2F;Vt) + Isbe * exp(V(br_be)&#x2F;Vt);
+&lt;&#x2F;span&gt;&lt;span&gt;    gbc = ddx(Ib, V(b,c)); &#x2F;&#x2F; gbc =  Isbc&#x2F;Vt*exp(V(b,c)&#x2F;Vt)
+&lt;&#x2F;span&gt;&lt;span&gt;    gbe = ddx(Ib, V(b,e)); &#x2F;&#x2F; gbe =  Isbe&#x2F;Vt*exp(V(b,c)&#x2F;Vt)
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;end
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;technical-background&quot;&gt;Technical Background&lt;&#x2F;h4&gt;
+&lt;p&gt;For performance reasons OpenVAF uses voltage derivatives instead of potential derivatives to calculate the Jacobian matrix entries.
+Consider a network with two nodes &lt;code&gt;a&lt;&#x2F;code&gt; and &lt;code&gt;b&lt;&#x2F;code&gt; which are connected by a single branch &lt;code&gt;br_ab&lt;&#x2F;code&gt; whose current only depends on 
+the voltage difference between the two nodes. 
+The matrix entries can then be calculated as follows: &lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;verilog&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-verilog &quot;&gt;&lt;code class=&quot;language-verilog&quot; data-lang=&quot;verilog&quot;&gt;&lt;span&gt;ddx(I(&amp;lt;a&amp;gt;),V(a))=ddx(I(&amp;lt;b&amp;gt;),V(b)) = ddx(I(br_ab),V(a,b))
+&lt;&#x2F;span&gt;&lt;span&gt;ddx(I(&amp;lt;a&amp;gt;),V(b))= ddx(I(&amp;lt;a&amp;gt;),V(b)) = - ddx(I(br_ab),V(a,b))
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Almost all equations in compact models have above form. Using voltage differences effectively enables to reduce the number of derivatives by a factor of 4.
+Considering how complicated and therefore computationally expensive such derivatives can be, 
+it is unlikely even modern compilers could optimize these duplications away completely.
+Therefore, it is preferable for OpenVAF to calculate derivatives using voltage difference and then calculate the Matrix entries from the results.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Introduction</title>
+		<published>2022-12-01T08:00:00+00:00</published>
+		<updated>2022-12-01T08:00:00+00:00</updated>
+		<link rel="alternate" href="https://openvaf.semimod.de/docs/getting-started/introduction/" type="text/html"/>
+		<id>https://openvaf.semimod.de/docs/getting-started/introduction/</id>
+		<content type="html">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;circuit-simulation&quot;&gt;Circuit Simulation&lt;&#x2F;h2&gt;
+&lt;p&gt;Circuit simulators play a critical role in the design of electrical circuits.
+Accurate simulations enable circuit designers to validate circuit behavior before actual fabrication happens, 
+potentially saving &lt;strong&gt;significant re-design costs.&lt;&#x2F;strong&gt;
+The simulation of a circuit critically depends on the so-called compact models and therefore:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;accuracy of the compact-model equations&lt;&#x2F;strong&gt; &lt;&#x2F;li&gt;
+&lt;li&gt;The quality of the &lt;strong&gt;model parameters&lt;&#x2F;strong&gt; &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;compact-models&quot;&gt;Compact Models&lt;&#x2F;h2&gt;
+&lt;p&gt;Compact models predict the device &lt;strong&gt;terminal characteristics&lt;&#x2F;strong&gt; by means of computationally inexpensive equations. 
+With increasingly advanced technologies, compact models have been &lt;strong&gt;growing significantly in complexity&lt;&#x2F;strong&gt;. 
+At the same time an increasingly diverse set of technologies is offered to designers, requiring &lt;strong&gt;specific compact models for each kind of electron device&lt;&#x2F;strong&gt;. &lt;&#x2F;p&gt;
+&lt;p&gt;The complexity of compact models has made the manual integration into simulators &lt;strong&gt;a tedious, error-prone and therefore expensive&lt;&#x2F;strong&gt; task.
+One reason for this is that not only the model equations have to be implemented, but also their symbolic derivatives. 
+Numeric derivatives are not an option because they are orders of magnitude slower to compute than analytical derivatives and can introduce convergence problems due to inaccuracies.
+It is not uncommon - even in commercial tools - to find model &lt;strong&gt;implementation bugs&lt;&#x2F;strong&gt; or to observe &lt;strong&gt;convergence problems&lt;&#x2F;strong&gt; that result 
+from incorrectly implemented derivatives. 
+Some simulators with no or limited Verilog-A integration &lt;strong&gt;do not implement certain compact-models and can therefore not be used to simulate some processes at all&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Manually implemented compact models may &lt;strong&gt;differ between simulators&lt;&#x2F;strong&gt; since EDA vendors often rename parameters or alter particular model equations.
+Due to these simulator specific peculiarities, PDKs can usually only be used by a few specific simulators.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;verilog-a&quot;&gt;Verilog-A&lt;&#x2F;h2&gt;
+&lt;p&gt;Verilog-A has been developed to address these problems and has become the &lt;a href=&quot;https:&#x2F;&#x2F;si2.org&#x2F;standard-models&#x2F;&quot;&gt;de-facto standard&lt;&#x2F;a&gt; for developing and distributing compact models. 
+It allows implementing compact models via a &lt;strong&gt;simulator independent&lt;&#x2F;strong&gt; and standardized language.
+&lt;strong&gt;Verilog-A compilers&lt;&#x2F;strong&gt; can translate these models to machine code and allow simulators to use these models &lt;strong&gt;without manually implementing them&lt;&#x2F;strong&gt;. &lt;&#x2F;p&gt;
+&lt;p&gt;Verilog-A enables...&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;model development and customization&lt;&#x2F;strong&gt; by allowing to quickly modify the model equations without having to worry about model implementation details. &lt;&#x2F;li&gt;
+&lt;li&gt;implementing &lt;strong&gt;behavioral or data-driven models&lt;&#x2F;strong&gt;, or even entire circuits.&lt;&#x2F;li&gt;
+&lt;li&gt;inherent &lt;strong&gt;portability between simulators&lt;&#x2F;strong&gt; for both models and PDKs that would not be possible with traditional netlist-based formats.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Model development and customization is necessary for advanced technologies and applications, for example quantum computing, 
+where existing models cannot provide satisfactory results and must be adjusted. 
+It also enables research and development.&lt;&#x2F;p&gt;
+&lt;!-- The difficulty of incorporating Verilog-A models into circuit simulators has been overcome 
+with the help of specialized tools such as ADMS, which should eliminate the need for implementing all model
+equations and their derivatives into simulators manually.
+
+ADMS employs a **transpilation** approach that has significant drawbacks:
+
+* The use of an intermediate language prohibits code optimization that would otherwise be possible when using an actual compiler. 
+* Usually, only a sub-set of the Verilog-A standard is implemented.
+* Functionality is highly simulator dependent, since the transpilation files have to be re-defined for each simulator. 
+
+Furthermore, ADMS is not officially supported anymore and implementations found in popular open-source circuit simulators such as Ngspice and 
+Xyce are buggy. 
+Verilog-A compiled models are usually slower than hand implemented models and most commercial tools still manually implement each model. 
+
+**OpenVAF** has been developed to overcome these issues by employing ...
+
+* ... compilation of Verilog-A **directly to machine code** using techniques that are standard in the field of compiler construction. 
+* ... state-of-the-art software development techniques such as **automated testing** and proper **version control**.
+* ... definition of a **flexible interface to the compiled machine code** that can be implemented into circuit simulators. 
+* ... use of standard libraries for compiler construction for enabling **user friendly error messages**. --&gt;</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Installation</title>
+		<published>2021-05-01T08:20:00+00:00</published>
+		<updated>2021-05-01T08:20:00+00:00</updated>
+		<link rel="alternate" href="https://openvaf.semimod.de/docs/getting-started/installation/" type="text/html"/>
+		<id>https://openvaf.semimod.de/docs/getting-started/installation/</id>
+		<content type="html">&lt;h1 id=&quot;installation&quot;&gt;Installation&lt;&#x2F;h1&gt;
+&lt;p&gt;OpenVAF is &lt;a href=&quot;..&#x2F;..&#x2F;..&#x2F;download&quot;&gt;available&lt;&#x2F;a&gt; as a pre-compiled standalone executable for 
+Windows and Linux.
+Compiling OpenVAF yourself is possible but not recommended as setting up the dependencies is difficult at the moment.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;system-requirements&quot;&gt;System Requirements&lt;&#x2F;h2&gt;
+&lt;p&gt;OpenVAF supports:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;All Unix systems released from RHEL 7 on. &lt;&#x2F;li&gt;
+&lt;li&gt;Windows systems from Windows 10 on. &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Note that OSX is currently not supported.
+If you are interested in OSX support reach out to us.&lt;&#x2F;p&gt;
+&lt;p&gt;OpenVAF requires that a &lt;strong&gt;linker is installed&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;On Linux the &lt;code&gt;ld&lt;&#x2F;code&gt; linker must be available in the path (typically already installed together with gcc). &lt;&#x2F;li&gt;
+&lt;li&gt;On Windows the MSVC build tools must be downloaded and installed &lt;a href=&quot;https:&#x2F;&#x2F;visualstudio.microsoft.com&#x2F;downloads&#x2F;?q=build+tools#build-tools-for-visual-studio-2022&quot;&gt;from the microsoft website&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;pre-compiled-executable&quot;&gt;Pre-compiled Executable&lt;&#x2F;h2&gt;
+&lt;p&gt;Pre-compiled OpenVAF executables for all supported platforms &lt;a href=&quot;..&#x2F;..&#x2F;..&#x2F;download&quot;&gt;can be downloaded here&lt;&#x2F;a&gt;. 
+After download, place the &lt;strong&gt;openvaf&lt;&#x2F;strong&gt; executable in your PATH, so that it can be called from everywhere. &lt;&#x2F;p&gt;
+&lt;p&gt;Try to run &lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;openvaf --help
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;in a terminal and see if the executable is found.&lt;&#x2F;p&gt;
+&lt;div class=&quot;card&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+   &lt;i&gt;
+  &lt;strong&gt;Note:&lt;&#x2F;strong&gt; Support for OSDI&#x2F;OpenVAF is available starting with the Ngspice-39 release. Earlier versions of Ngspice cannot be used.
+&lt;p&gt;On Linux you can either install Ngspice with your package manager (if ngspice-39 is already available). Alternatively you can build Ngspice from source as follows:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; clone git:&#x2F;&#x2F;git.code.sf.net&#x2F;p&#x2F;ngspice&#x2F;ngspice
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;cd&lt;&#x2F;span&gt;&lt;span&gt; ngspice
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; .&#x2F;compile_linux.sh
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Note that Ngspice has dependencies that must be installed on the system.
+Consult the &lt;a href=&quot;https:&#x2F;&#x2F;ngspice.sourceforge.io&#x2F;&quot;&gt;Ngspice website&lt;&#x2F;a&gt; for details regarding Ngspice installation.&lt;&#x2F;p&gt;
+&lt;p&gt;For Windows a precompiled version is &lt;a href=&quot;https:&#x2F;&#x2F;ngspice.sourceforge.io&#x2F;download.html&quot;&gt;available on the Ngspice website&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;i&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;h2 id=&quot;compilation&quot;&gt;Compilation&lt;&#x2F;h2&gt;
+&lt;p&gt;Users can compile OpenVAF themselves. 
+This is not recommended for users that do not want to actively take part in the development of OpenVAF
+since the build process is quite involved because of its &lt;strong&gt;LLVM dependency&lt;&#x2F;strong&gt;. &lt;&#x2F;p&gt;
+&lt;p&gt;The compilation is detailed in the &lt;strong&gt;README.md&lt;&#x2F;strong&gt; of the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;pascalkuthe&#x2F;OpenVAF&quot;&gt;OpenVAF repository&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Usage</title>
+		<published>2021-05-01T08:20:00+00:00</published>
+		<updated>2021-05-01T08:20:00+00:00</updated>
+		<link rel="alternate" href="https://openvaf.semimod.de/docs/getting-started/usage/" type="text/html"/>
+		<id>https://openvaf.semimod.de/docs/getting-started/usage/</id>
+		<content type="html">&lt;h1 id=&quot;verilog-a-compilation&quot;&gt;Verilog-A Compilation&lt;&#x2F;h1&gt;
+&lt;p&gt;Once OpenVAF is installed, compilation of Verilog-A models to an OSDI library suitable for circuit simulation is easy. 
+Simply run &lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;openvaf &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;file&amp;gt;.va
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;in a terminal and the compilation should complete quickly.
+OpenVAF offers options which are displayed when executing &lt;code&gt;openvaf --help&lt;&#x2F;code&gt;, but these won&#x27;t usually be required.&lt;&#x2F;p&gt;
+&lt;p&gt;If there are no errors in the Verilog-A source, a file called &lt;code&gt;&amp;lt;file&amp;gt;.osdi&lt;&#x2F;code&gt; will be generated that can be used by 
+circuit simulators that implement the &lt;a href=&quot;..&#x2F;..&#x2F;details&#x2F;osdi&quot;&gt;OSDI interface&lt;&#x2F;a&gt;, such as Ngspice.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;ngspice-integration&quot;&gt;Ngspice Integration&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;loading-osdi-files&quot;&gt;Loading OSDI Files&lt;&#x2F;h2&gt;
+&lt;p&gt;Once you have a compiled an OSDI file as described above, it can be loaded by Ngspice using a simple Ngspice simulator command.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;osdi &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;path&amp;gt;.osdi
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To load a model in a netlist, one must add &lt;code&gt;pre&lt;&#x2F;code&gt; to the  &lt;code&gt;osdi&lt;&#x2F;code&gt; command for ensuring that the model is loaded before the netlist is resolved:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;.control
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;pre_osdi &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;file&amp;gt;.osdi
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;*other&lt;&#x2F;span&gt;&lt;span&gt; control commands
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;.endc
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;The path to the file can be an absolute path like &lt;code&gt;&#x2F;home&#x2F;folder&#x2F;example.osdi&lt;&#x2F;code&gt;. &lt;&#x2F;li&gt;
+&lt;li&gt;The path can be a relative path like &lt;code&gt;folder&#x2F;example.osdi&lt;&#x2F;code&gt;, it is then resolved in the netlist directory.&lt;&#x2F;li&gt;
+&lt;li&gt;You can also omit the path and just write &lt;code&gt;example.osdi&lt;&#x2F;code&gt; if the file is located in the &lt;code&gt;lib&#x2F;ngspice&lt;&#x2F;code&gt; directory. To activate this feature you must comment out &lt;code&gt;unset osdi_enabled&lt;&#x2F;code&gt; in &lt;code&gt;share&#x2F;ngspice&#x2F;scripts&#x2F;spinit&lt;&#x2F;code&gt; . This method is recommended if you want to make this model permanently available to Ngspice. &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;using-verilog-a-modules&quot;&gt;Using Verilog-A Modules&lt;&#x2F;h2&gt;
+&lt;p&gt;Once an OSDI file has been loaded, Verilog-A modules can be initiated in a netlist as shown below.
+Note that the &lt;code&gt;N&lt;&#x2F;code&gt; prefix of the device name is important for ensuring correct behavior.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;.model &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;model name&amp;gt; &amp;lt;Verilog-A module name&amp;gt; &amp;lt;model parameters&amp;gt;*
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;N&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;instance name&amp;gt; &amp;lt;nodes&amp;gt;* &amp;lt;model name&amp;gt; &amp;lt;instance parameters&amp;gt;*
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;A minimal example netlist that creates a single instance of the HICUM&#x2F;L2 model is shown below.
+Further examples can be found &lt;a href=&quot;..&#x2F;examples&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;OSDI&lt;&#x2F;span&gt;&lt;span&gt; Example
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;.model&lt;&#x2F;span&gt;&lt;span&gt; hicum_model hicuml2va c10=1e-30
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;N1&lt;&#x2F;span&gt;&lt;span&gt; C B E S hicum_model
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;.control
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;pre_osdi&lt;&#x2F;span&gt;&lt;span&gt; hicumL2V3p0p0.osdi
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;.endc
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;.end
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Aaran Xu</title>
+		<published>2021-04-01T08:50:45+00:00</published>
+		<updated>2021-04-01T08:50:45+00:00</updated>
+		<link rel="alternate" href="https://openvaf.semimod.de/authors/aaran-xu/" type="text/html"/>
+		<id>https://openvaf.semimod.de/authors/aaran-xu/</id>
+		<content type="html">&lt;p&gt;Creator of &lt;strong&gt;AdiDoks&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;aaranxu&quot;&gt;@aaranxu&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>
