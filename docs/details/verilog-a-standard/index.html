@@ -1,0 +1,99 @@
+<!doctype html><html lang=en-US><head><meta charset=utf-8><meta content="ie=edge" http-equiv=x-ua-compatible><meta content="width=device-width,initial-scale=1,shrink-to-fit=no" name=viewport><link as=font href=https://openvaf.semimod.de/fonts/vendor/jost/jost-v4-latin-regular.woff2 rel=preload type=font/woff2><link as=font href=https://openvaf.semimod.de/fonts/vendor/jost/jost-v4-latin-700.woff2 rel=preload type=font/woff2><link href=https://openvaf.semimod.de/main.css rel=stylesheet><meta content="index, follow" name=robots><meta content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" name=googlebot><meta content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" name=bingbot><title>Verilog-A Standard Compliance | OpenVAF</title><meta content="Contribute to AdiDoks, improve documentation, or submit to showcase." name=description><link href=https://openvaf.semimod.de/docs/details/verilog-a-standard/ rel=canonical><script type=application/ld+json>
+  {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+          {
+            "@type": "ListItem",
+            "position":  1 ,
+            "name": "Home",
+            "item": "https://openvaf.semimod.de/"
+          },
+          
+          
+          {
+            "@type": "ListItem",
+            "position":  2 ,
+            "name": "Docs",
+            "item": "https://openvaf.semimod.de/docs/"
+          },
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+          
+          
+          {
+            "@type": "ListItem",
+            "position":  3 ,
+            "name": "Details",
+            "item": "https://openvaf.semimod.de/docs/details/"
+          },
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+          
+          {
+            "@type": "ListItem",
+            "position":  4 ,
+            "name": "Verilog A Standard",
+            "item": "https://openvaf.semimod.de/docs/details/verilog-a-standard/"
+          },
+        
+      
+    
+  }
+</script><meta content=#fff name=theme-color><link href=https://openvaf.semimod.de/apple-touch-icon.png rel=apple-touch-icon sizes=180x180><link href=https://openvaf.semimod.de/favicon-32x32.png rel=icon sizes=32x32 type=image/png><link href=https://openvaf.semimod.de/favicon-16x16.png rel=icon sizes=16x16 type=image/png><link href=https://openvaf.semimod.de/site.webmanifest rel=manifest><body class="docs single"><div class="header-bar fixed-top"></div><header class="navbar fixed-top navbar-expand-md navbar-light"><div class=container><input class="menu-btn order-0" id=menu-btn type=checkbox><label class="menu-icon d-md-none" for=menu-btn><span class=navicon></span></label><a class="navbar-brand order-1 order-md-0 me-auto" href=https://openvaf.semimod.de>OpenVAF</a><button aria-label="Toggle mode" class="btn btn-link order-2 order-md-4" id=mode type=button><span class=toggle-dark><svg class="feather feather-moon" viewbox="0 0 24 24" fill=none height=20 stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=2 width=20 xmlns=http://www.w3.org/2000/svg><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></span> <span class=toggle-light><svg class="feather feather-sun" viewbox="0 0 24 24" fill=none height=20 stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=2 width=20 xmlns=http://www.w3.org/2000/svg><circle cx=12 cy=12 r=5></circle><line x1=12 x2=12 y1=1 y2=3></line><line x1=12 x2=12 y1=21 y2=23></line><line x1=4.22 x2=5.64 y1=4.22 y2=5.64></line><line x1=18.36 x2=19.78 y1=18.36 y2=19.78></line><line x1=1 x2=3 y1=12 y2=12></line><line x1=21 x2=23 y1=12 y2=12></line><line x1=4.22 x2=5.64 y1=19.78 y2=18.36></line><line x1=18.36 x2=19.78 y1=5.64 y2=4.22></line></svg></span></button><ul class="navbar-nav fork-me order-3 order-md-5"><li class=nav-item><a class=nav-link href=https://github.com/pascalkuthe/openvaf><svg class="feather feather-github" viewbox="0 0 24 24" fill=none height=20 stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=2 width=20 xmlns=http://www.w3.org/2000/svg><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg><span class="ms-2 visually-hidden">GitHub</span></a></ul><div class="collapse navbar-collapse order-4 order-md-1"><ul class="navbar-nav main-nav me-auto order-5 order-md-2"><li class="nav-item docs active"><a class=nav-link href=https://openvaf.semimod.de/docs/getting-started/introduction/>Docs</a><li class=nav-item><a class=nav-link href=https://openvaf.semimod.de/download/>Downloads</a><li class=nav-item><a class=nav-link href=https://openvaf.semimod.de/blog/>Blog</a></ul><div class="break order-6 d-md-none"></div><form class="navbar-form flex-grow-1 order-7 order-md-3"><input aria-label="Search docs..." class="form-control is-search" placeholder="Search docs..." autocomplete=off id=userinput type=search><div class="shadow bg-white rounded" id=suggestions></div></form></div></div></header><div class="wrap container" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav aria-label="Main navigation" class=docs-links><h3>Getting Started</h3><ul class=list-unstyled><li><a class=docs-link href=https://openvaf.semimod.de/docs/getting-started/introduction/>Introduction</a><li><a class=docs-link href=https://openvaf.semimod.de/docs/getting-started/installation/>Installation</a><li><a class=docs-link href=https://openvaf.semimod.de/docs/getting-started/usage/>Usage</a><li><a class=docs-link href=https://openvaf.semimod.de/docs/getting-started/examples/>Examples</a></ul><h3>Details</h3><ul class=list-unstyled><li><a class=docs-link href=https://openvaf.semimod.de/docs/details/performance/>Performance</a><li><a class="docs-link active" href=https://openvaf.semimod.de/docs/details/verilog-a-standard/>Verilog-A Standard Compliance</a><li><a class=docs-link href=https://openvaf.semimod.de/docs/details/osdi/>OSDI - Simulator Interface</a><li><a class=docs-link href=https://openvaf.semimod.de/docs/details/compiler-internals/>Compiler Internals</a><li><a class=docs-link href=https://openvaf.semimod.de/docs/details/ui/>User Interface</a></ul><h3>Help</h3><ul class=list-unstyled><li><a class=docs-link href=https://openvaf.semimod.de/docs/help/faq/>FAQ</a><li><a class=docs-link href=https://openvaf.semimod.de/docs/help/compact-models/>Available compact models</a><li><a class=docs-link href=https://openvaf.semimod.de/docs/help/how-to-contribute/>Contributing and Support</a><li><a class=docs-link href=https://openvaf.semimod.de/docs/help/integration/>Integration Service</a></ul></nav></div><nav aria-label="Secondary navigation" class="docs-toc d-none d-xl-block col-xl-3"><div class=page-links><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=https://openvaf.semimod.de/docs/details/verilog-a-standard/#incomplete-features>Incomplete Features</a></li><ul><li><a href=https://openvaf.semimod.de/docs/details/verilog-a-standard/#analog-event-control-statements>(Analog) Event Control Statements</a><li><a href=https://openvaf.semimod.de/docs/details/verilog-a-standard/#arithmetic-bit-shift>Arithmetic Bit Shift</a></ul><li><a href=https://openvaf.semimod.de/docs/details/verilog-a-standard/#additional-features>Additional Features</a></li><ul><li><a href=https://openvaf.semimod.de/docs/details/verilog-a-standard/#symbolic-derivatives-with-respect-to-temperature>Symbolic Derivatives with respect to Temperature</a><li><a href=https://openvaf.semimod.de/docs/details/verilog-a-standard/#symbolic-derivatives-with-respect-to-voltages>Symbolic Derivatives with respect to Voltages</a></ul></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9"><div class="wrap container" role=document><div class=content><section class="section container-fluid mt-n3 pb-3"><div class="row justify-content-center"><div class="row justify-content-center"><div class="col-md col-lg col-xxl"><article><h1 class=text-center>Preview</h1><p class=text-center>This page is not yet fully complete and is missing some content.</article></div></div></div></section></div></div><h1 id=verilog-a-standard-compliance>Verilog-A Standard Compliance</h1><p>OpenVAF implements the <a href=https://www.accellera.org/images/downloads/standards/v-ams/VAMS-LRM-2-4.pdf>Verilog-AMS Language Reference Manual 2.4.0</a> language standard. The main goal is to support the analog (Verilog-A) subset defined within this standard, digital models can not (yet) be parsed. Strict adherence to the language standard was taken very seriously during development to ensure that all standard compliant models are supported.<p>Not all features of the Verilog-A standard are implemented yet, see our <a href=../roadmap>roadmap</a> for more details. However, the subset of the standard that is used by compact models (and more) is already implemented. Therefore, OpenVAF has been released as this already suffices for all standard compact models.<p>To better facilitating compact modeling a few additional features were added to OpenVAF. This page documents all <strong>differences</strong> between the language subset implemented by OpenVAF and the Verilog-A subset of the <a href=https://www.accellera.org/images/downloads/standards/v-ams/VAMS-LRM-2-4.pdf>Verilog-AMS Language Reference Manual</a>.<h2 id=incomplete-features>Incomplete Features</h2><p>Some features in the <a href=https://www.accellera.org/images/downloads/standards/v-ams/VAMS-LRM-2-4.pdf>Verilog-AMS Language Reference Manual</a> are aimed at behavioral modeling or describing entire circuits. The following features are not yet implemented by OpenVAF.<h3 id=analog-event-control-statements>(Analog) Event Control Statements</h3><p><strong>Standard Section</strong> 5.10 Analog event control statements <br> <strong>Status</strong> Syntax for events other than <code>inital_step</code> and <code>final_step</code> can't be parsed<p>The Verilog-AMS standard allows to mark statements with event control. Such statements are only executed when the indicated event has occurred. Most events are usually not used in compact models as they may introduce discontinuities. OpenVAF currently supports the <code>inital_step</code> and <code>final_step</code> events for initialization of code. These events are executed on every iteration and time step. Historically <code>inital_step</code> was used in compact models to mark model initialization code. OpenVAF automatically separates initialization code and therefore <code>intial_step</code> can be ignored.<h4 id=examples>Examples</h4><p>There are four kinds of events specified in the standard. They are listed below with an example and an indication to show whether OpenVAF currently supports this syntax:<ul><li>Global events (<code>@(initial_step)</code>, <code>@(final_step)</code>) <em>supported</em><li>Named (manually triggered) events (<code>@foo</code>) <em>not supported</em><li>Monitored events (<code>@(cross(V(smpl) - thresh, dir))</code>) <em>not supported</em><li>Or events (a combination of multiple other events) <code>@(initial_step or cross(V(smpl)-2.5,+1))</code> <em>not supported</em></ul><h3 id=arithmetic-bit-shift>Arithmetic Bit Shift</h3><p><strong>Standard Section</strong> 4.2.11 Shift Operators <br> <strong>Status</strong> Arithmetic Shift Operator can not be parsed (no change planned)<p>Arithmetic bit shifts are not allowed in analog blocks, yet they are a sub-set of the Verilog-AMS standard that is not excluded for Verilog-A. To avoid having to maintain unused code, the arithmetic bit shift operator is not supported by the compiler.<h2 id=additional-features>Additional Features</h2><p>Some features that are not part of the Verilog-A standard have been added to OpenVAF. The need for these features arose when OpenVAF was used in practice for compact model compilation and parameter, extraction. Below is a table that lists these additional features and a corresponding example.<p>In the following section each feature -including a motivation- is explained in detail. For making it easy to remain standard-compliance, OpenVAF emits a warning by default when any one of the listed features is used.<h3 id=symbolic-derivatives-with-respect-to-temperature>Symbolic Derivatives with respect to Temperature</h3><p>The <a href=https://www.accellera.org/images/downloads/standards/v-ams/VAMS-LRM-2-4.pdf>Verilog-AMS Language Reference Manual</a> allows calculating derivatives with the <code>ddx</code> analog filter. However, only derivatives w.r.t. node voltages <code>V(node)</code> or branch currents (<code>I(branch)</code>) are allowed. For parameter extraction derivatives w.r.t. ambient Temperature (<code>$temperature</code>) may be of interest for extracting temperature dependencies.<h4 id=guide>Guide</h4><p>The behavior of the <code>ddx</code> analog filter is extended so that <code>ddx(foo,$temperature)</code> is valid. When such a derivative is evaluated, all voltages and currents are assumed to be independent of temperature. Apart from this the <code>ddx</code> filter behaves identical as when used with nodes/branches, the derivative of the temperature is calculated by repeated application of the chain rule.<h4 id=examples-1>Examples</h4><pre class=language-verilog data-lang=verilog style=background-color:#2b303b;color:#c0c5ce;><code class=language-verilog data-lang=verilog><span>x = ddx($temperature,$temperature)
+</span><span>y = ddx(v(node),$temperature)
+</span><span>z = ddx(i(branch),$temperature)
+</span><span>// x = 1, y=z=0
+</span><span>
+</span><span>foo = 20*exp($temperature/10)+V(node)
+</span><span>bar = ddx(foo,$temperature)
+</span><span>// bar = 2*exp($temperature/10)
+</span></code></pre><h3 id=symbolic-derivatives-with-respect-to-voltages>Symbolic Derivatives with respect to Voltages</h3><p>Equations of compact models usually depend on voltage differences <code>V(a,b)</code> (or equivalently branch voltages <code>V(br_ab)</code>). The derivatives of these model Equations are required/useful during parameter extraction and for use in circuit simulators. However, Verilog-A only allows derivatives w.r.t. to node potentials.<p>Usually, such voltage derivatives are instead calculated with respect to the derivative of the voltage's upper node <code>ddx(foo,V(a,b) = ddx(foo,V(a))</code>. This approach fails when an equation depends on multiple branch voltages, as is demonstrated by the example below. For ensuring correct behavior it is therefore more desirable to calculate the derivative by <code>V(a,b)</code> directly.<pre class=language-verilog data-lang=verilog style=background-color:#2b303b;color:#c0c5ce;><code class=language-verilog data-lang=verilog><span>foo = V(a,b) + V(c,a)
+</span><span>dfoo1 = ddx(foo, V(a))
+</span><span>dfoo2 = ddx(foo,V(a,b))
+</span><span>// dfoo1 = 0, dfoo2 = 1
+</span></code></pre><h4 id=guide-1>Guide</h4><p>The behavior of the <code>ddx</code> analog filter is extended so that <code>ddx(foo,V(node1,node2))</code> is valid. Branch currents are treated as constants. Voltage derivatives w.r.t. <code>V(node1,node2)</code> are implemented as follows:<ul><li>The derivative of <code>V(node1,node2)</code> is 1<li>The derivative of <code>V(node2,node1)</code> is -1<li>The derivative of <code>V(branchX)</code> is 1 if the branches nodes are <code>node1</code> and <code>node2</code>: <code>branch (node1, node2) branchX</code><li>The derivative of <code>V(branchX)</code> is -1 if the branches nodes are <code>node2</code> and <code>node1</code>: <code>branch (node2, node1) branchX</code><li>In all other cases the derivative is 0</ul><p>Otherwise, the <code>ddx</code> filter behaves identical as when used with nodes/branches. The derivative of the argument is calculated by repeated application of the chain rule.<h4 id=example>Example</h4><pre class=language-verilog data-lang=verilog style=background-color:#2b303b;color:#c0c5ce;><code class=language-verilog data-lang=verilog><span>branch (b,e) br_be;
+</span><span>
+</span><span>begin
+</span><span>    Vt = $vt;
+</span><span>    Ib = Isbc * exp(V(b,c)/Vt) + Isbe * exp(V(br_be)/Vt);
+</span><span>    gbc = ddx(Ib, V(b,c)); // gbc =  Isbc/Vt*exp(V(b,c)/Vt)
+</span><span>    gbe = ddx(Ib, V(b,e)); // gbe =  Isbe/Vt*exp(V(b,c)/Vt)
+</span><span>
+</span><span>end
+</span></code></pre><h4 id=technical-background>Technical Background</h4><p>For performance reasons OpenVAF uses voltage derivatives instead of potential derivatives to calculate the Jacobian matrix entries. Consider a network with two nodes <code>a</code> and <code>b</code> which are connected by a single branch <code>br_ab</code> whose current only depends on the voltage difference between the two nodes. The matrix entries can then be calculated as follows:<pre class=language-verilog data-lang=verilog style=background-color:#2b303b;color:#c0c5ce;><code class=language-verilog data-lang=verilog><span>ddx(I(&LTa>),V(a))=ddx(I(&LTb>),V(b)) = ddx(I(br_ab),V(a,b))
+</span><span>ddx(I(&LTa>),V(b))= ddx(I(&LTa>),V(b)) = - ddx(I(br_ab),V(a,b))
+</span></code></pre><p>Almost all equations in compact models have above form. Using voltage differences effectively enables to reduce the number of derivatives by a factor of 4. Considering how complicated and therefore computationally expensive such derivatives can be, it is unlikely even modern compilers could optimize these duplications away completely. Therefore, it is preferable for OpenVAF to calculate derivatives using voltage difference and then calculate the Matrix entries from the results.<div class="docs-navigation d-flex justify-content-between"><a href=https://openvaf.semimod.de/docs/details/performance/> <div class="card my-1"><div class="card-body py-2">← Performance</div></div> </a><a class=ms-auto href=https://openvaf.semimod.de/docs/details/osdi/> <div class="card my-1"><div class="card-body py-2">OSDI - Simulator Interface →</div></div> </a></div></main></div></div></div><footer class="footer text-muted"><div class=container><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Developed by <a href=https://www.semimod.de>SemiMod GmbH</a></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=https://openvaf.semimod.de/privacy-policy/>Privacy Policy</a></ul></div></div></div></footer><script defer src=https://openvaf.semimod.de/js/main.js></script><script defer src=https://openvaf.semimod.de/plugins/elasticlunr.min.js></script><script defer src=https://openvaf.semimod.de/search_index.en.js></script><script defer src=https://openvaf.semimod.de/js/search.js></script>
