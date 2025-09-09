@@ -12,6 +12,12 @@ class = "page single"
 Below you can download precompiled binaries for the latest releases and read the changelog between each version.
 See our [installation](https://openvaf.semimod.de/docs/getting-started/installation/) instructions for details.
 
+
+#### OpenVAF Reloaded
+
+OpenVAF is now mainly maintained in the new fork [OpenVAF reloaded](https://github.com/arpadbuermen/OpenVAF) and can be downloaded [there](https://fides.fe.uni-lj.si/openvaf/download/).
+
+
 #### OpenVAF 23.5.0 (2023-5-16)
 
 
